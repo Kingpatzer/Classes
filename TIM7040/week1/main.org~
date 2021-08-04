@@ -1,0 +1,31 @@
+#+TITLE: Jelly Belly Production Process Analysis
+#+LATEX_HEADER: \shorttitle{PRODUCTION ANALYSIS}
+#+INCLUDE: "./preamble.org"
+#+AUTHOR: David A. Wagle
+#+LATEX_HEADER: \abstract{This is the abstract}
+#+LATEX_HEADER: \keywords{these, are, keywords}
+
+
+* Introduction
+
+Here is some introductory tex \textcite{Tracy2015}
+Here is another citation \parencite{AccentureCloudFirst2020}
+
+** A Subsection
+
+Let's see how this works  \cite{ahmadComparativeQoSSurvey2016,Tracy2015}
+
+*** A subsubsection
+
+    This too can have headings
+
+
+
+**** And down to the paragraph level
+
+** Another section
+  Here is more text \textcite{fengHowResearchProduction2018}
+
+* a main section
+
+\printbibliography

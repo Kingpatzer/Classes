@@ -1,0 +1,4 @@
+#+TITLE: Main
+#+AUTHOR: David A. Wagle
+#+LATEX_CLASS: apa7
+#+LATEX_CLASS_OPTIONS: [man]

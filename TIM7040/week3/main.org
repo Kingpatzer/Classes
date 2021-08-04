@@ -1,0 +1,213 @@
+#+TITLE: Policy Evaluation in the Enterprise
+#+INCLUDE: "./preamble.org"
+#+LATEX_HEADER: \title{Benefits and Importance of Policy Evaluation}
+
+
+* Introduction
+
+- Governance is a requirement for modern businesses
+- Governance of Finance and Accounting is strongly tied to IT
+- This ties IT policy to corporate governance \parencite{holderMaterialWeaknessesInformation2016,liInternalExternalInfluences2007}
+
+* Tool Components and Main Benefits
+
+** Components
+:PROPERTIES:
+:BEAMER_COL: 0.45
+:BEAMER_env: block
+:BEAMER_opt: t,label=
+:END:
+1. Validate regular updates
+2. Validate stakeholders
+3. Validate coherence
+4. Coheres with legal and other
+5. Defines ownership
+6. Defines purpose and scope
+7. Defines repercussions
+8. Defines measurement & metrics
+
+** Benefits
+:PROPERTIES:
+:BEAMER_COL: 0.45
+:BEAMER_ENV: block
+:BEAMER_opt: t,label=
+:END:
+1. Ensure technical relevance
+2. Ensure business relevance
+3. Ensure strategic purpose
+4. Ensure for regulatory compliance
+5. Ensure accountability
+6. Ensure coverage
+7. Clear onus of action
+8. Clear demarcation of compliance
+
+
+
+* Strengths and Weaknesses of the Tool
+
+** Strengths
+:PROPERTIES:
+:BEAMER_COL: 0.45
+:BEAMER_ENV: block
+:BEAMER_opt: t
+:END:
+- Short and Simple
+- Broadly Applicable to all Policies
+- Not overly specific or positivist \parencite{spanacheImplicationsEUEvaluation2018}
+
+** (Potential) Weaknesses
+:PROPERTIES:
+:BEAMER_COL: 0.45
+:BEAMER_ENV: block
+:BEAMER_opt: t
+:END:
+- Not tied to any specific model(s) (e.g. CMMI \parencite{caralliMaturityModels1012012}
+- Not tied to any framework (ITIL / COBIT)
+- Lacks specific measurement advice for scoring boundaries
+
+
+* Potential Improvements to the Tool
+
+- @@b:<1->@@ Add particularized boundary scores
+- @@b:<2->@@ Conduct audited checks against ITIL/COBIT audits to validate
+- @@b:<3->@@ Adjust as necessary
+
+
+* Evaluation of the Tool
+
+ - Adjusted tool includes descriptive scoring range
+ - Scores based on ITIL/COBIT audit results of Accenture and 3 internal clients
+ - Scale is pseudo-logrithmic, as "3" or better should be the norm for each question
+
+
+* Policy Evaluation and Outcomes
+
+- @@b:<1->@@ total score of 60 - Mature Process
+- @@b:<2->@@ Track improvement efforts (efficiency and efficacy)
+- @@b:<3->@@ Part of strategic plan and continuous improvement effort
+- @@b:<4->@@ Consideration of on-going business activities
+
+
+* Potential New Policy Targets
+
+- All emerging IT strategies must consider if new policies are needed, examples include:
+  + Social Media \parencite{ashishkumarrathorePolicymakersUseSocial2021}
+  + Big Data \parencite{mainaRevisitingNationalEHealth2019}
+  + Cloud Computing \parencite{wangResearchDataSecurity2021}
+- Growing business considerations that rise to strategic importance
+  + Sustainable practices \parencite{choiSustainablePoliciesStrategies2016}
+  + Privacy \parencite{bennettRevisitingGovernancePrivacy2020}
+
+* Strategic Value of IT Policy and Evaluation Tool Alignment
+
+- Policy and IT strategy matter for value creation
+- Policy and IT strategy matter for sustainability \parencite{chanChiefInformationOfficers2021}
+- Strategy and policy of new technologies incorporate organically cohere formally segmented areas
+  + Cloud resiliency for DR/BCP \parencite{jasgurLeveragingDisasterRecovery2019}
+  + Big Data for Business Intelligence \parencite{zhangApplicationEmergingInformation2020}
+  + Etc.
+
+
+
+
+\appendix
+
+
+
+* Appendix A - Scoring:
+\scriptsize
+- \textbf{13 - 40}: Immature process. The business should focus on ensuring clear ownership and accountability for future improvements for this process. The business owners should place this process on a watch list for quarterly remediation and audit. Owners should be held accountable for developing a clear plan for incremental improvements and should be held accountable for meeting specific goals related to said improvement targets.
+
+- \textbf{40 - 55}: Developing process: The processes has some areas of acceptable quality and performance but is overall still not fully mature. The business should develop a plan for ensuring continued improvement. Process ownership should be defined and the process owners should be required to develop a one-year plan for incremental process improvement, and held accountable for meeting specific goals related to said improvement targets.
+
+- \textbf{55 - 60}: Mature process: The process has few if any areas where coverage is lacking. Focus should be on improving efficiency and efficacy of the process components that are in place. Process ownership should be defined and held accountable for tracking improvement efforts. There is no need to have a specific plan or targeted improvement goals at this level. However, the policy should still be part of organizational unit strategic plans and continuous improvement of the policy should be a consideration of on-going business activity.
+
+- \textbf{60 - 65}: Fully Mature Process: This process has little room for improvement. Focus at this level is on continuous improvement of efficiency and efficacy. Business owners and stakeholders should be focused on ensuring the process is continually updated to reflect changing strategic goals. Business owners and stakeholders should consider using this process as a model for "lessons learned" to inform less well-performing processes on how they might improve over time.
+
+* Appendix B - Matrix Tool
+:PROPERTIES:
+:BEAMER_OPT: allowframebreaks,label=
+:END:
+\scriptsize
+\begin{longtable}{llllrr}
+Item & Never/No & Infrequent & NA & Sometimes & Always/Yes\\
+\hline
+\endfirsthead
+\multicolumn{6}{l}{Continued from previous page} \\
+\hline
+
+Item & Never/No & Infrequent & NA & Sometimes & Always/Yes \\
+
+\hline
+\endhead
+\hline\multicolumn{6}{r}{Continued on next page} \\
+\endfoot
+\endlastfoot
+\hline
+Does the policy have a &  &  &  &  & 5\\
+defined owner? &  &  &  &  & \\
+\hline
+Are the policy &  &  &  &  & 5\\
+stakeholders defined? &  &  &  &  & \\
+\hline
+Is the policy purpose &  &  &  &  & 5\\
+defined? &  &  &  &  & \\
+\hline
+Does the policy have &  &  &  &  & \\
+any defined exceptions &  &  &  &  & 5\\
+or exclusions? &  &  &  &  & \\
+\hline
+Does the policy have &  &  &  &  & \\
+defined repercussion &  &  &  &  & \\
+for failure to comply &  &  &  & 4 & \\
+with each requirement? &  &  &  &  & \\
+\hline
+Does the policy define &  &  &  &  & \\
+who is responsible &  &  &  & 4 & \\
+for enforcement of each &  &  &  &  & \\
+element? &  &  &  &  & \\
+\hline
+Is the policy scope &  &  &  &  & \\
+clear? &  &  &  &  & 5\\
+\hline
+Does the policy link &  &  &  &  & \\
+to appropriate &  &  &  &  & \\
+supporting documents &  &  &  & 4 & \\
+for each requirement? &  &  &  &  & \\
+\hline
+Does the policy define &  &  &  &  & \\
+how compliance will be &  &  &  &  & \\
+monitored for each &  &  &  & 4 & \\
+requirement? &  &  &  &  & \\
+\hline
+Is the policy regularly &  &  &  &  & \\
+updated as technology &  &  &  &  & 5\\
+or environments change? &  &  &  &  & \\
+\hline
+Is the policy readily &  &  &  &  & \\
+available to those to &  &  &  & 4 & \\
+whom it applies? &  &  &  &  & \\
+\hline
+Is the policy overall &  &  &  &  & \\
+coherent and fit &  &  &  &  & \\
+organically with the &  &  &  &  & 5\\
+rest of the governance &  &  &  &  & \\
+structure? &  &  &  &  & \\
+\hline
+Does the policy take &  &  &  &  & \\
+into account legal and &  &  &  &  & \\
+regulatory as well as &  &  &  &  & \\
+technological &  &  &  &  & 5\\
+limitations and &  &  &  &  & \\
+implications? &  &  &  &  & \\
+\hline
+ &  &  &  &  & \\
+\end{longtable}
+
+
+* Bibliography
+:PROPERTIES:
+:BEAMER_opt: allowframebreaks,label=
+:END:
+
+\printbibliography

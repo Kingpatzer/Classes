@@ -1,0 +1,57 @@
+\section{Introduction}
+
+For many years, the standard data model for database systems has been the relational database model. In the seminal paper by \textcite{coddRelationalModelData1970}, the IBM researcher layed out a system for creating a data model based purely on set theory. The goal of the model was to ``protect users of formatted data systems from the potentially disruptive changes in data representation caused by growth in the data bank and changes in traffic.'' Codd defined the mathematical model for relational databases, but not the specifics of implementation. Over the intervening years, numerous suppliers were producing databases that they called ``relational.'' However, a lack of consistency with Codd's vision led the author to publish a set of 13 rules to determine if a databases is truly relational \parencite{coddYourDBMSReally1985} (the original is lost to time, this article is a reprint).
+
+Over time, standards for how relational data should be represented arose and became systematized. These standards are known as Boyce-Codd normal forms and are descriptions of how entity-relationships should be architected at the time of database design \parencite{philipTeachingDatabaseModeling2007} and this method of database design has become the standard method of teaching database theory in university settings. This method of data base design became so popular that in 1987, the ISO published the first version of standard 9075 ``Information Technology - Database Languages - SQL'' to describe how structured query languages should be designed in order to work with relational database data \parencite{iso/iecjtc1ISO907519871987}. This standard has been updated many times since its initial publication, owing to the enduring popularity of relational database system.
+
+However, as data needs grew, processing speeds increased, and storage costs diminished, limitations of relational databases became more of a bottleneck than a benefit \parencite{mohanHistoryRepeatsItself2013}.  While navigational databases, such as IBM's IMS system existed since the mid-1960s, it wasn't until the mid-2000s that commercial graph databases such as Neo4j and Oracle Spacial Graph became available. While there are architectural differences between how data is stored from relational to graph databases, the most important difference is that in a relational database, the relationships between data are secondary properties of the data that must be explicated in code. For example, to connect two tables together to query a relationship in SQL, the code might look something like the following:
+
+\begin{lstlisting}[frame=single]
+  SELECT table1.column1, table2.column2
+  FROM table1
+  INNER JOIN table2
+  ON table1.key_column = table2.key_column;
+  \end{lstlisting}
+
+  The key concept to take away from this example is that the relationship between the data is not part of the data, but is expressed by the programmer selecting data from columns in tables based on both set and logical operations enacted on the data elements and tables. The programmer needs to establish the relationship and assign meaning to it at the time of query creation not at the time of database design.
+
+  Graph databases on the other hand have relationships as first-class data that is integral to the architecture of the system. The result creates many advantages. One  is that the queries are simplier to write, debug and understand such as the following example:
+
+  \begin{lstlisting}[frame=single]
+    MATCH (offer:PromotionalOffer {type: 'discount_offer'})
+    -[:USED_TO_PROMOTE]->(product:Product)
+    <-[:ADDED_TO_WISH_LIST|:VIEWED]
+    -(customer:Customer)
+RETURN offer, product, customer;
+\end{lstlisting}
+
+Without knowing the language at all, it is easy to see that this query will return a list of discount offers for products which have been viewed by a customer and added to that customer's wish list. Compare this query to the SQL example above, while the latter returns a much simpler relationship, we don't know what that relationship is from the query, and thus have no way of assigning meaning to the query results absent the programmer's knowledge about the database schema.
+
+\section{Graph Theory}
+
+Graph databases give meaning to both the vertices and edges in a database. That is, if one thinks of a relational database table as a vertices, and the connection between tables as edges, an a traditional RDBS, the edges have no intrinsic meaning. In a graph database they do \parencite{karunarathnaScalableGraphConvolutional2020}. This has numerous advantages.
+
+First, unlike relational databases, it does not require that tables be joined together to perform logical operations. When databases reach billions of records (as many large databases do), such operations are extremely resource intensive and can even prove impossible. Graph databases however, transverse the nodes validating relationships rather than having to construct temporary tables to perform set operations \parencite{ariasBenefitsGraphDatabases2020}.
+
+Second, because the relationship between data vertices are first-class objects in a graph database, machine learning and AI systems can discover inferences about data more easily. Graph databases support the ability to easily support predicting links between data elements because the incoming data relationship can be compared to existing relationship densities in the underlying database \parencite{karunarathnaScalableGraphConvolutional2020,wangLinkPredictionHeterogeneous2021}. This capability allows users of these databases to glean more business value from their data and to discover otherwise unknowable relationships between various data elements.
+
+Graph database systems underpin advanced AI solutions developed by researchers that exploit these properties, such as a job recommendation system that compares a users skills and work history with job vacancies \parencite{giabelliSkills2JobRecommenderSystem2021}, to provide advanced robotic control systems, and across numerous engineering domains of cutting edge research \parencite{bhattacharyyaGraphDatabaseSurvey2020}.
+
+\section{Research-Practice Gap}
+
+For all of the demonstrated advantages there are still large gaps in graph database adoption. It is a tool that is fairly widely adopted in social media analysis, in large part because social media is predicated on relationships \parencite{borahImprovisedMarketingInterventions2020,changSocialMediaInfluencer2020,guoFutureFalseInformation2020}. However, the vast majority of research has focused on how to optimize graph database systems, and little is known about what users actually need from graph database systems.
+
+One recent survey noted that users have specific demands that graph database products do not necessarily possess. Among these are the ability to process high-degree vertices in special ways; the ability to easily identify edges that share more than two vertices; versioning and historical analysis of vertices and edge changes; the ability to provide schema constraints to vertices and edges; and the ability to have capabilities similar to relational database triggers \parencite{sahuUbiquityLargeGraphs2020}.
+
+Additionally, to take full advantage of graph database capabilities at scale, businesses are faced with the challenge of re-engineering their existing data into graph structures. This is a non-trivial task. Further, unlike relational databases, which have had a standard query language since 1987, there is no standardized graph query language yet in place \parencite{bhattacharyyaGraphDatabaseSurvey2020}. This presents a significant risk to companies who are trying to ensure long-term sustainable investment in their IT infrastructure.
+
+
+\section{Effects of the Research-Practice Gap}
+
+The gaps identified: lack of specific desired capabilities found in traditional databases, complexity of converting existing data, and lack of existing standards primarily impact established companies with significant existing database infrastructure investment. It is these companies that have to weight the costs of conversion against future potential, currently unproven benefits. Just as smaller and mid-sized companies, particularly startups, are further along in converting to Cloud Computing \parencite{karunagaranDifferentialCloudAdoption2019}, they are also further along in adopting graph database systems. Such companies have less data to convert, they are more able to redesign their generally smaller systems, and they have the agility to pivot to new technology faster than established companies that have enormous legacy systems upon which critical business functionality is based.
+
+Still, the advantages of graph databases do have some large-scale adopters. One of the primary large-enterprise uses of graph databases is fraud detection. Because human behavior, though complex, is relatively stable, anomalies in relationships between transactions can signify fraud. Thus graph databases are being adopted by financial companies interested in fraud prevention. But even in this arena, emerging technology adoption is slow  \parencite{mackeyInterdisciplinaryReviewDigital2020}. Another set of large-scale adopters are large retailers. Companies like Walmart and eBay are using graph database systems to power recommendations for web shoppers and in-store app users \parencite{webberTopUseCases2017}.
+
+\section{Conclusion}
+
+Overall, the future of impact of graph databases will be a net positive for nearly all parties. By focusing on data relations, graph databases give semantic context to data elements, allowing for more intelligent use of data sets by both human users and machine learning systems. The resulting ability to gather more useful, timely, and impactful insights into data will be a net positive for everyone. Still, for graph databases to overcome traditional relational database systems broadly, implementors need to solve for the user needs that remain unmet. History and versioning likely being the most important of these, as such capabilities serve a critical governance and oversight function for auditors. A standardized query language is also likely a requirement for large-scale adoption.

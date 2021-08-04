@@ -1,0 +1,315 @@
+david@user-iMac Classes [main] % pwd
+/home/david/Documents/School/Classes
+david@user-iMac Classes [main] % cd Documetns
+cd:cd:10: no such file or directory: Documetns
+david@user-iMac [1] Classes [main] % cd TIM7001/week2/slides 
+david@user-iMac slides [main] % ls
+apa7/  preamble/  beamerthemeUNLTheme.sty  main.bbl  main.blg          main.fls  main.nav  main.pdf      main.snm         main.tex  Value.tex
+img/   tex/       main.aux                 main.bcf  main.fdb_latexmk  main.log  main.out  main.run.xml  main.synctex.gz  main.toc
+david@user-iMac slides [main] % cp main.pdf WagleD_TIM7001-1.2.pdf
+'main.pdf' -> 'WagleD_TIM7001-1.2.pdf'
+david@user-iMac slides [main] % cp WagleD_TIM7001-1.2.pdf ..
+'WagleD_TIM7001-1.2.pdf' -> '../WagleD_TIM7001-1.2.pdf'
+david@user-iMac slides [main] % cd ..
+david@user-iMac week2 [main] % ls
+slides/   main.org  preamble.org  slide.aux  slide.fdb_latexmk  slide.org  slide_preamble.org  WagleD_TIM7001-1.2.pdf
+tex/      main.pdf  slide.5.vrb   slide.bcf  slide.fls          slide.out  slide_preamble.tex  WagleD_TIM7001_2.1.pdf
+main.bbl  main.tex  slide.6.vrb   slide.blg  slide.log          slide.pdf  slide.tex
+david@user-iMac week2 [main] % mv WagleD_TIM7001-1.2.pdf WagleD_TIM7001_2.2.pdf
+renamed 'WagleD_TIM7001-1.2.pdf' -> 'WagleD_TIM7001_2.2.pdf'
+david@user-iMac week2 [main] % ssh ec2-user@54.210.191.25
+The authenticity of host '54.210.191.25 (54.210.191.25)' can't be established.
+ECDSA key fingerprint is SHA256:ly8o/xZ0OM3sD29QE4vjy1z6SjdMlKgitg5kRzPoxwo.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '54.210.191.25' (ECDSA) to the list of known hosts.
+ec2-user@54.210.191.25: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
+david@user-iMac [255] week2 [main] % ssh ec2-user@54.210.191.25
+ec2-user@54.210.191.25: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
+david@user-iMac [255] week2 [main] % ssh --help
+unknown option -- -
+usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
+           [-b bind_address] [-c cipher_spec] [-D [bind_address:]port]
+           [-E log_file] [-e escape_char] [-F configfile] [-I pkcs11]
+           [-i identity_file] [-J [user@]host[:port]] [-L address]
+           [-l login_name] [-m mac_spec] [-O ctl_cmd] [-o option] [-p port]
+           [-Q query_option] [-R address] [-S ctl_path] [-W host:port]
+           [-w local_tun[:remote_tun]] destination [command]
+david@user-iMac [255] week2 [main] % keyring --help
+Usage: keyring [get|set|del] SERVICE USERNAME
+
+Options:
+  -h, --help            show this help message and exit
+  -p KEYRING_PATH, --keyring-path=KEYRING_PATH
+                        Path to the keyring backend
+  -b KEYRING_BACKEND, --keyring-backend=KEYRING_BACKEND
+                        Name of the keyring backend
+  --list-backends       List keyring backends and exit
+  --disable             Disable keyring and exit
+david@user-iMac week2 [main] % ssh-keygen --help
+unknown option -- -
+usage: ssh-keygen [-q] [-b bits] [-C comment] [-f output_keyfile] [-m format]
+                  [-t dsa | ecdsa | ecdsa-sk | ed25519 | ed25519-sk | rsa]
+                  [-N new_passphrase] [-O option] [-w provider]
+       ssh-keygen -p [-f keyfile] [-m format] [-N new_passphrase]
+                   [-P old_passphrase]
+       ssh-keygen -i [-f input_keyfile] [-m key_format]
+       ssh-keygen -e [-f input_keyfile] [-m key_format]
+       ssh-keygen -y [-f input_keyfile]
+       ssh-keygen -c [-C comment] [-f keyfile] [-P passphrase]
+       ssh-keygen -l [-v] [-E fingerprint_hash] [-f input_keyfile]
+       ssh-keygen -B [-f input_keyfile]
+       ssh-keygen -D pkcs11
+       ssh-keygen -F hostname [-lv] [-f known_hosts_file]
+       ssh-keygen -H [-f known_hosts_file]
+       ssh-keygen -K [-w provider]
+       ssh-keygen -R hostname [-f known_hosts_file]
+       ssh-keygen -r hostname [-g] [-f input_keyfile]
+       ssh-keygen -M generate [-O option] output_file
+       ssh-keygen -M screen [-f input_file] [-O option] output_file
+       ssh-keygen -I certificate_identity -s ca_key [-hU] [-D pkcs11_provider]
+                  [-n principals] [-O option] [-V validity_interval]
+                  [-z serial_number] file ...
+       ssh-keygen -L [-f input_keyfile]
+       ssh-keygen -A [-f prefix_path]
+       ssh-keygen -k -f krl_file [-u] [-s ca_public] [-z version_number]
+                  file ...
+       ssh-keygen -Q -f krl_file file ...
+       ssh-keygen -Y find-principals -s signature_file -f allowed_signers_file
+       ssh-keygen -Y check-novalidate -n namespace -s signature_file
+       ssh-keygen -Y sign -f key_file -n namespace file ...
+       ssh-keygen -Y verify -f allowed_signers_file -I signer_identity
+                -n namespace -s signature_file [-r revocation_file]
+david@user-iMac [1] week2 [main] % ssh-keyscan --help
+unknown option -- -
+usage: ssh-keyscan [-46cDHv] [-f file] [-p port] [-T timeout] [-t type]
+                   [host | addrlist namelist]
+david@user-iMac [1] week2 [main] % ssh-keyscan    
+usage: ssh-keyscan [-46cDHv] [-f file] [-p port] [-T timeout] [-t type]
+                   [host | addrlist namelist]
+david@user-iMac [1] week2 [main] % ssh-keyscan -v
+usage: ssh-keyscan [-46cDHv] [-f file] [-p port] [-T timeout] [-t type]
+                   [host | addrlist namelist]
+david@user-iMac [1] week2 [main] % ssh-agent --help 
+unknown option -- -
+usage: ssh-agent [-c | -s] [-Dd] [-a bind_address] [-E fingerprint_hash]
+                 [-P provider_whitelist] [-t life] [command [arg ...]]
+       ssh-agent [-c | -s] -k
+david@user-iMac [1] week2 [main] % man ssh-agent
+david@user-iMac week2 [main] % ssh --help
+unknown option -- -
+usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
+           [-b bind_address] [-c cipher_spec] [-D [bind_address:]port]
+           [-E log_file] [-e escape_char] [-F configfile] [-I pkcs11]
+           [-i identity_file] [-J [user@]host[:port]] [-L address]
+           [-l login_name] [-m mac_spec] [-O ctl_cmd] [-o option] [-p port]
+           [-Q query_option] [-R address] [-S ctl_path] [-W host:port]
+           [-w local_tun[:remote_tun]] destination [command]
+david@user-iMac [255] week2 [main] % ssh -i /home/david/Downloads/AWSUdemyEC2.pem ec2-user@54.210.191.25
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+[ec2-user@ip-172-31-23-142 ~]$ sudo su
+[root@ip-172-31-23-142 ec2-user]# yum update -y
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package chrony.x86_64 0:3.2-1.amzn2.0.5 will be updated
+---> Package chrony.x86_64 0:3.5.1-1.amzn2.0.1 will be an update
+--> Processing Dependency: libnettle.so.4()(64bit) for package: chrony-3.5.1-1.amzn2.0.1.x86_64
+---> Package cloud-init.noarch 0:19.3-3.amzn2 will be updated
+---> Package cloud-init.noarch 0:19.3-4.amzn2 will be an update
+---> Package p11-kit.x86_64 0:0.23.21-2.amzn2.0.1 will be updated
+---> Package p11-kit.x86_64 0:0.23.22-1.amzn2.0.1 will be an update
+---> Package p11-kit-trust.x86_64 0:0.23.21-2.amzn2.0.1 will be updated
+---> Package p11-kit-trust.x86_64 0:0.23.22-1.amzn2.0.1 will be an update
+---> Package tzdata.noarch 0:2020a-1.amzn2 will be updated
+---> Package tzdata.noarch 0:2020d-2.amzn2 will be an update
+--> Running transaction check
+---> Package nettle.x86_64 0:2.7.1-8.amzn2.0.2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=====================================================================================================================================================
+ Package                             Arch                         Version                                     Repository                        Size
+=====================================================================================================================================================
+Updating:
+ chrony                              x86_64                       3.5.1-1.amzn2.0.1                           amzn2-core                       258 k
+ cloud-init                          noarch                       19.3-4.amzn2                                amzn2-core                       924 k
+ p11-kit                             x86_64                       0.23.22-1.amzn2.0.1                         amzn2-core                       321 k
+ p11-kit-trust                       x86_64                       0.23.22-1.amzn2.0.1                         amzn2-core                       130 k
+ tzdata                              noarch                       2020d-2.amzn2                               amzn2-core                       481 k
+Installing for dependencies:
+ nettle                              x86_64                       2.7.1-8.amzn2.0.2                           amzn2-core                       329 k
+
+Transaction Summary
+=====================================================================================================================================================
+Install             ( 1 Dependent package)
+Upgrade  5 Packages
+
+Total download size: 2.4 M
+Downloading packages:
+Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+(1/6): chrony-3.5.1-1.amzn2.0.1.x86_64.rpm                                                                                    | 258 kB  00:00:00     
+(2/6): cloud-init-19.3-4.amzn2.noarch.rpm                                                                                     | 924 kB  00:00:00     
+(3/6): nettle-2.7.1-8.amzn2.0.2.x86_64.rpm                                                                                    | 329 kB  00:00:00     
+(4/6): p11-kit-0.23.22-1.amzn2.0.1.x86_64.rpm                                                                                 | 321 kB  00:00:00     
+(5/6): tzdata-2020d-2.amzn2.noarch.rpm                                                                                        | 481 kB  00:00:00     
+(6/6): p11-kit-trust-0.23.22-1.amzn2.0.1.x86_64.rpm                                                                           | 130 kB  00:00:00     
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                                 11 MB/s | 2.4 MB  00:00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Updating   : p11-kit-0.23.22-1.amzn2.0.1.x86_64                                                                                               1/11 
+  Installing : nettle-2.7.1-8.amzn2.0.2.x86_64                                                                                                  2/11 
+  Updating   : chrony-3.5.1-1.amzn2.0.1.x86_64                                                                                                  3/11 
+  Updating   : p11-kit-trust-0.23.22-1.amzn2.0.1.x86_64                                                                                         4/11 
+  Updating   : tzdata-2020d-2.amzn2.noarch                                                                                                      5/11 
+  Updating   : cloud-init-19.3-4.amzn2.noarch                                                                                                   6/11 
+  Cleanup    : p11-kit-trust-0.23.21-2.amzn2.0.1.x86_64                                                                                         7/11 
+  Cleanup    : tzdata-2020a-1.amzn2.noarch                                                                                                      8/11 
+  Cleanup    : cloud-init-19.3-3.amzn2.noarch                                                                                                   9/11 
+  Cleanup    : p11-kit-0.23.21-2.amzn2.0.1.x86_64                                                                                              10/11 
+  Cleanup    : chrony-3.2-1.amzn2.0.5.x86_64                                                                                                   11/11 
+  Verifying  : p11-kit-trust-0.23.22-1.amzn2.0.1.x86_64                                                                                         1/11 
+  Verifying  : nettle-2.7.1-8.amzn2.0.2.x86_64                                                                                                  2/11 
+  Verifying  : p11-kit-0.23.22-1.amzn2.0.1.x86_64                                                                                               3/11 
+  Verifying  : cloud-init-19.3-4.amzn2.noarch                                                                                                   4/11 
+  Verifying  : tzdata-2020d-2.amzn2.noarch                                                                                                      5/11 
+  Verifying  : chrony-3.5.1-1.amzn2.0.1.x86_64                                                                                                  6/11 
+  Verifying  : tzdata-2020a-1.amzn2.noarch                                                                                                      7/11 
+  Verifying  : p11-kit-trust-0.23.21-2.amzn2.0.1.x86_64                                                                                         8/11 
+  Verifying  : p11-kit-0.23.21-2.amzn2.0.1.x86_64                                                                                               9/11 
+  Verifying  : chrony-3.2-1.amzn2.0.5.x86_64                                                                                                   10/11 
+  Verifying  : cloud-init-19.3-3.amzn2.noarch                                                                                                  11/11 
+
+Dependency Installed:
+  nettle.x86_64 0:2.7.1-8.amzn2.0.2                                                                                                                  
+
+Updated:
+  chrony.x86_64 0:3.5.1-1.amzn2.0.1 cloud-init.noarch 0:19.3-4.amzn2 p11-kit.x86_64 0:0.23.22-1.amzn2.0.1 p11-kit-trust.x86_64 0:0.23.22-1.amzn2.0.1
+  tzdata.noarch 0:2020d-2.amzn2    
+
+Complete!
+-[root@ip-172-31-23-142 ec2-user]# 
+[root@ip-172-31-23-142 ec2-user]# yum install -y httpd
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package httpd.x86_64 0:2.4.46-1.amzn2 will be installed
+--> Processing Dependency: httpd-tools = 2.4.46-1.amzn2 for package: httpd-2.4.46-1.amzn2.x86_64
+--> Processing Dependency: httpd-filesystem = 2.4.46-1.amzn2 for package: httpd-2.4.46-1.amzn2.x86_64
+--> Processing Dependency: system-logos-httpd for package: httpd-2.4.46-1.amzn2.x86_64
+--> Processing Dependency: mod_http2 for package: httpd-2.4.46-1.amzn2.x86_64
+--> Processing Dependency: httpd-filesystem for package: httpd-2.4.46-1.amzn2.x86_64
+--> Processing Dependency: /etc/mime.types for package: httpd-2.4.46-1.amzn2.x86_64
+--> Processing Dependency: libaprutil-1.so.0()(64bit) for package: httpd-2.4.46-1.amzn2.x86_64
+--> Processing Dependency: libapr-1.so.0()(64bit) for package: httpd-2.4.46-1.amzn2.x86_64
+--> Running transaction check
+---> Package apr.x86_64 0:1.6.3-5.amzn2.0.2 will be installed
+---> Package apr-util.x86_64 0:1.6.1-5.amzn2.0.2 will be installed
+--> Processing Dependency: apr-util-bdb(x86-64) = 1.6.1-5.amzn2.0.2 for package: apr-util-1.6.1-5.amzn2.0.2.x86_64
+---> Package generic-logos-httpd.noarch 0:18.0.0-4.amzn2 will be installed
+---> Package httpd-filesystem.noarch 0:2.4.46-1.amzn2 will be installed
+---> Package httpd-tools.x86_64 0:2.4.46-1.amzn2 will be installed
+---> Package mailcap.noarch 0:2.1.41-2.amzn2 will be installed
+---> Package mod_http2.x86_64 0:1.15.14-2.amzn2 will be installed
+--> Running transaction check
+---> Package apr-util-bdb.x86_64 0:1.6.1-5.amzn2.0.2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=====================================================================================================================================================
+ Package                                  Arch                        Version                                  Repository                       Size
+=====================================================================================================================================================
+Installing:
+ httpd                                    x86_64                      2.4.46-1.amzn2                           amzn2-core                      1.3 M
+Installing for dependencies:
+ apr                                      x86_64                      1.6.3-5.amzn2.0.2                        amzn2-core                      118 k
+ apr-util                                 x86_64                      1.6.1-5.amzn2.0.2                        amzn2-core                       99 k
+ apr-util-bdb                             x86_64                      1.6.1-5.amzn2.0.2                        amzn2-core                       19 k
+ generic-logos-httpd                      noarch                      18.0.0-4.amzn2                           amzn2-core                       19 k
+ httpd-filesystem                         noarch                      2.4.46-1.amzn2                           amzn2-core                       23 k
+ httpd-tools                              x86_64                      2.4.46-1.amzn2                           amzn2-core                       87 k
+ mailcap                                  noarch                      2.1.41-2.amzn2                           amzn2-core                       31 k
+ mod_http2                                x86_64                      1.15.14-2.amzn2                          amzn2-core                      147 k
+
+Transaction Summary
+=====================================================================================================================================================
+Install  1 Package (+8 Dependent packages)
+
+Total download size: 1.8 M
+Installed size: 5.1 M
+Downloading packages:
+(1/9): apr-1.6.3-5.amzn2.0.2.x86_64.rpm                                                                                       | 118 kB  00:00:00     
+(2/9): apr-util-1.6.1-5.amzn2.0.2.x86_64.rpm                                                                                  |  99 kB  00:00:00     
+(3/9): apr-util-bdb-1.6.1-5.amzn2.0.2.x86_64.rpm                                                                              |  19 kB  00:00:00     
+(4/9): generic-logos-httpd-18.0.0-4.amzn2.noarch.rpm                                                                          |  19 kB  00:00:00     
+(5/9): httpd-filesystem-2.4.46-1.amzn2.noarch.rpm                                                                             |  23 kB  00:00:00     
+(6/9): httpd-tools-2.4.46-1.amzn2.x86_64.rpm                                                                                  |  87 kB  00:00:00     
+(7/9): httpd-2.4.46-1.amzn2.x86_64.rpm                                                                                        | 1.3 MB  00:00:00     
+(8/9): mailcap-2.1.41-2.amzn2.noarch.rpm                                                                                      |  31 kB  00:00:00     
+(9/9): mod_http2-1.15.14-2.amzn2.x86_64.rpm                                                                                   | 147 kB  00:00:00     
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                                9.0 MB/s | 1.8 MB  00:00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : apr-1.6.3-5.amzn2.0.2.x86_64                                                                                                      1/9 
+  Installing : apr-util-bdb-1.6.1-5.amzn2.0.2.x86_64                                                                                             2/9 
+  Installing : apr-util-1.6.1-5.amzn2.0.2.x86_64                                                                                                 3/9 
+  Installing : httpd-tools-2.4.46-1.amzn2.x86_64                                                                                                 4/9 
+  Installing : generic-logos-httpd-18.0.0-4.amzn2.noarch                                                                                         5/9 
+  Installing : mailcap-2.1.41-2.amzn2.noarch                                                                                                     6/9 
+  Installing : httpd-filesystem-2.4.46-1.amzn2.noarch                                                                                            7/9 
+  Installing : mod_http2-1.15.14-2.amzn2.x86_64                                                                                                  8/9 
+  Installing : httpd-2.4.46-1.amzn2.x86_64                                                                                                       9/9 
+  Verifying  : apr-util-1.6.1-5.amzn2.0.2.x86_64                                                                                                 1/9 
+  Verifying  : httpd-filesystem-2.4.46-1.amzn2.noarch                                                                                            2/9 
+  Verifying  : apr-util-bdb-1.6.1-5.amzn2.0.2.x86_64                                                                                             3/9 
+  Verifying  : httpd-tools-2.4.46-1.amzn2.x86_64                                                                                                 4/9 
+Hello world!
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+~                                                                                                                                                    
+"/var/www/html/index.html" 1L, 14C

@@ -1,0 +1,27 @@
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+\centering
+\caption{KEY FACTS}
+\ADLnullwidehline
+\arrayrulecolor{black}
+\begin{tabular}{||ll||}
+\hhline{|t:==:t|}
+\textbf{Head Office}                               & \begin{tabular}[c]{@{}l@{}}Accenture PLC\\3 Grand Canal Plaza\\Grand Canal Street Upper\\Dublin, Ireland\end{tabular}  \\
+\hdashline[1pt/1pt]
+\textbf{Phone}                                     & +353 1 407 6000                                                                                                        \\
+\hdashline[1pt/1pt]
+\textbf{Web Address}                               & https://www.accenture.com                                                                                              \\
+\hdashline[1pt/1pt]
+\textbf{2019 Revenue}                              & \textcolor[rgb]{0.267,0.267,0.267}{\$43.215B US}                                                                       \\
+\hdashline[1pt/1pt]
+\textbf{2019 Operating Income}                     & \textcolor[rgb]{0.267,0.267,0.267}{\$}\textcolor[rgb]{0.267,0.267,0.267}{6.305B US}                                    \\
+\hdashline[1pt/1pt]
+\textbf{Financial Year End}                        & Aug 31, 2020                                                                                                           \\
+\hdashline[1pt/1pt]
+\textbf{Employees}                                 & 513,000                                                                                                                \\
+\hdashline[1pt/1pt]
+\multicolumn{1}{||l||}{\textbf{NYSE Stock Symbol}} & ACN                                                                                                                    \\
+%%\hhline{|b:=>{\arrayrulecolor{black}}:b:>{\arrayrulecolor{black}}=:b|}
+\end{tabular}
+\end{table*}

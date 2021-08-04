@@ -1,0 +1,79 @@
+%% use {apa7} for apa style papers
+%% and {beamer} for slides
+%%
+\documentclass[man,donotrepeattitle]{apa7}
+%%\documentclass[unknownkeysallowed]{beamer}
+
+\usepackage{import}
+
+%%
+%% preamble material
+%%
+
+\import{preamble/}{packages}
+\usepackage{changepage}
+\import{preamble/}{bibliography_stuff}
+
+
+%% \fakesection gets a section into TOC without printing anything in document
+
+\newcommand{\fakesection}[1]{%
+  \par\refstepcounter{section}% Increase section counter
+  \sectionmark{#1}% Add section mark (header)
+  \addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}% Add section to ToC
+  % Add more content here, if needed.
+}
+
+%% a variable for the citation key to avoid having to enter it 3 times on each page
+%%
+\newcommand{\mykey}{null}
+%%
+%% use {titlepage} for apa style papers
+%% and {beamer} for beamer slides
+%%
+\import{preamble/}{titlepage}
+%%\import{preamble/}{beamer}
+
+
+%%
+%% main document
+%%
+
+\begin{document}
+
+
+%% use this only for apa style papers
+\maketitle
+\tableofcontents
+\newpage
+%% use this only for beamer presentations
+%%\begin{frame}
+%%  \titlepage
+%%\end{frame}
+\import{tex/}{introduction}
+\import{tex/}{ref8}
+\import{tex/}{ref3}
+\import{tex/}{ref5}
+\import{tex/}{ref1}
+\import{tex/}{ref6}
+\import{tex/}{ref9}
+\import{tex/}{ref10}
+\import{tex/}{ref4}
+\import{tex/}{ref7}
+\import{tex/}{ref2}
+\import{tex/}{conclusion}
+
+
+%% uncomment the following for beamer
+%%\begin{frame}[allowframebreaks]
+
+\printbibliography
+
+%% uncomment the following for beamer
+%%\end{frame}
+
+
+%%\appendix
+
+
+\end{document}

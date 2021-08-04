@@ -1,0 +1,24 @@
+\begin{table*}[htpb]
+\begin{tabular}{@{}lllll@{}}
+\toprule
+\textbf{Characteristic} &
+  \textbf{\begin{tabular}[c]{@{}l@{}}Original\\ Number\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}l@{}}Original\\ Percentage\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}l@{}}Simulated \\ Number\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}l@{}}Simulated\\ Percentage\end{tabular}} \\ \midrule
+\textit{Work Organization}              & 112 &       & 500 &      \\ \midrule
+Academic Educational Institution        & 4   & 3.57  & 27  & 5.4  \\ \midrule
+Academic Medical Center                 & 15  & 13.39 & 83  & 16.6 \\ \midrule
+Community Health Organization or Clinic & 1   & 0.89  & 15  & 3.0  \\ \midrule
+Health Care Provider                    & 5   & 4.46  & 17  & 3.4  \\ \midrule
+Healthcare System Corporate Office      & 6   & 5.36  & 68  & 13.6 \\ \midrule
+Hospital                                & 72  & 64.29 & 103 & 20.6 \\ \midrule
+Long-term/Post-acute care               & 3   & 2.70  & 21  & 4.2  \\ \midrule
+Other                                   & 5   & 4.5   & --- & ---  \\ \midrule
+Insurance Provider                      & --- & ---   & 112 & 22.4 \\ \midrule
+Government (Research)                   &     &       & 29  & 5.8  \\ \midrule
+Government (Provider)                   &     &       & 25  & 5.0  \\ \bottomrule
+\end{tabular}
+\caption{Comparing Results }
+\label{tab:table1}
+\end{table*}

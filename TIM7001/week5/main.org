@@ -1,0 +1,104 @@
+#+TITLE: Concept Outline  
+#+LATEX_HEADER: \shorttitle{CONCEPT OUTLINE}
+#+INCLUDE: "./preamble.org"
+#+AUTHOR: David A. Wagle
+#+LATEX_HEADER: %%\abstract{This is the abstract}
+#+LATEX_HEADER: %%\keywords{these, are, keywords}
+
+
+
+* Introduction
+
+The Area of Interest under consideration fort his concept map is: blockchain technologies
+The specialization is: supply-chain management.
+The business factor is: sustainability
+The theory is: technology acceptance model
+
+* Concept Outline
+
+1. Supply-Chain Management
+   A. Complexity Management
+      1. Supply-chains are growing more complex
+         a. Internet and digitization affects complexity parencite:freundEffectInternetInternational2004,bojnecImpactInternetManufacturing2009 
+         b. Globalization causes complexity  parencite:fujitaGlobalizationEvolutonSupply2006,serdarasanReviewSupplyChain2013
+         c. Corporate actions can increase or decrease complexity parencite:linawatiSupplyChainFlexibility2017,piyaSupplyChainComplexity2017
+      2. Supply-chain complexity creates a need for middle-men acting as brokers
+         a. Complexity creates trust gaps which brokers fill parencite:tangpongReviewBuyersupplierRelationship2015  
+         b. Trust is essential to effective supply-chain management parencite:dubeySwiftTrustCommitment2019 
+         c. Brokers facilitate information sharing between buyers (principals) and agents (suppliers) parencite:voigtSupplyChainCoordination2012
+         d. Brokers are essential to efficiency parencite:aryaMiddlemanPanaceaSupply2015    
+      3. Complexity increase costs and risks
+         a. Modern manufacturing techniques are complex and drive cost parencite:thomasCostsBenefitsAdoption2016    
+         b. Complexity provides societal benefits (ibid) 
+         c. Risk increase with complexity parencite:wangRiskTransmissionComplex2021,niComprehensiveAssessmentLogistics2019 
+   B. Blockchain address Supply-Chain complexity
+      1. Blockchain mediates privacy, an issue of trust parencite:sahaiEnablingPrivacyTraceability2020 through:
+         a. Access controls parencite:liuPrivacyProtectionFog2020 
+         b. Encryption parencite:chanSimpleScalableBlockchain2021 
+         c. Data integrity parencite:elghazouaniEfficientMethodBased2020 
+      2. Blockchain provides transparency, an issue of trust parencite:gaurBuildingTransparentSupply2020
+         a. Smart Contracts parencite:omarEnsuringProtocolCompliance2020 
+         b. Immutability parencite:kostalBlockchainEVotingDone2019 
+         c. Ensurable compliance parencite:omarEnsuringProtocolCompliance2020    
+      3. Blockchain assists with brokerage parencite:piperBlockchainSmartContracts2017 
+         a. Blockchain can minimize brokers parencite:aryaMiddlemanPanaceaSupply2015   
+         b. Blockchain can broker regulatory compliance through smart contracts parencite:saberiBlockchainTechnologyIts2019  
+         c. Blockchain can broker process integrity parencite:saberiBlockchainTechnologyIts2019 
+      4. Blockchain minimizes cost parencite:xuImpactBlockchainTechnology2020
+         a. Billing accuracy parencite:groenfeldtIBMMaerskApply2017 
+         b. Lower Transaction Costs   parencite:schmidtBlockchainSupplyChain2019
+         c. Disintermediation   parencite:crosbyBlockChainTechnologyBitcoin2016
+      5. Blockchain limits supply-chain risk parencite:gchoiMeanvarianceApproachGlobal2019
+         a. Time reduction reduces risk parencite:ivanovImpactDigitalTechnology2019 
+         b. Transparency mitigates ripple effect parencite:pavlovHybridFuzzyProbabilisticApproach2018  
+         c. Enhanced record keeping mitigates risk parencite:ibmHowBlockchainCan2016 
+      6. Blockchain Assists with Sustainability 
+         a. Reduced Carbon Emissions parencite:mishraCarbonManagementFramework2019  
+         b. Reduces Physical movement parencite:tonnissenUsingBlockchainTechnology2019 
+         c. Sourcing parencite:wangUnderstandingBlockchainTechnology2019
+         d. Sustainability consumer metrics parencite:hughesBitcoinWhatBlockchain2019 
+2. Sustainability
+   A. Growing Societal Importance
+      1. Carbon emissions parencite:mishraCarbonManagementFramework2019  
+      2. Safety parencite:wangRiskTransmissionComplex2021 
+      3. Consumer demand parencite:mukherjeeApplicationBlockchainTechnology2021   
+   B. Growing Business importance
+      1. Legislation parencite:liManagingClosedloopSupply2021  
+      2. Triple-bottom-line (TBL) paradox parencite:walkerAllOneAll2020 
+      3. Decentralization parencite:mukherjeeApplicationBlockchainTechnology2021 
+   C. Blockchain helps ensure sustainable practices
+      1. Traceability parencite:saberiBlockchainTechnologyIts2019,wangUnderstandingBlockchainTechnology2019  
+      2. Security parencite:saberiBlockchainTechnologyIts2019,wangUnderstandingBlockchainTechnology2019  
+      3. Immutability parencite:saberiBlockchainTechnologyIts2019,wangUnderstandingBlockchainTechnology2019 
+      4. Trust parencite:saberiBlockchainTechnologyIts2019,wangUnderstandingBlockchainTechnology2019
+      5. Reliability parencite:saberiBlockchainTechnologyIts2019,wangUnderstandingBlockchainTechnology2019
+3. Technology Acceptance Model
+   A. Perceived Usefulness (PU) drives technology adoption
+      1. User Trust parencite:gefenTrustTAMOnline2003  
+      2. User Intention parencite:parkUserAcceptanceDigital2009
+      3. Prevailing Social View parencite:vuPredictorsCloudComputing2020 
+   B. Perceived Ease-of_Use (PEOU) drives technology adoption
+      1. Behavioral intentions parencite:parkUserAcceptanceDigital2009 
+      2. System Characteristics parencite:parkUserAcceptanceDigital2009 
+      3. Prevailing Social View parencite:alduaijEmployingTechnologyAcceptan2020 
+   C. PU for Blockchain in Supply-Chain to address sustainability is high
+      1. Speed parencite:korpelaDigitalSupplyChain2017
+      2. Reliability parencite:kambleUnderstandingBlockchainTechnology2019 
+      3. Intention to Adopt parencite:louIntegratingInnovationDiffusion2017   
+   D. PEOU for Blockchain in Supply-Chain to address sustainability is low
+      1. Customer Discomfort parencite:kambleUnderstandingBlockchainTechnology2019
+      2. Intention parencite:albayatiAcceptingFinancialTransactions2020  
+      3. Trust parencite:albayatiAcceptingFinancialTransactions2020
+      4. Future Fear parencite:yangMaritimeShippingDigitalization2019 
+         
+            
+              
+            
+             
+
+            
+
+
+
+\printbibliography
+    

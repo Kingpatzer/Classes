@@ -1,0 +1,9 @@
+# Fdb version 3
+["pdflatex"] 1603628487 "introduction.tex" "introduction.pdf" "introduction" 1603628487
+  "/usr/share/texmf-dist/web2c/texmf.cnf" 1591545468 33301 a3134070eacafb10b1f371612ce2650d ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1602890588 2514049 3f72377dd5688e023bd8182b9dd19f9b ""
+  "introduction.aux" 1603628199 8 a94a2480d3289e625eea47cd1b285758 ""
+  "introduction.tex" 1603628432 1779 0716e1407c0671f3baf9d0f3ad48bcb9 ""
+  (generated)
+  "introduction.log"
+  "introduction.pdf"

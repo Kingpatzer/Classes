@@ -1,0 +1,27 @@
+\section{Analysis of Current Process}
+
+There are multiple ways to consider how to improve the efficiency of any process. One is to look at maximizing profitability by focusing on maximizing throughput, while minimizing inventory and operating expenses. This approach is known as Goldratt's Theory of Constraints \parencite[][p. 320]{schroederOperationsManagementContemporary2010}. This is a macro-level approach of focusing on identifying the biggest bottleneck which limits throughput, optimizing that single area, then moving on to the next bottleneck.
+
+The second considerations is how to dispatch the batch work through the system. While Little's Law covers the entire system, the system can be thought of a collection of smaller queues, with Little's Law also applying to each of those queues. Dispatching rules can be remarkably complex and generally require signifciant analysis to determine the best dispatching regimine \parencite{oukilRankingDispatchingRules2019}.
+
+In general, there are only a few different dispactching methods for setting batch priority: first come, first served, lowest critical ratio, and shortest processing time. The issue for Jelly Belly is that while it is possible to consider each flavor it's own batch covered by it's own constraints, the reality is that Jelly Belly mixes batches together for shipping, as retail packages will normally contain multiple flavors. This means that most likely useful dispatching protocol is to look at the lowest critical ratio. This is defined by equation:
+
+\begin{equation}
+  Critical Ratio (CR) = \frac{reamining time until due date}{remaining processing time}
+\end{equation}
+
+For Jelly Belly, CR for each flavor would be calculated by looking at the remaining time until due date determined by the remaining inventory levels of the various flavors and their associated shipping rate. The remaining processing time will be determined by how much of each flavor is within each stage of the system.
+
+For the process steps, the first step is neither going to a bottleneck nor impact the CR for any flavor. The key issue for this step is to ensure that the slurry production rate is kept up to pace for the overall production rate of jelly beans.
+
+The second and third steps are likewise neither a source of constraint nor a significant impact to the CR, as this process is highly automated and rather quick. There is an opportunity to address the operational cost here however. The ``Mogal'' creates the candy molds out of cornstarch. This means that a significant amount of cornstarch is utilized in production that is not part of the final product, but ratehr consummed by the process. Jelly Belly should explore the cost-effectiveness of using silicon molds that can be re-used. There could be a significant retooling cost and a capital invesetment into the molds themselves. However, there is a potential ROI that should be investigated.
+
+The fourth step is a significant bottleneck and contributes a significant amount of time to the CR. At issue with this step, as well as the other steps requiring drying, is simply that some amount of time is required using the methods employed by Jelly Belly. There are known techniques for decreasing dehydration time, such as utilizing ultra-high pressure and ultrasound \parencite{zhangEffectsUltrahighPressure2020}. Again, while this may involve a large investment, reducing drying and setup time has the greatest opportunity to increase throughput overall. Jelly Belly should investigate the potential ROI to be had here.
+
+The fifth step, like the third, doesn't add much in terms of CR calculations. It should be noted that changing drying methods for step 4 could impact the amount of steam and sugar needed to be consummed in this step of the process.
+
+The sixth and eight steps are concerning because they require human labor. In a largely automated process, Jelly Belly should seriously consider how to eliminate the human labor from this process step. Modern AI systems should be able to perform the same sort of analysis as human beings do to determine if enough of the various food products have been added to the drum, and when the jelly beans are ready to be set aside for setup \parencite{pothArtificialIntelligenceHelps2019}.
+
+Similarly, while human beings should be retained for the QA step for taste testing the batch, automated AI driven QA monitors could easily be configured to determine if any beans are misshappen or discolored. Not only would the removal of human labor from these steps decrease the on-going operational cost. At issue would be how long the until the ROI for required technology would take.
+
+The last place for optimization is automating the final packaging steps to eliminate human labor costs. Again, following the logic raised above, this could eventually pay off enough to make the investment worthwhile.

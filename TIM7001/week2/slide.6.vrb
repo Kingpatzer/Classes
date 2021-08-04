@@ -1,0 +1,10 @@
+\frametitle{Code Block Without Highlighting}
+Just text.
+
+\begin{verbatim}
+val test = 1 + 5
+println(test.toString)
+\end{verbatim}
+
+\note{Note
+Just note example}

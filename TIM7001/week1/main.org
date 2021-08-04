@@ -1,0 +1,210 @@
+#+TITLE: An Examination of Current State of Blockchain Technology in Ethical Supply Chain Management 
+#+LATEX_HEADER: \shorttitle{BLOCKCHAIN AND ETHICAL SCM}
+#+INCLUDE: "./preamble.org"
+#+AUTHOR: David A. Wagle
+#+LATEX_HEADER: \abstract{This paper examines a number of scholarly and general publications on the topic of blockchain as it relates to sustainable/ethical supply chain management issues .}
+#+LATEX_HEADER: \keywords{Blockchain, Supply Chain Management, Business Ethics, SCM }
+
+
+* Introduction
+
+On December 14, 2020, textcite:reutersAppleProbesViolence2020 reported that
+thousands of employees of the Taiwanese company Wistron Corp. rioted in India
+causing millions of dollars in damage. The workers rioted, ostensibly due to
+forced reduction in salaries to less than $7 US per month for some employees
+parencite:amadeoIPhoneFactoryWorkers2020, as well as unsafe working conditions. While
+India is an under-developed nation, this treatment of workers has caused
+Wistron's major downstream customer, Apple to respond by sending auditors and
+inspectors to India to examine the events
+parencite:reutersAppleSupplierPuts2020. While this is not the first time that a
+large corporation has had to deal with the fallout from ethical lapses in their
+supply chain, these global-news grabbing events in some ways cover up the
+greater issue that most corporations ignore corruption and ethical issues in
+their supply chain parencite:webbTwoThirdsCorporationsIgnore2017.
+
+But this intentional ignorance is problematic in a world where customers want to
+purchase from companies that ethically source their products
+parencite:howellsSAPBrandVoiceEthics2020 and where the freedom to publish by anyone with
+a smartphone means leaders can no longer control information release
+parencite:davenportGoogleHowTechnology2014.
+
+Enter blockchain. Blockchain gained its fame as the underlying technology behind
+bitcoin. The blockchain system was originally conceived as a means of conducting
+financial transactions securely without needing intermediaries and which
+eliminates the "double-spending" problem while being able to operate without
+requiring trust between parties. In one of the great moments of acute irony
+in technology history, this trust-less protocol's author published anonymously
+using the pseudonym Satoshi Nakamoto
+citeyear:nakamotoBitcoinPeertoPeerElectronic2008. 
+
+It did not take long for technologists to start noticing the potential utility
+of blockchain to solve issues of trust in supply chain management. The central
+characteristics of blockchain make it a potentially ideal system for helping
+ensure ethical supply chain management. However, the rate of adoption, and
+potential hurdles mean that adoption of the technology will require visionary
+leadership across multiple organizations, as well as solving multiple
+engineering hurdles in the process. 
+
+* Blockchain Briefly Explained
+
+Blockchain's most prominent feature is that of the distributed ledger. Each node
+in a peer-to-peer network contains some, to all, of the available nodes which
+make up the chain. Each node's authentication results via cryptographic
+public-private key hashes which demonstrate proof that a particular member of
+the peer-to-peer network is responsible for the content of that specific node.
+Trust in the content of anyone node is a product of the peer-to-peer structure,
+where the lengthiest chain with peer consensus becomes the authoritative version
+of the chain. Some blockchain protocols allow for the execution of associated
+actions verified by the blockchain as part of a node. This allows
+for "smart contracts" whereby adding a node, requires agreeing to contractual
+terms and/or proof of contract execution attach to the ledger itself. Due to the
+unalterable nature of the blockchain, enforced by the sequence of cryptographic
+hashes, specific actions and data are thereby secured into the blockchain as a
+permanent record cite:mearianWhatBlockchainComplete2019.
+
+These properties make blockchain extremely attractive to solve various business
+problems, provided a framework is in place to support adoption
+parencite:iansitiTruthBlockchain2017.
+
+* Blockchain and Supply Chain Management
+
+One area blockchain shows great promise is in helping businesses ensure
+compliance with ethical sourcing standards. For example, if Apple's delivery
+contract with Wistron included a mandate to include verified proof of proper
+salary payments to employees, then Apple would not be facing the PR issues it
+now is dealing with as a result of Winstron's failures in India. However, much
+of the research on using blockchain technology to ensure ethical supply chain
+management is more theoretical than practical
+parencite:venkateshSystemArchitectureBlockchain2020. Indeed, an empirical
+examination of the "Fortune 500" firms web-presence for information about
+blockchain found that only 21, or 4%, of the firms had a referenced use for
+blockchain on their publically facing materials. Only a few of these 21
+companies were using blockchain to improve supply chain information
+parencite:caseBlockchainEmpiricalReview2020. This study used an examination of
+the available publically facing webpresence of a company looking for the term
+"blockchain," so it is limited in its applicability. However, given the theoretical
+power of blockchain to function as a  transformative technology, it is a
+reasonable assumption to expect that companies with major blockchain initiatives
+would advertise that fact. 
+
+
+* State of Research
+
+One of the most important areas of research on blockchain technology with
+regards to ethical supply chain management is in the arena of transparency.
+While there is very little empirical studies of actual real-world
+implementations of blockchain solutions, researchers have examined areas where
+blockchain could solve numerous problems. For example,
+textcite:thakurLandRecordsBlockchain2020 did an extensive investigation into how
+blockchain could improve transparency and trust in land ownership issues in
+India. But their proposed solution was not implemented. Rather it functioned as
+case study in what might have been rather than an empirical study of what is.
+But there are some empirical results, if only few and far between. One group of
+researches demonstrated through the development of a supply chain sourcing
+system that traceability and transparency can be improved with blockchain
+solutions parencite:luAdaptableBlockchainBasedSystems2017. 
+
+But simply because something is possible doesn't mean that it will succeed.
+While blockchain offers tremendous advantages due to the underlying technology,
+technology adaption includes a socio-behavioral component.
+Textcite:kristofferfranciscoSupplyChainHas2018 note that adoption is slow and
+real-world empirical results are rare precisely due to these socio-behavioral
+components.
+
+A study by textcite:alazabBlockchainTechnologySupply2020 used survey data to
+investigate the relationship between adoption and various variables. The main
+findings are the trust, expressed both as inter-organizational trust and trust
+in the technology impacts behavioral choices in blockchain adoption. Additional
+work by parencite:fossowambaDynamicsBlockchainAdoption2020 analyzed survey results of
+senior IT leadership and determined that while leaders having differing opinions
+about blockchain adoption, the network effect is paramount in overcoming
+resistance to adopting blockchain. That is, pressure from trading partners to
+adopting blockchain is strongly correlated to blockchain adoption in the supply chain
+space.   
+
+Textcite:wongTimeSeizeDigital2020 used survey data and neural-network analysis
+to examine blockchain adoption data and concluded that there are four major
+considerations for managers in adopting blockchain: competitive pressures, the
+complexity of the solution, the cost of the solution, and the relative
+advantage. The researchers determined that senior leadership support, market
+pressures, and regulatory support had minimal impact on blockchain adoption.
+This is interesting in that it suggestions senior leadership's vision has
+limited impact, at least for the participants in this particular study.
+Speculatively, this maybe because technology leadership includes a significant
+component of deriving authority through expertise, which senior leadership may
+be seen as lacking. Alternatively, they may not adequately understand the
+benefits of the technology for their company or industry.
+
+Additional empirical research by textcite:liuBehavioralTechnicalPerspectives2020
+corroborates the above findings. Looking at over 8 months of data collected
+from 200 senior leaders in green supply chain management, the researchers
+demonstrated that leadership lacking a vision for green supply chain management
+will likely lack the wherewithal to further a blockchain strategy. The study
+further demonsrated that the theorized positive relationship between green
+supply chain management and performance is generally realized in developing
+markets.
+
+Multiple real-world case studies show that the theoretical benefits of
+blockchain in SCM are frequently realized, from fish markets in Thailand
+parencite:tsolakisSupplyNetworkDesign2020 to the airport industry
+parencite:divaioBlockchainTechnologySupply2020 to many others.
+
+In all of these studies, researchers are looking at actual adoption, the
+attitudes of the leadership teams responsible for the SCM system development and
+implementation and the perceptions of senior leadership, including their initial
+and post-adoption support. A common theme arises that while blockchain is fairly
+well understood and accepted in financial circles, in supply chain management
+there remain numerous barriers to adoption
+cite:kouhizadehBlockchainTechnologySustainable2021,upadhyayDemystifyingBlockchainCritical2020.
+
+* Visionary Leadership
+
+There is much that is happening in the blockchain world. Blockchain
+cryptocurrency based funds are raising fund managers to new heights, with 11 of
+the Forbes "30 Under 30" list for 2020 including fund managers focused on
+cryptocurrency parencite:castillo11BitcoinBlockchain2020. But mainstream business
+media is recognizing that the promises of blockchain have not yet matched the
+realities. Issues of how to scale systems, how to mange costs (blockchain is
+very energy intensive), and how to ensure security remain largely unsolved. But
+leaders across industry verticals are working diligently to address these
+issues parencite:friedrichCouncilPostWhy. 
+
+* Areas of Further Research
+
+The research has shown that the promise of the technology can be born out. At
+issue is the underlying psychological pressure to move leadership from
+appreciating future promise of a technology to committing resources to realizing
+those benefits. Thus one key area of research need is what are the specific
+psychological and behavioral drivers that must be present to move leadership
+to actively pursue an emerging technology as a leader in the field rather than
+waiting for the masses to move first? 
+
+A second key point of interest is precisely how transparent should sustainable
+supply chain management systems be? The ideal public blockchain framework, where
+anyone can read anything that is in the ledger is clearly not feasible as
+details of contracts between suppliers and customers need to be maintained as
+confidential. However, the real public benefit of this technology is to allow
+consumers to see the critical behaviors of the entire supply chain so as to be
+able to adjudicate if the supply chain's final product is worthy of their
+support. For this technology to be transformative, much that is currently not
+public needs to be made available. But the question of what information is
+sufficient to that purpose and what information is best kept confidential (and
+how that confidentiality is maintained) remains an intriguing area of research.
+
+Finally, there is the simple issue of interoperability. Right now blockchain is
+a generic term for a host of competing protocols, any one of which can be the
+basis for a larger SCM standard. Right now, research into the costs and benefits of
+different protocols to support a blockchain SCM system are underway. The ability
+to have a unifying standard is necessary to allow small companies to "join the
+party" as it where. Until that happens, each solution will be limited to the
+application for which it is designed. So research into what features are
+essential for a unified blockchain standard for supply chain management is
+absolutely necessary. 
+
+
+
+
+
+
+
+\printbibliography

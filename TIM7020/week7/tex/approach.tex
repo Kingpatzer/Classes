@@ -1,0 +1,28 @@
+\section{Approach}
+
+In order to explore the characteristics of the firm that predicate BD\&A adoption success, the research will utilize BD\&A techniques from machine learning and natural language (ML/NL) processing. It is well understood that these techniques can be used to predict the success or failure of human activities based on how the activities are discussed. For example, \textcite{alaphatSmartFundPredictingResearch2020} showed that using ML/NL processing, it is possible to predict how successful research will be from the grant application.
+
+Thei two specific hypotheses to be tested is the following: \textem{H1: The future financial and market success of a company engaging in a BD\&A, Blockchain, or AI project is predictable based on existing characteristics of a firm;} and, \textem{H2: The characteristics of a firm identifiable in H1 are knowable through ML/NL processing of social media posts about the firm.}
+
+The proposed research consists of several phases:
+\begin{enumerate}
+  \item Identify key firm attributes to be examined
+  \item Configure an ML/NL engine to categorize for those terms
+  \item Build a web-bot to identify publicly traded SMEs who are initiating a BD\&A, AI, or Blockchain initiative.
+  \item Track for mentions of the SME on social media sites and feed the ML/NL engine from those feeds
+  \item Track the financial performance of the SME in terms of key financial market indicators and market share for one year prior and 2 years after the press release
+  \item Track news feeds for mention of the BD\&A, AI, or Blockchain project
+  \item Using the ML/NL engine, determine if performance is predictable and assign weight to each characteristics
+\end{enumerate}
+
+
+
+For step (1) business leaders, change management experts, and academics will be surveyed to determine which characteristics should be used to initially seed the model. It should be noted that ML/NL tools can be allowed to discover and add their own categories and this model will be run in that mode. On step (2) the cloud-based IBM Watson\texttrademark{} engine will be configured to explore the input space. Step (3) will be a simple web-scrapping utility that will be coded to examine typical business news feeds such as Yahoo! Finance, Bloomberg, and others. Once step (3) identifies a company that is announcing a new BD\&A, Blockchain, or AI initiative, the name of the company, its stock symbol, and the names of all of its corporate officers and board members will be entered into a second web-scrapping tool that will collect all mentions from Twitter, Glassdoor, Linked-In, and Facebook from the past year. No identifying information of the posters will be retained, only the post content. That content will be fed into the ML/NL engine to compute characteristics of the company as seen by employees, customers, and other stakeholders. At the same time, the ticker symbol of the SME will be sent into a data collection tool to collect financial and market data for the prior year.
+
+All companies identified in a 3 month period will be tracked for a period of two years. At the end of the 2 year period, their financial and market performance will again be collected. Collected data will be divided into three sets, a training set, a validation set, and the experimental set. This division will be done randomly.
+
+The ML/NL model will be trained using the training set. Once trained, the model will be validated against the validation set, which should produce results similar to those predicted by the training set. This will be an iterative process until the model validates. Once validated, the experimental set will be fed to the model and the characteristics and weights will be collected.
+
+Standard statistical methods will be applied to the result to determine how much of the future stock and market performance can be attributable to the perceived characteristics. Step (6) is there as it will be assumed the project is being employed by the company unless there is specific communication to the public or shareholders that the project has been scrapped.
+
+This experiment will require approximately 2,000 hours of experienced ML/NL and Big Data programmers in equal measure. Once the system is coded, it will be able to run automatically until the data collection step is complete, at which point normal statistical analysis efforts will be required.

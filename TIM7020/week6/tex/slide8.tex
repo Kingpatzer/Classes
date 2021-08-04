@@ -1,0 +1,19 @@
+\begin{frame}
+  \frametitle{Key Advantages}
+  \framesubtitle{Testability}
+  \begin{itemize}
+    \item<1-> Microservice cloud architectures lend themselves towards automation, which improves testing
+
+          \note[item]<1-> {\scriptsize{The nature of loose coupling allows for automated testing by using RESTful API's and other techniques \parencite{redhatWhatAreMicroservices}. Combined with the need to automate DevOps agile development, which as Redhat reminds us is the preferred development method for microservices, this means that the architectural design choices drives automation which improves testability. }}
+
+    \item<2-> Testing is similar to debugging
+
+          \note[item]<1-> {\scriptsize{Just as \textcite{ahnScalableTemporalOrder2009} pointed out how difficult it is to debug large system, the converse is also true, smaller systems are inherently simpler to test and debug. By focusing on providing a single business functional unit of behavior, microservices are more easily tested. }}
+
+    \item<1-> Microservices expose functionality
+
+          \note[item]<1-> {\scriptsize{Many of the reasons that large-scale systems are difficult to test well is because not all functionality is exposed. For example, security checks around ID and access rights are typically not expressed external to the program in a monolithic design. Rather, the rights are noted internally in some data structure. However, for a microservice focused on identity and access management, the identity and access tokens must be exposed to API calls for other microservices to utilize. This exposing of what used to be internal structures to calls from other systems opens up the environment for more robust testing.}}
+
+
+  \end{itemize}
+\end{frame}

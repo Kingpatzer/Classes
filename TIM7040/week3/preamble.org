@@ -1,0 +1,50 @@
+#+LATEX_CLASS: beamer
+#+LATEX_CLASS_OPTIONS: [unknownkeysallowed]
+#+OPTIONS: toc:nil ^:{}
+
+# set beamer stuff
+#+LATEX_HEADER: \usepackage{pgfpages}
+#+LATEX_HEADER: %%\setbeameroption{show notes on second screen=right}
+#+LATEX_HEADER: %%\setbeamertemplate{note page}{\pagecolor{yellow!5}\insertnote}\usepackage{palatino}
+#+LATEX_HEADER: \usetheme{Madrid}
+#+LATEX_HEADER: \usecolortheme{beaver}
+
+# for working hyperlinks
+#+LATEX_HEADER: \usepackage{hyperref}
+
+# fonts, specifically linkedin symbol
+#+LATEX_HEADER: \usepackage{fontawesome}
+
+# fancy quotations
+#+LATEX_HEADER: \usepackage{csquotes}
+
+# double-lines for tables
+#+LATEX_HEADER: \usepackage{hhline}
+
+# colors and effects for tables
+#+LATEX_HEADER: \usepackage{colortbl}
+
+# dashed lines in tables
+#+LATEX_HEADER: \usepackage{arydshln}
+
+# captions particularly for floating tables
+#+LATEX_HEADER: \usepackage{caption}
+
+# UTF-8 Why does this still have to be specified??
+#+LATEX_HEADER: \usepackage[utf8]{inputenc}
+
+# Sometimes you need Euro symbols
+# option is set to'' `gen` to match current font rather than
+# 'official' which gives something different
+#+LATEX_HEADER: \usepackage[gen]{eurosym}
+
+# bibliography information
+#+LATEX_HEADER: \usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+#+LATEX_HEADER: \DeclareLanguageMapping{american}{american-apa}
+#+LATEX_HEADER: \addbibresource{/home/david/Dropbox/Org/References/bibliography.bib}
+
+
+#+LATEX_HEADER: \title{Benefits and Importance of Policy Evaluation in the Enterprise}
+#+LATEX_HEADER: \author{David A. Wagle}
+#+LATEX_HEADER: \institute{Northcentral University \par \par TIM7040: Technology Policy and Strategy \par \par Dr. Dani Babb}
+#+LATEX_HEADER: \date{August 1, 2021}

@@ -1,0 +1,8 @@
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+  \centering
+  \includegraphics[width=.8\textwidth]{./img/estimate}
+  \caption{AWS Estimate}
+  \label{fig:estimate}
+\end{figure*}

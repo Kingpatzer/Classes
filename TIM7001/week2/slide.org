@@ -1,0 +1,196 @@
+#+TITLE: Innovation Management and Technology
+#+AUTHOR: David A. Wagle 
+#+EMAIL:
+#+DATE: 2018
+
+ # #+INCLUDE: slide_preamble.org
+#+LATEX_HEADER: \usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+#+LATEX_HEADER: \DeclareLanguageMapping{american}{american-apa}
+#+LATEX_HEADER: \addbibresource{/home/david/Documents/School/References/bibliography.bib}
+
+#+LATEX_CLASS: beamer
+#+LATEX_CLASS_OPTIONS: [10pt, presentation, colorlinks]
+
+#+LATEX_HEADER: \usepackage[sfdefault]{plex-sans}
+
+#+LATEX_HEADER: \usetheme[progressbar=frametitle]{Madrid}
+#+LATEX_HEADER: \usecolortheme{beaver}
+
+#+LATEX_HEADER: \usepackage{pgfpages}
+\setbeameroption{show notes on second screen=right}
+
+
+
+* Laying the Groundwork
+  + What is
+  + *INNOVATION* 
+  + anyway?
+
+* A Short History of Innovation
+** For most of human history *Innovation* considered harmful
+** Middle Ages even had royal decrees against *innovation*
+** 19th Century started reformation of term
+** Early 20th Century was seen as almost exclusively positive
+** Became associated with Technological advancement
+
+** Note
+:PROPERTIES:
+:BEAMER_ENV: note
+:END:
+\scriptsize
+- Innovation started off as a term with strong negative connotations.
+- Innovation was seen as trying to alter the natural order according to the ancient Greeks parencite:godinInnovationContestedIdea2015.
+- Most famous Royal Decree is the first in Western Europe by England's Edward VI (ibid).   
+- Innovation was strongly associated with revolution, not technology advancement. The latter was seen as a careful application of "natural laws," while the former held a sense of a reckless attempt to create something new without regard for consequence.
+- According to Godin, by the start of the 19th Century, "innovation" was considered subversive, heretical, and violent. 
+- Inventors started applying the term to large leaps in technology.
+- By the time of WWII, a positive connotation adhered to the term.
+\normalsize  
+  
+* Innovation Today
+** *Innovation* intrinsically linked to technology
+** Has strong association with economic drivers and business success
+** Can occur in multiple domains within business context:
+- Product
+- Service
+- Process
+- Marketing
+- Business Model
+** Applying creativity to solve problems parencite:godinInnovationContestedIdea2015
+
+
+** Note
+:PROPERTIES:
+#+BEAMER_ENV: note
+:END:
+
+\scriptsize
+- The link to technology for the term innovation happened in the 19th century.
+- Products can involve innovation in two ways: new technologies or new technology applications. The same is true of services. This breakdown comes from textcite:sbdcInnovationSmallBusiness2020.
+- Process, Marketing, and Business Model are often lumped together as a single entity  parencite:pisanoYouNeedInnovation2015. But it seems more appropriate to segregate them. For example, different communication strategies can work with the same revenue model under different societal contexts.
+- Innovation can be applied to many realms, as the SBDC notes, but according to Godin, the current use of the term is nearly exclusively reserved for employing technology in new ways or inventing new technology, per Schumpter.
+  \normalsize
+
+** tutorial: https://orgmode.org/worg/exporters/beamer/tutorial.html
+
+** beamer export: https://orgmode.org/manual/Beamer-export.html
+
+** latex export: https://orgmode.org/manual/LaTeX-export.html#LaTeX-export
+
+** Theme https://github.com/matze/mtheme  or  https://github.com/rchurchley/beamercolortheme-owl
+
+** Cheat Sheet  https://github.com/fniessen/refcard-org-beamer
+
+** Note
+ :PROPERTIES:
+ :BEAMER_ENV: note
+ :END:
+
+Use it for store speaker notes with advanced PDF viewers such as PDFPC https://pdfpc.github.io/
+(see: https://tex.stackexchange.com/questions/84622/is-there-a-specialized-pdf-viewer-for-latex-beamer-presentations-on-linux)
+
+
+* Code Block Without Highlighting
+
+Just text.
+
+#+begin_src scala
+val test = 1 + 5
+println(test.toString)
+#+end_src
+
+** Note
+ :PROPERTIES:
+ :BEAMER_ENV: note
+ :END:
+
+Just note example
+
+* Code Block With Highlighting
+
+# properties with :BEAMER_OPT: fragile required to allow {lstlisting} works
+
+** use latex export block with the "lstlisting" package:
+- Tutorial: https://mikedewar.wordpress.com/2009/02/25/latex-beamer-python-beauty/
+- docs: https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
+
+#+begin_export LaTeX
+
+\begin{lstlisting}
+// simple code example
+def parseOpt[A: ClassTag](a: Any): Option[A] =
+  a match {
+    case a: A => Some(a)
+    case _ => None
+  }
+}
+
+def xxx[A](a: Int) = "000"
+\end{lstlisting}
+
+#+end_export
+
+* Standout
+  + pure *FP*
+  + composition
+  + streaming
+
+* Table
+
+#+LATEX: \def\arraystretch{1.4} % height of the row
+#+ATTR_LATEX: :align |c|c|c|c| :font \large
+|---------+------------+---------------------+------------------------------|
+| \clm{a} | \clm{name} | \clm{long name}     | \clm{other}                  |
+|---------+------------+---------------------+------------------------------|
+| \row{b} | V          | 0                   | Lorem ipsum met              |
+|---------+------------+---------------------+------------------------------|
+| \row{c} | 0          | Excepteur cupidatat | Ut minim, quis  exercitation |
+|         |            |                     |                              |
+|---------+------------+---------------------+------------------------------|
+
+
+* Columns Blocks
+
+/_*Just Text*_/
+
+*** TODO
+    :PROPERTIES:
+    :BEAMER_col: 0.45
+    :BEAMER_env: block
+    :END:
+ #+begin_src scala :tangle yes
+  sealed trait MarkStyle
+  case class PointStyle(
+    color: Color,
+    borderColor: Color,
+    bolderWidth: Double,
+    radius: Double,
+    shape: PointShape
+  ) extends MarkStyle
+ #+end_src
+
+*** TODO
+    :PROPERTIES:
+    :BEAMER_col: 0.45
+    :BEAMER_env: block
+    :END:
+ #+begin_src scala :tangle yes
+  case class FontStyle(
+     name: String,
+     weight: FontWeight,
+     size: Double,
+     color: Color
+   ) extends MarkStyle
+ #+end_src
+
+
+* Image
+#+ATTR_LATEX: :height 3cm
+image file link goes here
+
+
+
+\begin[allowpagebreaks]{frame}
+\frametitle{References}
+\printbibliography[resetnumbers=false]
+\end{frame}

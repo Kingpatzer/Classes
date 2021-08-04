@@ -1,0 +1,232 @@
+% Created 2021-01-17 Sun 17:50
+% Intended LaTeX compiler: pdflatex
+\documentclass[10pt, presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+\DeclareLanguageMapping{american}{american-apa}
+\addbibresource{/home/david/Documents/School/References/bibliography.bib}
+\usepackage[sfdefault]{plex-sans}
+\usetheme{Madrid}
+\author{David A. Wagle}
+\date{2018}
+\title{Innovation Management and Technology}
+\hypersetup{
+ pdfauthor={David A. Wagle},
+ pdftitle={Innovation Management and Technology},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.1 (Org mode 9.5)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+
+
+
+\begin{frame}[label={sec:org914e755}]{Laying the Groundwork}
+\begin{itemize}
+\item What is
+\item \alert{INNOVATION}
+\item anyway?
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:org795f395}]{A Short History of Innovation}
+\begin{block}{For most of human history \alert{Innovation} considered harmful}
+\end{block}
+\begin{block}{Middle Ages even had royal decrees against \alert{innovation}}
+\end{block}
+\begin{block}{19th Century started reformation of term}
+\end{block}
+\begin{block}{Early 20th Century was seen as almost exclusively positive}
+\end{block}
+\begin{block}{Became associated with Technological advancement}
+\end{block}
+
+\note{Note
+\scriptsize
+\begin{itemize}
+\item Innovation started off as a term with strong negative connotations.
+\item Innovation was seen as trying to alter the natural order according to the ancient Greeks \parencite{godinInnovationContestedIdea2015}.
+\item Most famous Royal Decree is the first in Western Europe by England's Edward VI (ibid).
+\item Innovation was strongly associated with revolution, not technology advancement. The latter was seen as a careful application of ``natural laws,'' while the former held a sense of a reckless attempt to create something new without regard for consequence.
+\item According to Godin, by the start of the 19th Century, ``innovation'' was considered subversive, heretical, and violent.
+\item Inventors started applying the term to large leaps in technology.
+\item By the time of WWII, a positive connotation adhered to the term.
+\end{itemize}
+\normalsize}
+\end{frame}
+
+\begin{frame}[label={sec:org7325bcc}]{Innovation Today}
+\begin{block}{\alert{Innovation} intrinsically linked to technology}
+\end{block}
+\begin{block}{Has strong association with economic drivers and business success}
+\end{block}
+\begin{block}{Can occur in multiple domains within business context:}
+\begin{itemize}
+\item Product
+\item Service
+\item Process
+\item Marketing
+\item Business Model
+\end{itemize}
+\end{block}
+\begin{block}{Applying creativity to solve problems \parencite{godinInnovationContestedIdea2015}}
+\end{block}
+
+
+\begin{block}{Note}
+
+\scriptsize
+\begin{itemize}
+\item The link to technology for the term innovation happened in the 19th century.
+\item Products can involve innovation in two ways: new technologies or new technology applications. The same is true of services. This breakdown comes from \textcite{sbdcInnovationSmallBusiness2020}.
+\item Process, Marketing, and Business Model are often lumped together as a single entity  \parencite{pisanoYouNeedInnovation2015}. But it seems more appropriate to segregate them. For example, different communication strategies can work with the same revenue model under different societal contexts.
+\item Innovation can be applied to many realms, as the SBDC notes, but according to Godin, the current use of the term is nearly exclusively reserved for employing technology in new ways or inventing new technology, per Schumpter.
+\normalsize
+\end{itemize}
+\end{block}
+
+\begin{block}{tutorial: \url{https://orgmode.org/worg/exporters/beamer/tutorial.html}}
+\end{block}
+
+\begin{block}{beamer export: \url{https://orgmode.org/manual/Beamer-export.html}}
+\end{block}
+
+\begin{block}{latex export: \url{https://orgmode.org/manual/LaTeX-export.html\#LaTeX-export}}
+\end{block}
+
+\begin{block}{Theme \url{https://github.com/matze/mtheme}  or  \url{https://github.com/rchurchley/beamercolortheme-owl}}
+\end{block}
+
+\begin{block}{Cheat Sheet  \url{https://github.com/fniessen/refcard-org-beamer}}
+\end{block}
+
+\note{Note
+Use it for store speaker notes with advanced PDF viewers such as PDFPC \url{https://pdfpc.github.io/}
+(see: \url{https://tex.stackexchange.com/questions/84622/is-there-a-specialized-pdf-viewer-for-latex-beamer-presentations-on-linux})}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgd268d6b},fragile]{Code Block Without Highlighting}
+ Just text.
+
+\begin{verbatim}
+val test = 1 + 5
+println(test.toString)
+\end{verbatim}
+
+\note{Note
+Just note example}
+\end{frame}
+
+\begin{frame}[label={sec:org7dbd86c}]{Code Block With Highlighting}
+\begin{block}{use latex export block with the ``lstlisting'' package:}
+\begin{itemize}
+\item Tutorial: \url{https://mikedewar.wordpress.com/2009/02/25/latex-beamer-python-beauty/}
+\item docs: \url{https://en.wikibooks.org/wiki/LaTeX/Source\_Code\_Listings}
+\end{itemize}
+
+
+\begin{lstlisting}
+// simple code example
+def parseOpt[A: ClassTag](a: Any): Option[A] =
+  a match {
+    case a: A => Some(a)
+    case _ => None
+  }
+}
+
+def xxx[A](a: Int) = "000"
+\end{lstlisting}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgd216519}]{Standout}
+\begin{itemize}
+\item pure \alert{FP}
+\item composition
+\item streaming
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgf7d8537}]{Table}
+\def\arraystretch{1.4} % height of the row
+\begin{center}
+\large
+\begin{tabular}{|c|c|c|c|}
+\hline
+\clm{a} & \clm{name} & \clm{long name} & \clm{other}\\
+\hline
+\row{b} & V & 0 & Lorem ipsum met\\
+\hline
+\row{c} & 0 & Excepteur cupidatat & Ut minim, quis  exercitation\\
+ &  &  & \\
+\hline
+\end{tabular}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[label={sec:org19dc9a8},fragile]{Columns Blocks}
+ \emph{\uline{\alert{Just Text}}}
+
+\begin{columns}
+\begin{column}{0.45\columnwidth}
+\begin{block}{TODO}
+\begin{verbatim}
+  sealed trait MarkStyle
+  case class PointStyle(
+    color: Color,
+    borderColor: Color,
+    bolderWidth: Double,
+    radius: Double,
+    shape: PointShape
+  ) extends MarkStyle
+\end{verbatim}
+\end{block}
+\end{column}
+
+\begin{column}{0.45\columnwidth}
+\begin{block}{TODO}
+\begin{verbatim}
+  case class FontStyle(
+     name: String,
+     weight: FontWeight,
+     size: Double,
+     color: Color
+   ) extends MarkStyle
+\end{verbatim}
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgfa343ae}]{Image}
+image file link goes here
+
+
+
+\begin[allowpagebreaks]{frame}
+\frametitle{References}
+\printbibliography[resetnumbers=false]
+\end{frame}
+\end{frame}
+\end{document}

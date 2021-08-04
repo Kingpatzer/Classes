@@ -1,0 +1,23 @@
+#+TITLE: Outline Notes for Slides
+
+* Development begins with research
+** can be academic research that spurs idea
+** can be in-house research
+*
+** research overseen by regulators such as FDA + others around world
+*** each technology or device requires an evaluation plan based on specific product
+* Product design and development
+** builds off of research to form manufacturable product
+** Once designed and built to conform to in-house testing, clinical trials can begin
+** Results examined by experts in area to determine safety and efficacy
+** only safe and effective products get approved
+* Once in market
+** quality checks for all suppliers + all stages of development
+** product monitoring continues through patient lifecycle - each product provided to a single patient
+** Adverse events are reported and analyzed, and may lead to product redesign
+* Manufacturing is highly regulated
+** Medical Device Ammendment creates "regime of detailed federal oversight"
+** must have FDA approval for manufacture of class II or III devices + 510(k) reviews
+** Devices must pass FDA pre-market approval
+* Collaboration with external experts
+*

@@ -1,0 +1,85 @@
+#+TITLE: A Service Encounter Evaluations
+#+LATEX_HEADER: \shorttitle{Service Encounter}
+#+INCLUDE: "./preamble.org"
+#+AUTHOR: David A. Wagle
+#+LATEX_HEADER: \abstract{An evaluation of a service encounter in the retail space to examine the quality of service, customer standards and expectations, comparison to industry norms, the success or failure of the encounter, and impacts to profitability.}
+#+LATEX_HEADER: \keywords{service industry, quality, customer encounter, customer service}
+
+
+* Introduction
+
+For this paper, the customer encounter to considered is an encounter with a retail employee at a local Costco store. The specfics of the encounter are as fairly straight forward. The author was looking for a specific product and approached a store employee to ask for the product location. As the author approached, the employee looked up and assessed an intent for an encounter and cheerfully greeted the author asking if they could be of assistance. After a brief explaination of what the author sought, the employee responded by suggesting that the author follow them. The employee walked to the correct aisle and to the exact place in the aisle where the type of product could be found. They noted that similar possible substitute products were available in another aisle, and waited for the author to verify that the product in question was present. Prior to leaving the enounter, the employee asked if anything else needed by the author, and wished the author to "have a good day." During the walk to the location the employee engaged in cheerful banter about the local NFL team, which had an important game that day.
+
+* Quality Evaluation
+
+Literature on service quality began in the early 1980s \parencite{hasanServiceQualityMeasurement2019}. Among the first researchers into service quality were \textcite{parasuramanConceptualModelService1985} who presented the GAP model in 1985. This model of suggested that service quality was the result of the interplay of specific factors, namely: reliability, or the ability to demonstrate consistent and dependable performance; responsiveness, or the engagement of employees in providing service; competence, or the employees possesing the needed skills in the right degree; access, or the ease of customer contact; courtesy, which involves politeness and respect; communication, or the means of ensuring customers remain informed; credibility, or the believability of the employee; security, or the freedom from uncertainty; knowing the customer, or ensuring the employee understands the customer needs; and tangibles, or the physical evidence of service.
+
+Parasuraman and his collegues called the model the GAP model as its primary building blocks is in identifying the gaps between corporate expectations and customer expectations. Building off of prior research, they noted five specific gaps: the gap between expected service and perceived service, the game between external communications to customers and service delivery; the gap between service delivery and specifications of delivery; the game between specifications of delivery and management perceptions of customer expectations; and finally, the gap between management perceptions of customer expectations and customer's actual expectations for servcie (ibid).
+
+While this is an older model for evaulating quality, it remains a popular model for evaluating quality in the service sector. The reason for this is that more recent research has demonstrated that brand loyalty, or the tendancy for customers to return for future encounters, is highly mediated by customer's perception of quality \parencite{rizwanImpactPerceivedQuality2013}. For this short encounter, service quality requirement evaluation will utilize this framework.
+
+** Reliability
+
+Reliability inherently rests on the presumption of repeated encounters.  However, as a regular customer of Costco, the author has found that Costco employees in general can be relied upon to demonstrate consistent performance. Further, Costco ensures that different Costco stores can be relied upon to maintain a specific mix of brands and products in every location, ensuring a reliable, consistent experience for the customer from location to location.
+
+** Responsiveness
+
+In this encounter the employee was highly responsive. Indeed, the employee noted by the author's manner of approach that an encounter might be imminent and went out of their way to initiate the encounter. The employee further immediately took it upon themselves to personally lead the author to the desired goal rather than merely giving directions. This level of responsiveness has been shown to contribute to brand loyalty in various service contexts \parencite{murrayExaminingEmpathyResponsiveness2019}.
+
+** Competence
+
+The employee knew exactly where the product in question could be found and was unerring in navigating the store to the product. The employee further understood that there were potential alternatives to the product available in the store and ensured that the customer understood that availability as well. The employee did not merely direct the author to the general location of the goal, but ensured that the author was directed with specificity. This indicates a high level of competence with respect to the service requested.
+
+** Courtesy
+
+The employee was cheerful and respectful for the duration of the encounter. The employee acted appropriately at all times. This is not only appropriate to the GAP model, but the focus on this aspect in the GAP model is reflected in recent research which has shown that "customer relationship performance fully mediated the influence of service orientation on retailer profitability" \parencite{briggsLinkingOrganizationalService2020}.
+
+** Communication
+
+The employee asked specific and direct questions and ensured that they understood the customer's responses. The employee communicated throughout the encounter. Even as the encounter ended, the employee was ensuring through direct questioning that she had met the customer's needs. The employee's communication style was cheerful and conversational throughout.
+
+** Credibility
+
+The employee was instantly credible as she immediately indicated that she understood the request and started in a specific direction without hesitation. The employee affirmed her credibility through the service delivery experience by correctly directing the customer.
+
+** Security
+
+Security in the GAP model can take on several different meanings. In this case, freedom from uncertainty seems to be the most important consideration. That is, did the author feel any uncertainty that the employee could provide the needed assistance. The answer is that no such uncertainty existed. This stems in part from prior experience related to reliability. But it also involved the employee's own demonstration of competence, caring, and engagement.
+
+** Knowledge of the Customer
+
+While the author is a football fan, the author hails from Pittsburgh, PA., not Minneapolis, MN. As such, the author's favorite team is not the local football franchise. So, while the discussion of the local game was an entertaining distraction while walking through the store, it was not a conversation that interested the customer. The employee made an assumption about the customer based on limited information. This is a negative mark within the GAP model.
+
+** Tangibles
+
+Tangibles relate to demonstrating that the company delivered the requested service. The tangibles here are obvious, the customer requested help in locating a product. The employee provided that help. The customer found and purchased the desired product.
+
+* Meeting of Expectations
+
+** Were Expectations Met?
+
+The author's expectations in this encounter were simple. There was an expectation that Costco did in fact have the item in stock. There was an expectation that the employee would be courteous and knowledgeable. There was an expectation that the employee would provide aid in locating the item. There was an expectation that the author would locate the item.
+
+Each of these expectations were met. More importantly, the customer experience met or exceeded expectations for quality under the GAP model for every category except knowledge of the customer. Here, the employee made a simple, but explainable error. Luckily, the error did not detract from the overall experience of quality for the customer.
+
+
+** What Reasons Allowed For This Outcome?
+
+The reasons for the expectations being met starts with Costco ensuring that employees are capable of meeting expectations. Indeed, Costco is notorious in ensuring that employees are well trained, as well as well compensated, and have real prospects of having a career at Costco. They are one of a growing handful of retailers who have discovered that customer retention and profitability start at the interface between employee and customer, and that investment in the employee results in higher customer satisfaction. This higher customer satisfaction results in greater profitability \parencite{tonWhyGoodJobs2012}.
+
+A second reason for meeting of expectations rests with Costco having a strong desire to ensure consistency in inventory, story layout, and customer experience. Costco sees itself as a destination, and shopping as a leisure experience. This can be seen in how Costco is famous for providing copious free samples throughout the store, and in how famous the company is for its food courts as much as for its service and prices. Costco seeks to ensure a "frictionless" and repeatable experience for customers \parencite{williamsPractitionersPathCustomer2020}.
+
+
+** Comparing Big Box Stores
+
+Costco is relatively unique in the big box store experience. Walking into a Best Buy, for example, the author's experience is one of having to struggle to find an employee, and the employee found usually being relatively unversed in the store or its product offerings. Similarly, past experiences at Sam's Clubs, the nearest competitor to Costco, are one of frustration at the lack of genuine help provided by employees. To the author, at least, the perception is that Costco is an industry leader in the quality of retail customer service encounters.
+
+* Impact on Profitability
+
+Costco's profitability comes primarily from the sales of memberships and not from profit off of retail sales \parencite{foxbusinessHowDoesCostco2020,costcoINVESTORRELATIONSOVERVIEW}. Indeed, Costco is famous for keeping some customer favorite items at a steady price point despite being both popular and net loss per sale. This demonstrates that Costco understands that the customer experience is key to retaining membership sales, which is the heart of their business model.
+
+Costco further demonstrates this knowledge by ensuring the training levels of employees, and garnering employee loyalty to the company. Employees who feel cared for by a company are known to provide better service to customers. This too enhances profitability.
+
+For Costco, this type of interaction, repeated numerous times a day, is a key factor to the level of profitability the company enjoys.
+
+\printbibliography

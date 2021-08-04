@@ -1,0 +1,11 @@
+# Fdb version 3
+["pdflatex"] 1616948971 "slide11.tex" "slide11.pdf" "slide11" 1616948971
+  "/etc/texmf/web2c/texmf.cnf" 1609622350 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1609622934 8256281 3c2353f9b2311ed1f10ed0c080677816 ""
+  "slide11.aux" 1616948971 8 a94a2480d3289e625eea47cd1b285758 ""
+  "slide11.tex" 1616948968 1383 b47c378f2f49a49b4d42db474c62e75b ""
+  (generated)
+  "slide11.log"
+  "slide11.pdf"

@@ -1,0 +1,30 @@
+\documentclass[man]{apa7}
+
+\usepackage{import}
+
+%%
+%% preamble material
+%%
+
+\import{preamble/}{packages}
+\import{preamble/}{bibliography_stuff}
+\import{preamble/}{titlepage}
+
+%%
+%% main document
+%%
+
+\begin{document}
+\maketitle
+
+\import{tex/}{introduction}
+\import{tex/}{analysis}
+\import{tex/}{formulation}
+\import{tex/}{planning}
+\import{tex/}{monitor}
+
+\printbibliography
+\appendix
+
+
+\end{document}

@@ -1,0 +1,27 @@
+\documentclass[man]{apa7}
+
+\usepackage{import}
+
+%%
+%% preamble material
+%%
+
+\import{preamble/}{packages}
+\import{preamble/}{bibliography_stuff}
+\import{preamble/}{titlepage}
+
+%%
+%% main document
+%%
+
+\begin{document}
+\maketitle
+
+\import{tex/}{section1.tex}
+\import{tex/}{section2.tex}
+
+\printbibliography
+\appendix
+
+
+\end{document}

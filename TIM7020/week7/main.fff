@@ -1,0 +1,16 @@
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h!]
+  \centering
+  \includegraphics[width=.8\textwidth]{google1}
+  \caption{Google Trend interest in Supply Chain Management}
+  \label{fig:img1}
+\end{figure*}
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h!]
+  \centering
+  \includegraphics[width=.8\textwidth]{google2}
+  \caption{Google Trend interest in BDA, AI, \& Blockchain}
+  \label{fig:img2}
+\end{figure*}

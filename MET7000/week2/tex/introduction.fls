@@ -1,0 +1,5 @@
+PWD /home/david/Documents/School/MET7000/week2/tex
+INPUT /usr/share/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT introduction.tex
+OUTPUT introduction.log

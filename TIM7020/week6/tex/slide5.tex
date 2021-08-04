@@ -1,0 +1,19 @@
+\begin{frame}
+  \frametitle{Key Advantages}
+  \framesubtitle{Performance}
+  \begin{itemize}
+
+    \item<1-> Microservices tend to be faster for their individual task, but the system can be slower due to the increased need for network communications
+
+          \note[item]<1-> {\scriptsize{\textcite{klockWorkloadBasedClusteringCoherent2017} discussed this issue in some depth. Effectively, the increased number of communication channels needed can cause an increase in overall performance even though each microservice may itself perform faster for its specific task.}}
+
+    \item<2-> This performance trade-off can be mitigated or even eliminated with several key steps: load-balancing and cloud location
+
+          \note[item]<2-> {\scriptsize{Klock further discussed methods for addressing the overall performance impact including profiling, containerization, horizontal scaling and others. Not discussed by Klock, but still an important factor is the role of Cloud. By being able to allocate resources globally, computing resources can be moved closer to each end-user resulting in a faster experience of them due to lower latency, even if the compute time increases. Likewise the ability to scale underlying hardware in Cloud services can also increase computing speed.}}
+
+    \item<3-> It should not be considered a given that performance will decrease or increase
+
+          \note[item]<3->{\scriptsize{Performance in a microservice cloud architecture is tricky and requires careful thought by qualified experts. The underlying issue of increased communication channels being slower than in a monolithic system is a given, but the actual impact of moving to the new environment can be either negative or positive based on a host of issues, most of which are controllable by the system designers. However, the full impacts can not be determined at design time and must be discovered through observation of the full system in operation. One major advantage of microservices is that each component can be changed individually relatively easily. Thus as each bottleneck is discovered it becomes rather trivial to diagnose why and address it. Performance become an incremental feature that evolves over time.  }}
+
+  \end{itemize}
+\end{frame}

@@ -1,0 +1,32 @@
+\usetikzlibrary {arrows.meta,graphs,graphdrawing} \usegdlibrary {circular,trees,layered,force}
+\tikz[nodes={text height=.7em,text depth=.2em,draw=black!20,thick, fill=white, font=\tiny},>={Stealth[round,sep]},rounded corners,semithick]
+\graph[spring electrical layout, downsize ratio = 0.1,
+node distance = 3cm, convergence tolerance = 0.00001,
+iterations=5000, electric charge = 3] %%,vertical= 1 to 2] %level distance=1cm,sibling sep=.5em,sibling distance=1cm]a
+{
+    Supply Chains -> [edge label = have increasing] Complexity,
+      Complexity -> [edge label=Managed by] Blockchain,
+      Complexity -> [edge label = drives] Costs,
+      Complexity -> [edge label = increases] Risk,
+      Supply Chains -> [edge label = customers want] Sustainability,
+      Supply Chains -> [edge label = have high] Business Importance,
+    Blockchain -> [edge label = improves] Traceability,
+    Blockchain -> [edge label = provides] Security,
+    Blockchain -> [edge label = provides] Immutability,
+    Blockchain -> [edge label = improves] Trust,
+    Blockchain -> [edge label = addresses] Reliability,
+    Blockchain -> [edge label = reduces] Risk,
+    Blockchain -> [edge label = reduces] Costs,
+    Blockchain -> [edge label = has high] Perceived Utility,
+    Blockchain -> [edge label = has low] Perceived Ease of Use,
+    Perceived Utility -> [edge label = is high for] Sustainability,
+    Perceived Ease of Use -> [edge label = is low for] Sustainability,
+    Perceived Ease of Use -> [edge label = drives] Technology Adoption,
+    Perceived Utility -> [edge label = neede for ] Technology Adoption,
+    Sustainability -> [edge label = growing] Business Importance,
+    Sustainability -> [edge label = demanded by] Customers,
+    Sustainability -> [edge label = addressed by ] Blockchain,
+    Sustainability -> [edge label = assisted by] Traceability,
+    Sustainability -> [edge label = improved with] Security,
+    Sustainability -> [edge label = needs] Reliability
+    };

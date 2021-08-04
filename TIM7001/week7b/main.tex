@@ -1,0 +1,55 @@
+%% use {apa7} for apa style papers
+%% and {beamer} for slides
+%%
+%%\documentclass[man]{apa7}
+\documentclass[unknownkeysallowed]{beamer}
+
+\usepackage{import}
+
+%%
+%% preamble material
+%%
+
+\import{preamble/}{packages}
+\import{preamble/}{bibliography_stuff}
+\import{preamble/}{settings}
+
+%%
+%% use {titlepage} for apa style papers
+%% and {beamer} for beamer slides
+%%
+%%\import{preamble/}{titlepage}
+\import{preamble/}{beamer}
+%%
+%% main document
+%%
+
+\begin{document}
+
+%% use this only for apa style papers
+%% \maketitle
+
+%% use this only for beamer presentations
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\import{tex/}{slide1}
+\import{tex/}{slide2}
+\import{tex/}{slide3}
+\import{tex/}{slide4}
+\import{tex/}{slide5}
+\import{tex/}{slide6}
+\import{tex/}{slide7}
+
+%% uncomment the following for beamer
+\begin{frame}[allowframebreaks]
+
+  \printbibliography
+
+%% uncomment the following for beamer
+\end{frame}
+
+
+
+\end{document}

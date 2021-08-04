@@ -1,0 +1,87 @@
+%% use {apa7} for apa style papers
+%% and {beamer} for slides
+%%
+%%\documentclass[stu]{apa7}
+\documentclass[unknownkeysallowed]{beamer}
+
+\usepackage{import}
+
+%%
+%% preamble material
+%%
+
+\import{preamble/}{packages}
+\import{preamble/}{bibliography_stuff}
+\graphicspath{ {./img/} }
+%%
+%% use {titlepage} for apa style papers
+%% and {beamer} for beamer slides
+%%
+%%\import{preamble/}{titlepage}
+\import{preamble/}{beamer}
+\setbeameroption{show notes on second screen=right}
+\setbeamertemplate{note page}{\pagecolor{yellow!5}\insertnote}\usepackage{palatino}
+
+%%
+%% main document
+%%
+
+\begin{document}
+
+%% use this only for apa style papers
+%% \maketitle
+
+%% Some Tikz stuff
+\tikzstyle{mybox} = [draw=red, fill=blue!20,very thick,
+rectangle, rounded corners, inner sep=10pt, inner ysep=20pt]
+\tikzstyle{fancytitle} = [fill=red, text=white]
+
+
+%% use this only for beamer presentations
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\import{tex/}{objectives}
+\import{tex/}{face1}
+\import{tex/}{face2}
+\import{tex/}{face3}
+\import{tex/}{face4}
+
+\import{tex/}{threats1}
+\import{tex/}{threats2}
+
+\import{tex/}{zerotrust}
+\import{tex/}{zerotrust2}
+\import{tex/}{blockchain}
+
+\import{tex/}{blockchain1}
+
+\import{tex/}{blockchain2}
+\import{tex/}{blockchain3}
+
+
+\import{tex/}{barrierSecurity}
+\import{tex/}{barrierManagement}
+\import{tex/}{barriersCulture}
+
+\import{tex/}{barriersGov}
+
+%%\import{tex/}{longtermConcern}
+
+\import{tex/}{recommendations1}
+
+
+%% uncomment the following for beamer
+\begin{frame}[allowframebreaks]
+
+  \printbibliography
+
+%% uncomment the following for beamer
+\end{frame}
+
+
+\appendix
+
+
+\end{document}

@@ -1,0 +1,22 @@
+\begin{frame}
+  \frametitle{Adoption Rate}
+  \framesubtitle{A Complicated Problem}
+  \begin{itemize}
+    \item<1-> Research has shown lack of adoption rests on a complicated set of factors
+
+          \note[item]<1-> {\scriptsize{Barriers to adoption fall into many categories, such as technological barriers, organizational barriers, and environmental barriers.}}
+
+    \item<2-> These barriers can be seen as arising as a sociological phenomenon susceptible to ANT analysis
+
+          \note[item]<2-> {\scriptsize{Adoption is a choice driven by perception that adopting is beneficial. Likewise, lack of adoption is driven by a perception that it is not beneficial. These perceptions arise because various actors in the relevant network create the prevailing shared beliefs.}}
+
+    \item<3-> ANT analysis has not been utilized in any recent papers specifically on blockchain adoption.
+
+          \note[item]<3-> {\scriptsize{Despite the fact that adoption is a phenomenon driven by a prevalent shared belief claim, which is demonstrated in multiple studies, ANT has not been directly utilized by researchers to examine why the adoption rate is low. However, it is possible to read existing research with an ANT lens, as there are strong coorelations between ANT and the models researchers develop.}}
+
+    \item<4-> There is room for researchers to explore how shared perception impacts adoption using the ANT framework, as business actions are a sociological phenomenon.
+
+         \note[item]<4-> {\scriptsize{A business presents multiple sociological frameworks. The business exists an entity in the broader society. It also frames the social relationships between the business employees and the specific culture of the company. Finally, of course, the employees themselves are part of the broader community in which they live. As ANT contends that knowledge and belief about our reality is created through the interactions of the social network, it is appropriate to explore how ANT can explain the choice to adopt a new technology or not. }}
+
+  \end{itemize}
+\end{frame}

@@ -1,0 +1,47 @@
+#+LATEX_CLASS: apa7
+#+LATEX_CLASS_OPTIONS: [stu]
+#+OPTIONS: toc:nil ^:{}
+
+# for working hyperlinks
+#+LATEX_HEADER: \usepackage{hyperref}
+
+# fonts, specifically linkedin symbol
+#+LATEX_HEADER: \usepackage{fontawesome}
+
+# fancy quotations
+#+LATEX_HEADER: \usepackage{csquotes}
+
+# double-lines for tables
+#+LATEX_HEADER: \usepackage{hhline}
+
+# colors and effects for tables
+#+LATEX_HEADER: \usepackage{colortbl}
+
+# dashed lines in tables
+#+LATEX_HEADER: \usepackage{arydshln}
+
+# captions particularly for floating tables
+#+LATEX_HEADER: \usepackage{caption}
+
+# UTF-8 Why does this still have to be specified??
+#+LATEX_HEADER: \usepackage[utf8]{inputenc}
+
+# Sometimes you need Euro symbols
+# option is set to'' `gen` to match current font rather than
+# 'official' which gives something different
+#+LATEX_HEADER: \usepackage[gen]{eurosym}
+
+# bibliography information
+#+LATEX_HEADER: \usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+#+LATEX_HEADER: \DeclareLanguageMapping{american}{american-apa}
+#+LATEX_HEADER: \addbibresource{/home/david/Documents/School/References/bibliography.bib}
+
+#+LATEX_HEADER: \title{A Brief Analysis of Current Research}
+#+LATEX_HEADER: \author{David Wagle}
+#+LATEX_HEADER: \course{TIM-7040 V3: Technology Policy and Strategy}
+#+LATEX_HEADER: \professor{Dr. Dani Babb}
+#+LATEX_HEADER: \affiliation{School of Business, Northcentral University}
+#+LATEX_HEADER: \duedate{Jul 18, 20121}
+
+#+LATEX_HEADER: \leftheader{Wagle}
+

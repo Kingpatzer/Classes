@@ -1,0 +1,85 @@
+%% for papers use this one
+%%\documentclass[man]{apa7}
+%% for presentations use this one
+\documentclass[12pt,show notes]{beamer}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+
+\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+\DeclareLanguageMapping{american}{american-apa}
+\addbibresource{d:/David/OneDrive/Documents/School/References/bibliography.bib}
+
+
+\setbeameroption{show notes on second screen} %both
+
+%%
+%% slight yellow tint to notes page
+%%
+\setbeamertemplate{note page}{\pagecolor{yellow!5}\insertnote}
+\setbeamerfont{note page}{size=\scriptsize}
+
+\usetheme{PaloAlto}
+\usecolortheme{dolphin}
+
+%%
+%% main document
+%%
+\title[Strategic Skills]{Developing Strategic Leadership Skills in the Age of COVID}
+
+\subtitle{Recommendations for Accenture PLC}
+
+\author{David A. Wagle}
+
+\institute{
+  School of Business\\
+  North Central University
+}
+
+\date{September 9, 2020}
+
+\logo{\includegraphics[height=1.9cm]{img/NCUlogo.jpg}}
+
+
+
+\begin{document}
+
+
+\frame{\titlepage}
+%% slides
+
+
+\begin{frame}{Introduction}
+
+  \begin{itemize}
+    \item Summary Highlights of Strategic Questions
+    \item Key Tactical Questions
+    \item What Leadership Skills are Necessary
+    \item Critical Immediate Leadership Tasks
+  \end{itemize}
+
+
+
+\note[item]{We will begin this presentationw with a review of key findings from prior examinations of the key strategic questions. For as precsented by \textcite{Tracy2015}. }
+
+
+\note[item]{After review of the strategic questions, we will address the tactics necsesary to proceed successfully, and look at the leadership skills necessary to move forwad.}
+
+\note[item]{We will conclude with specific short-term actionable items to make progress.}
+\end{frame}
+
+\include{tex/frame2}
+\include{tex/frame3}
+\include{tex/frame4}
+\include{tex/frame5}
+\include{tex/frame6}
+\include{tex/frame7}
+\include{tex/frame8}
+\include{tex/frame9}
+
+\begin{frame}[allowframebreaks]
+  \printbibliography
+\end{frame}
+
+\end{document}

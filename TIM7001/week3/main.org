@@ -1,0 +1,11 @@
+#+TITLE: Annotated Bibliography
+#+LATEX_HEADER: \shorttitle{Annotated Bibliography}
+#+LATEX_HEADER: \usepackage{hanging}
+#+INCLUDE: "./preamble.org"
+#+AUTHOR: David A. Wagle
+
+
+\begin{hangingparas}{.25in}{1}
+fullcite:bagKeyResourcesIndustry2021
+\end{hangingparas}
+Researchers collected data from South African manufacturing firms. Utilizing a five-point Likert scale questionnaire, the questions asked were about "Industry 4.0" adoption, green design, collaboration, and sustainable practices. The team looked at 11 hypothesis examining relationships between attitudes towards sustainability and I4.0 adoption, adoption practices, and collaborative relationships with other firms. All 11 hypothesis held in the final analysis.  

@@ -1,0 +1,25 @@
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h!]
+  \includegraphics[width=\textwidth]{img/it_services_communications}
+  \caption{Gartner's 2020 IT Services and Communications Magic Quandrant}
+\label{fig:itsc}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h!]
+  \includegraphics[width=\textwidth]{img/it_public_cloud}
+  \caption{Gartner's 2020 IT Public Cloud Infrastructure Magic Quandrant}
+  \label{fig:itpc}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h!]
+  \includegraphics[width=\textwidth]{img/data_analytics}
+  \caption{Gartner's 2020 Data Analytics Magic Quandrant}
+  \label{fig:itda}
+\end{figure*}

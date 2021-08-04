@@ -1,0 +1,18 @@
+\section{Recommendations for Business Process Improvement}
+\begin{frame}
+  \frametitle{Recommendations for Business Process Improvement}
+  \framesubtitle{How to eliminate waste}
+  \begin{itemize}
+    \item<1-> At issue is manual complexity
+      \note[item]<1-> {\scriptsize{While there is little academic research on the business cost of patch management, industry experience of those within the IT security fields provides strong indications of the extensive labor involved in patching. Indeed, one of the major selling points used by cloud vendors such as Amazon, Google, and Microsoft is that they reduce labor costs by taking on the responsibility for ensuring security patching of the underlying architecture. And academic studies of this effect support the advertising claim \parencite {devarakondaLaborCostReduction2013}.}}
+
+    \item<2-> There are no ``cheap wins''
+      \note[item] <2-> {\scriptsize{Where automation exists, it is because vendors are supplying systems that provide push notifications to clients. For non-automated systems, to reduce the manual complexity of identifying that a security patch is relavant to a company requires experienced, and expensive network security experts analyize the patch release information. This is a complex and lengthy process. It can be automated, but security researchers have found that doing so is itself a complicated programing challenge \parencite{liLargeScaleEmpiricalStudy2017}.}}
+
+    \item<3-> Two possible options automation or IaaS
+      \note[item] <3-> {\scriptsize{Given the above realities, there are two options. The first is to invest in a project to build web-scraping tools to automatically collect patch data, compare the patch information to the company's configuration management database, classify the patches, and then download the patches automatically. This can be done with a small team of programmers and once completed, will need to be maintained as companies routinely modify their websites which would require changes in the web-scrapping tools. The second is to move to an Infrastructure as a Service (IaaS) model that places corporate infrastructure into the cloud, thereby ensuring automation. This is much more costly, but positions a company to move to a cloud computing strategy, which is more cost efficient in the long run \parencite{linCloudComputingInnovation2012}. Ultimately, not all devices can be moved to the cloud, so a combination of these two approaches is most appropriate. }}
+
+
+
+  \end{itemize}
+\end{frame}

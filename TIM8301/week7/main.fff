@@ -1,0 +1,5 @@
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+\includegraphics[width=.8\textwidth]{diagram}
+\end{figure*}

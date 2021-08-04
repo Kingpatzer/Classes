@@ -1,0 +1,63 @@
+%% use {apa7} for apa style papers
+%% and {beamer} for slides
+%%
+%%\documentclass[stu]{apa7}
+\documentclass[unknownkeysallowed]{beamer}
+
+\usepackage{import}
+
+%%
+%% preamble material
+%%
+
+\import{preamble/}{packages}
+\import{preamble/}{bibliography_stuff}
+\graphicspath{ {./img/} }
+%%
+%% use {titlepage} for apa style papers
+%% and {beamer} for beamer slides
+%%
+%%\import{preamble/}{titlepage}
+\import{preamble/}{beamer}
+\setbeameroption{show notes on second screen=right}
+\setbeamertemplate{note page}{\pagecolor{yellow!5}\insertnote}\usepackage{palatino}
+
+%%
+%% main document
+%%
+
+\begin{document}
+
+%% use this only for apa style papers
+%% \maketitle
+
+%% use this only for beamer presentations
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\import{tex/}{slide1}
+\import{tex/}{slide2}
+\import{tex/}{slide3}
+\import{tex/}{slide4}
+\import{tex/}{slide5}
+\import{tex/}{slide6}
+\import{tex/}{slide7}
+\import{tex/}{slide8}
+\import{tex/}{slide9}
+\import{tex/}{slide10}
+\import{tex/}{slide11}
+
+%% uncomment the following for beamer
+\begin{frame}[allowframebreaks]
+
+  \printbibliography
+
+%% uncomment the following for beamer
+\end{frame}
+
+
+\appendix
+
+
+\end{document}

@@ -1,0 +1,59 @@
+\section{Review of Encryption}
+
+Cryptography is an important component of the IT security stack. In a more and more connected world, it is important to not only understand best practices with regard to encryption, but to recognize that many devices are being marketed and sold without adhering to these practices. For example, researchers have found that some hubs in the IoT space do not encrypt device messages, violating best practices \parencite{momenzadehBestPracticesWould2020}. When selecting systems to integrate into the IT environment of our company, it is necessary to fully examine if devices adhere to best practices, including cryptography.  While cryptography is becoming less important over the years due to the rise in the success of malware attacks \parencite{greenCryptographyMayNot2014}, and will likely cease to be a major consideration at some future point \parencite{leydenPreparePostcryptoWorld,leetaruEncryptionDebateDead2019}, that time is not here yet. However, it should be remembered that encryption is only part of the security environment, and by itself is not likely to provide much in the way of protection to an organization \parencite{dingmanPosterAbstractGood2018}.
+
+Confidentiality is an important internal and external security requirement. Encryption is central to confidentiality as it ensures that people who do not have the access key to view data are not able to see that same data \parencite{xuStrongLeakageresilientEncryption2021}. It is important to note that encryption is not free, and while it would be ideal to have all data encrypted, it is the case that encryption has a performance cost that can impact user experience \parencite{fujdiakModelingTradeoffSecurity2019}. Therefore it is important to use cryptography prudently to both ensure confidentiality and the user experience. There is ample advice available on how to consider the trade-offs between encryption and performance \parencite{martinEncryptionWonAffect}.
+
+\subsection{Types of Encryption}
+
+There are primarily four types of encryption which exist on two dimensions. These dimensions are binary ``yes/no'' conditions and are not sliding scales.
+
+The first dimension is the one of symmetry. An encryption algorithm is symmetric if the same key is used to both encrypt and decrypt the content.  An encryption algorithm is asymmetric if different keys are used to both encrypt and decrypt the content \parencite{cloudfalreWhatEncryptionTypes}.
+
+Asymmetric algorithms are useful for allowing someone else to initiate an encrypted conversation. The key-pair can be thought of as a private key component that must be kept secret and secure, and a public key component that can be broadly shared. Anyone with the public key can encrypt a message that the holder of the private key can read. This is an extremely important property for things such as messaging systems or web traffic. However, it is un-necessary complexity for things like storage systems where the same entity will be both encrypting and decrypting the data.
+
+The second dimension is the one of directionality. An encryption algorithm is bidirectional if data can be both encrypted and decrypted. An algorithm is uni-directional if data can only be encrypted, but not the process is not reversable. This latter condition has come to be known as ``hashing'' and is often thought of as separate from encryption. However, we still talk about ``encrypting passwords'' and most password storage is uni-directional \parencite{sslstoreDifferenceEncryptionHashing2018}.
+
+\subsection{Where to use Encryption}
+
+\subsubsection{Data Storage}
+
+Data at rest, that is, on storage medium such as disk or tape, should be encrypted at least once, and often twice. The first level of encryption should be device level encryption. Full disk encryption ensures that all of the data on the device is encrypted, and can only be read by someone who has the password to decrypt the device \parencite{mateakiSecuringMobileDevices}. This helps ensure the security of data even if a device is lost and physically ends up in an attackers hands. Full disk encryption can be symmetric and obviously must also be reversable.
+
+Data should be encrypted on the system, even if the system is utilizing device encryption when the data is not considered public data. This allows control of confidentiality by ensuring only those with proper access credentials can view the data.
+
+One example of this is system passwords. System passwords are often stored on a device either in cache memory or on disk so that access rights can be checked. It is important that anytime a password is stored it is stored encrypted. Password encryption is generally symmetric and one-way. That is, there is not a separate decryption key, but the algorithm is not always reversable \parencite{tldpPasswordSecurityEncryption2021}. An entered password need only be checked against the resulting hash value, and if they match, then the password entered is likely the same as the true password.
+
+Database data should also be encrypted in storage to ensure that confidentiality is retained. Only people with proper access to the data should be able to read it, not just anyone with access to the system the data is stored on. Database encryption should be asymmetric and reversable. It should be asymmetric so that distribution of the public key will allow different data owners to enter data into the system without reading other people's entries into the same system. And it generally must be reversable as a typical database includes situations where data needs to be read from the database and displayed to the user \parencite{netlibsecurityDifferencesWholeDatabase2016}.
+
+Due to the rise in cloud computing use, which often means data is duplicated around the globe, database column level encryption is more and more important. Data should be decrypted at the point of use and not in-transit. This is because the company can not always control the routing of data around the globe, and man-in-the-middle attacks may be possible at any routing point in transit. All data that the company uses must be categorized for an appropriate level of encryption for this reason.
+
+\subsection{Data Transit}
+
+Data in motion over the internet should also be encrypted for security \parencite{bahriPrivacyWebService2018}. Again, there are multiple levels of encryption. All network communication streams should be encrypted, just as devices are encrypted. This is especially true for any communication streams that will exist external to the company. This includes company owned cloud assets that are stored or accessed via a cloud provider.
+
+Typical connection level encryption is achieved through the SSL/TLS protocol utilized by web services like HTTPS \parencite{oltsikNetworkEncryptionIts2015}. This security protocol is an asymmetric and reversable protocol. The asymmetry allows anyone with the public key to attempt to connect to the web service and it must be reversable so that the systems can understand the data flows involved.
+
+More secure communication channels can add on-top of this encryption. For encryption between corporate owned systems that traverse outside of the company and which carry highly sensitive data, hardware based encryption devices should be considered \parencite{zybersafeZybersafeTrafficcloakNetwork}. These devices provide encryption at the layer-2 of the network stack, which is below the TCP/IP protocol. This makes it extremely difficult for man-in-the-middle attacks to succeed.
+
+As noted in the discussion about data storage, data that should be encrypted in the database or files should be decrypted at the user-end of the application stack and not in transit. This can complicate web-client design, but is an important aspect of secure communications.
+
+\subsection{International Data}
+
+The European Union's General Data Protection Regulation (GDPR) was updated in 2018. This set of regulations impose significant penalties on companies that are shown to fail to adhere to best practices for protecting user data. The compliance requirements include addressing legacy systems that may be utilizing no or very weak cryptographic functions to protect user data and user access credentials \parencite{blueNovelApproachProtecting2018}. Companies that will be doing business in the European Union must consider the demands of the GDPR on system architecture. Failure to do so upfront can have severe financial impacts on the company, either in the form of fines and penalties or in the form of costly re-architecture efforts \parencite{yuanPolicyEffectGeneral2019}.
+
+\subsection{Implementation Considerations}
+
+Following best practices for when to encrypt data and which data to encrypt is only part of a solid cryptographic strategy. Companies need to be aware of what specific libraries and tools are used to provide their cryptographic solutions. Not all implementations of cryptography are robust. Doing cryptography well is often complex and errors or omissions in implementation details can result in serious weaknesses of the system. For example, the ``heartbleed'' bug in the OpenSSL library's TLS/DTLS implementation allowed the leakage of primary key, secondary key, and protected content from the connection. Any organization utilizing the vulnerable version had to upgrade all systems which were built against those libraries. Failure to do so would result in a continuing on-going vulnerability \parencite{naHeartbleedBug}.
+
+\subsection{Actions}
+
+In light of the current state of cybersecurity, staying on top of best practices is a critical step in ensuring both compliance to legal standards such as the GDPR as well as compliance to internal policies and corporate data strategy. Both the legal and technical framework of cybersecurity are ever-evolving. As such it is recommended that the following steps be implemented.
+
+\begin{enumerate}
+  \item Establish policies for documenting corporate data collection and properly categorizing data for encryption standards
+  \item Establish policies for auditing system and network compliance to encryption standards and best practices
+  \item Establish policies for collecting and documenting what encryption tools and libraries are used in all applications
+  \item Establish policies for ensuring patching and updating of all encrypt tools and libraries used in all applications
+  \item Establish regular reviews of encryption policies to ensure continued adherence to both legal standards and best practices
+\end{enumerate}

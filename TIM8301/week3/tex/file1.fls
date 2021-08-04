@@ -1,0 +1,9 @@
+PWD /home/david/Documents/School/Classes/TIM8301/week3/tex
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /usr/share/texmf/web2c/texmf.cnf
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT file1.tex
+OUTPUT file1.log
+INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm

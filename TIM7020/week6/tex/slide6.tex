@@ -1,0 +1,20 @@
+\begin{frame}
+  \frametitle{Key Advantages}
+  \framesubtitle{Availability}
+  \begin{itemize}
+
+    \item<1-> In a microservice cloud architecture, availability improves greatly because of the nature of Cloud computing
+
+          \note[item]<1-> {\scriptsize{Cloud computing provides robust availability guarantees. In Amazon Web Services, for example, each geographic area, or Region, is comprised of multiple availability zones. These zones are themselves operationally isolated data centers. Regardless of what happens in any one availability zone, the region is protected. Likewise, even if Amazon should loose multiple regions, the other global regions could take on the remaining workloads provided the system is architected to take advantage of this feature \parencite{amazonRegionsZonesAmazon}. }}
+
+    \item<2-> Each component is individually available
+
+          \note[item]<1-> {\scriptsize{Further, unlike a monolithic system where a bug or device crash can incapacitate the entire technology stack, a microservices architecture improves availability by allowing for more cases of partial availability. Horizontal scaling also provides a mechanism to easily stand up new environments quickly. \textcite{meiResearchHealthMonitoring2018} demonstrated the notion of a ``service registry'' that allows meta-monitoring of the active state of the environment and its associated health statistics. This provides a mechanism for early fault detection and reaction, limiting impacts to end-users and maximizing availability.}}
+
+    \item<3-> The nature of the environment prevents cascading failures
+
+          \note[item]<1-> {\scriptsize{While some work has to be done to produce this result, \textcite{kennedya.torkuraIntegratingContinuousSecurity2017} demonstrates that it is not difficult to architect a microservice cloud architecture to prevent cascading failures, where one system failure permeates throughout the environment. The ability to quickly, and automatically, isolate faults and misbehaving components increases the reliability of the overall system substantially.   }}
+
+
+  \end{itemize}
+\end{frame}

@@ -1,0 +1,203 @@
+\section{Introduction}
+
+Big Data and Analytics (BDA) is an a growing area of concern, as questions about how BDA is utilized, the value it provides, and the quality of the data involved are becoming more important \parencite{molinariQualityConcernsHealth2020}. There is widespread agreement that the utilization of BDA in the healthcare space can lead to better health outcomes, higher quality of care, and more efficient health services \parencite{milenkovicBigDataAnalytics2019}. It is widely agreed that the new opportunities afforded by using BDA in healthcare will provide critically needed information to address numerous areas of concern, from early diagnosis for individual patients to the discovery of new cures or the predicting of epidemics \parencite{todorFutureTrendHealthcare2018}. There are advantages to be had for patients, medical practitioners, hospital operators, pharmaceutical researchers, and healthcare insurers, just to name a few.
+
+Data for healthcare is being produced at increasing rates due to the use of electronic health records, smart sensors, and mobile health informatic devices. This has driven a rapid growth of health care data. US Healthcare data alone exceeded 150 exabytes in 2011 and is expected to exceed yottabytes in the near future \parencite{fangComputationalHealthInformatics2016}. This data is also exceedingly complex, consisting of radio-graphic scans, MRI images, CAT scan images, handwritten documents, and other image data \parencite{feldmanBigDataHealthcare2012}, genomic data \parencite{dolezelBigDataAnalytics2019} as well as complex, large, heterogeneous measurement and treatment data \parencite{sunBigDataAnalytics2013}.
+
+While there is no universally accepted definition of Big Data, there are a number of commonalities amongst the most common definitions. These include the idea that Big Data is characterized by the volume of data, the velocity of data collection, and the variety of data (the 3V's model) which is appears in numerous other definitions of big data \parencite{appuswamyNobodyEverGot2013}. There have also been calls to define Big Data in terms of the processing and supported architectures that are required to perform BDA \parencite{emmanuelDefiningBigData2016}. Regardless of which of the various definitions that are employed, there is little doubt that healthcare data qualifies as Big Data.
+
+It is the use of these special tools and techniques that presents a challenge in practice. There exists a shortage of data scientists and BDA practitioners which makes staffing BDA positions difficult across all sectors \parencite{willettsBarriersSMEsAdoption2020}. This shortage also impacts BDA in healthcare. In order to examine solutions to the BDA practitioner shortage in healthcare, \textcite{dolezelBigDataAnalytics2019} examined three specific research questions:
+
+\begin{enumerate}
+  \item What are the technologies utilized for BDA in healthcare?
+  \item What are the skills needed for BDA in healthcare?
+  \item What are the tools utilized for BDA in healthcare?
+\end{enumerate}
+
+These questions were examined with the purpose of making specific recommendations to schools and universities to address curriculum deficiencies to address the talent shortage of BDA practitioners.
+
+\section{Research Methodology and Outcomes}
+
+\textcite{dolezelBigDataAnalytics2019} engaged in a survey of individuals selected for their probable knowledge of BDA needs in healthcare. The individuals were identified from a subscription healthcare database based on job titles of ``chief information officer,'' ``chief executive officer,'' ``chief operations officer,'' ``chief medical officer,'' ``chief nursing officer,'' ``director of IT,'' and ``health information management director'' among others. A total of 17,972 individuals were identified and contacted by email to participate in a Qualtrics survey. The survey included one multi-part question scored on a Likert 7-point scale (1= never, 7= very frequently), while the others requested responses to multiple choice questions about specific technology use. The survey's principle aim was to elicit which technologies are used, what skills are employed, and the frequency of usage.
+
+This was a moderately appropriate methodology for obtaining the data necessary to answer the research questions. Senior leaders of organizations are required to understand the needs of the organization and are expected to have insight into what critical skills and capabilities are utilized by their employees. However, the methodology is only moderately appropriate as BDA practitioners in healthcare spaces are most likely the people most equipped to provide deep insight into what skills and tools they utilize on a regular basis. By focusing on senior leadership, the researchers likely failed to to get the most informed responses possible to answer their stated questions.
+
+\subsection{Research Accomplishment}
+
+The research succeeded in providing a limited view of the technologies and skills currently employed in BDA activities in the healthcare domain. The study provides data for curriculum designers at universities to address critical skill shortages in the BDA space. Included in the survey results were specific data science technologies, statistical analysis tool sets, data mining and analysis tools, and data visualization tools. The research provided a good first approximation of the relative importance of knowledge of these tools for healthcare BDA practitioners.
+
+\subsection{Research Limitations}
+
+The full goal of the research can not be said to have been achieved. This is primarily due to the fact that the response rate for the survey was only 0.79\%. Further, the response demographics were heavily skewed to practitioners from Texas, new York, and California. Further, the responses were heavily skewed towards specific Hospital employees (64.29\%), with the majority of respondents being the Chief Nursing Officer (32.14\%). Response rates for Chief Executive Officers, Chief Information Officers, Chief Operations Officers, Chief Medical Officers, and Directors of IT were all very near to 5\% or less. Thus the results of the survey should very much be taken as a first-pass, given the very low response rate from academic health researchers, IT specialists, and other health care environments, it is worth questioning how generalizable the research results are.
+
+\subsection{Results and Contributions}
+
+The researchers were able to outline specific recommendations to help address critical skill shortages based on the results of their survey. This contributes to the awareness of those in the field who are trying to address the observed skill shortages. It does not, however, provide any forward looking analysis of what skill would be needed in the future. This makes the results potentially less valuable, as technology tools and skills adapt and change over time. By the time a curriculum is rolled out, the needed skills may well have shifted significantly.
+
+For example, the first BDA NoSQL database that was really successful was Apache Hadoop, built in 2005. This technology is represented on the research's list of tools. However, just 2 years after Hadoop was built, MongoDB was released, this too is now on the list of tools and is named as a necessary technology nearly 4 times as often as Hadoop. In 2010, Couchbase was released, this too is listed on the tools for BDA activities. Given the growth in NoSQL DBA tools, it is not unreasonable to expect that the by the time a new University student graduates in 4 to 5 years, what tools are necessary will have shifted again.
+
+\subsection{Extensions and Further Research}
+
+For this study, there are several important steps that can be taken to bolster the research. First, a concerted effort should be made to survey a broader section of the healthcare space. In particular, individual practitioners, small clinics, insurance providers, and academic researchers should be better represented. Further, any follow-up research on these questions should seek to include DBA professionals rather than executive officers. The reason for this was discussed earlier, but should be restated: it is not obvious that the best person to answer questions about what skills, tools, and techniques are necessary to perform DBA successfully are people who do not do DBA activities professionally. This will increase the direct value of the research by either validating the conclusions reached, or by demonstrating a gap between healthcare leadership of BDA skill and tool needs and actual healthcare BDA skill and tool needs.
+
+Additionally, there should be some examination of which skills can or should be learned ``on the job'' and which must be at some level of mastery in order to begin working in the BDA space. It is possible, for example, that general programming skills and statistical knowledge must be mastered prior to hiring, but that specific programming languages and tools can be learned while successfully performing BDA work.
+
+\section{Reproducing the Experiment}
+
+In reproducing the experiment, there are several steps that need to be taken. First, the survey instrument must be created. While the original experiment asked question about specific technology platforms, such questions may miss the mark as platform popularity shifts over time. A slightly superior survey will focus on technology types. For example, rather than asking about Hadoop usage versus MongoDB usage, more insight would be gained by comparing how frequently NoSQL technologies are employed comapred to SQL databases. Thus, the proposed reproduction of this research will modify the survey to use only Likert scale questions asking about how important mastery of types of technology are to successful BDA employment combined with how frequently those technology types are utilized.
+
+Thus, instead of asking a question such as:
+
+\textit{Indicate which relational databases are in use at your organization. Select all that apply}
+
+\begin{itemize}
+  \item IBM DB2
+  \item Microsoft SQL Server
+  \item MySQL
+  \item Oracle Database
+  \item PostgreSQL
+  \item SAP Hanna
+  era\item Teradata
+  \item Other (Please Specify)
+\end{itemize}
+
+The new survey will ask questions such as:
+
+\textit{On a scale of 1 to 7, with 1 being not at all important and 7 being critically important, please rate how important knowledge of these types of technology are to being successful at BDA work:}
+
+\begin{itemize}
+  \item Hierarchical databases
+  \item Network databases
+  \item Relational databases
+  \item Object-Oriented databases
+  \item Graph databases
+  \item ER databases
+  \item Document databases
+  \item NoSQL databases
+\end{itemize}
+
+The question will then be repeated asking about how frequently the technologies are used, with 1 being ``not at all,'' and 7 being ``daily.'' This refocusing from questions about specific products to general skills will be more useful for those who want to build a curriculum that is durable in the face of changing technology landscapes.
+
+Once the survey is ready, the next step is to identify to whom the survey will be administered. To this end, instead of focusing on executive leadership in the healthcare industry, this experiment will focus on BDA professionals in the healthcare space. Individuals will be identified through LinkedIn as working for companies associated with healthcare, and who are currently employed with job titles related to BDA work. The identified individuals will be contacted via email and asked to participate. In order to ensure adequate demographic representation of each sector and geography, participant selection will be randomized as follows:
+
+\begin{itemize}
+  \item Subjects sorted into roughly equal-sized groups based on geography (state level).
+  \item Geographic groups sorted into roughly equal sub-groups based on industry sector (insurance, private practice, etc.)
+  \item Cohorts will be built by randomly selecting one individual from sub-groups based on industry participation ratios. For example, Texas has 8\% of academic medical researchers, so one of the several sub-group of academic medical researchers will have an 8\% chance to be randomly selected each selection cycle.
+  \item There will be six rounds of building Cohorts, percentage chance of selection for cohorts will be updated each round to reflect confirmed participants in order to target randomly selected individuals who fit demographic and geographic participation needs.
+\end{itemize}
+
+This selection process should result in a more demographically diverse group of candidates than the prior research.
+
+With Cohort participation confirmed, the survey will be sent out at the same time to all confirmed participants, who will be given two weeks to respond to the survey. Participants will be given reminders every 3 days for the first week, and every two days for the last week, with a final reminder on the last day of the survey. The survey will be scheduled to run Tuesday to Monday in order to ensure the last day falls on a typical workday for most participants.
+
+Once the collection period is over the survey will be closed and the results analyzed.
+
+\subsection{Simulating the Experiment}
+
+The above experiment is reproduced using a Monte Carlo technique. In order to weight the question responses appropriately, members of a Reddit community were asked to guess what likely responses would look like, the resulting answers were used to build in Monte Carlo probabilities.
+
+The resulting demographics are significantly different from the original study, see table 1.
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\FloatBarrier
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[htpb]
+\begin{tabular}{@{}lllll@{}}
+\toprule
+\textbf{Characteristic} &
+  \textbf{\begin{tabular}[c]{@{}l@{}}Original\\ Number\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}l@{}}Original\\ Percentage\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}l@{}}Simulated \\ Number\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}l@{}}Simulated\\ Percentage\end{tabular}} \\ \midrule
+\textit{Work Organization}              & 112 &       & 500 &      \\ \midrule
+Academic Educational Institution        & 4   & 3.57  & 27  & 5.4  \\ \midrule
+Academic Medical Center                 & 15  & 13.39 & 83  & 16.6 \\ \midrule
+Community Health Organization or Clinic & 1   & 0.89  & 15  & 3.0  \\ \midrule
+Health Care Provider                    & 5   & 4.46  & 17  & 3.4  \\ \midrule
+Healthcare System Corporate Office      & 6   & 5.36  & 68  & 13.6 \\ \midrule
+Hospital                                & 72  & 64.29 & 103 & 20.6 \\ \midrule
+Long-term/Post-acute care               & 3   & 2.70  & 21  & 4.2  \\ \midrule
+Other                                   & 5   & 4.5   & --- & ---  \\ \midrule
+Insurance Provider                      & --- & ---   & 112 & 22.4 \\ \midrule
+Government (Research)                   &     &       & 29  & 5.8  \\ \midrule
+Government (Provider)                   &     &       & 25  & 5.0  \\ \bottomrule
+\end{tabular}
+\caption{Comparing Demographic Results }
+\label{tab:table1}
+\end{table}
+\FloatBarrier
+
+For positions, this information was not collected as only those who are employed with job titles directly related to performing BDA functions were included in the possible list of participants.
+
+\subsection{Simulation Analysis}
+
+\subsubsection{Technologies Needed for Big Data Analytics}
+
+While the initial study was able to confirm that the most commonly used technologies (those with very-frequent use in the Likert scale question) were statistical analysis (47.6\%), data mining (39\%
+), data visualization (34.1\%), and SQL (28.0\%). This information is greatly expanded upon in the simulated study (see table 2).
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[]
+  \tiny
+\begin{tabular}{@{}llllll@{}}
+\toprule
+\multicolumn{2}{l}{\textbf{Technology}} &
+  \textbf{\begin{tabular}[c]{@{}l@{}}Critically \\ Important\end{tabular}} &
+  \textbf{Percentage} &
+  \textbf{Used Daily} &
+  \textbf{Percentage} \\ \midrule
+ & Hierarchical Databases           & 5   & 1.0\%  & 0   & 0.0\%  \\
+ & Network Databases                & 7   & 1.4\%  & 0   & 0.0\%  \\
+ & Relational Databases             & 216 & 43.2\% & 156 & 31.2\% \\
+ & Object-Oriented Databases        & 123 & 24.6\% & 26  & 5.2\%  \\
+ & Graph Databases                  & 176 & 35.2\% & 29  & 5.8\%  \\
+ & ER Databases                     & 137 & 27.4\% & 12  & 2.4\%  \\
+ & Document Databases               & 245 & 49.0\% & 127 & 25.4\% \\
+ & NoSQL Databases                  & 321 & 64.2\% & 123 & 24.6\% \\
+ & Procedural Programming Languages & 342 & 68.4\% & 414 & 82.8\% \\
+ & Functional Programming Languages & 61  & 12.2\% & 13  & 2.6\%  \\
+ & Scripting Languages              & 497 & 99.4\% & 237 & 47.4\% \\
+ & Extension Languages              & 214 & 42.8\% & 86  & 17.2\% \\
+ & Dataflow Languages               & 81  & 16.2\% & 5   & 1.0\%  \\
+ & Command Line Interfaces          & 245 & 49.0\% & 349 & 69.8\% \\
+ & Data Cleaning                    & 347 & 69.4\% & 27  & 5.4\%  \\
+ & Data Preparation                 & 437 & 87.4\% & 29  & 5.8\%  \\
+ & Data Formatting                  & 276 & 55.2\% & 19  & 3.8\%  \\
+ & Data Documentation               & 467 & 93.4\% & 106 & 21.2\% \\
+ & Report Writing                   & 179 & 35.8\% & 239 & 47.8\% \\
+ & Creating Visualizations          & 439 & 87.8\% & 264 & 52.8\% \\
+ & Debugging                        & 465 & 93.0\% & 158 & 31.6\% \\
+ & Domain Knowledge                 & 316 & 63.2\% & 312 & 62.4\% \\
+ & Basic Statistics                 & 289 & 57.8\% & 317 & 63.4\% \\
+ & Linear Algebra                   & 102 & 20.4\% & 51  & 10.2\% \\
+ & Calculus                         & 98  & 19.6\% & 12  & 2.4\%  \\
+ & Advanced Statistics              & 217 & 43.4\% & 3   & 0.6\%  \\
+ & Machine Learning                 & 219 & 43.8\% & 72  & 14.4\% \\
+ & Project Management               & 214 & 42.8\% & 421 & 84.2\% \\ \cmidrule(l){2-6}
+\end{tabular}
+\caption{Critical Technologies and Daily Use Patterns}
+\label{tab:table2}
+\end{table}
+
+This simulation, were it real, would greatly expand on the original results in two critically important ways. First it would be seen that specific technologies vary between their relative importance to the job role and their relative utilization within that job role. For example, while only 42.8\% of the respondents said that project management skills are critically important, 84.2\% note that they use those skills daily. This creates an interesting set of results. The top 5 Technologies/Skills are identified as Scripting Languages (99.4\%), Data Documentation (93.4\%), Debugging (93.0\%), Creating Visualizations (87.8\%) and Data Preparation (87.4\%). However, the top skills utilized are Project Management (84.2\%), Procedural Programming Languages (82.8\%), Command Line Interfaces (69.8\%), Basic Statistics (63.4\%), and Domain Knowledge (62.4\%).
+
+By focusing on generalized skills and asking not merely about importance in the job role but also about daily utilization, it can be shown that the perceptions of leadership on which skills are most critical for success does not match that of the perception of leadership. Leadership, in this simulation (informed by the input of real practitioners from Reddit), fixate too much on specific technologies and fail to understand how skills may be generalized. Leadership also lacks insight as to the daily activities of BDA practitioners. It is not clear that hiring criteria closely aligns to actual job requirements for this reason.
+
+\subsection{Simulation Limitations}
+
+Were this a real study, a major limitations of this simulation includes the lack of differentiation between topic categories. For example, command-line and scripting languages are also typically procedural languages. Therefore, the overlap between categories may be causing some results to be over-represented. As this research did not differentiate practitioners based on seniority, it also fails to have enough demographic granularity as to be effective for communicating curriculum recommendations, a limitation shared by the original study. If the goal is to provide insight and recommendations for addressing the hiring gap for BDA personnel out of university, then understanding the skills needed for success at entry-level BDA roles would be more important than understanding what is required for success at more senior BDA roles.
+
+\subsection{Simulation Recommendations for Future Research}
+
+Future research should focus on several aspects. First, a survey instrument should be developed with non-overlapping general technology and skill categories. The categories should also be specific enough as to ensure that they can be used for understanding curriculum needs. For example, ``Project Management'' is a broad category that can include anything from individuals managing their own work items on a project kanban board to a senior person managing multiple project budgets and schedules. What educational requirements exist thus is not entirely distinguishable. Future researchers should also focus on entry-level skill needs, frequency of use, and how difficult such skills are to learn ``on the job.'' Many technical skills are easily learned by performing tasks using those skills, while others require significant formal education. For example, learning command-line interfaces is relatively trivial if someone is working with the command-line daily. But learning advanced statistics requires a great deal of formal mathematical training. This distinction matters a great deal when talking about curriculum needs.
+
+\section{Conclusion}
+
+The skill-to-hiring gap for BDA is significant and is likely to persist \parencite{gartnerTrendsImpactingCloud2020}, yet the importance of BDA in all areas including healthcare only continues to grow. Discovering what changes at University curriculum can be made to help address this important industry need is a worthwhile area of research. Such investigations should take into account not merely the importance of the skill to the role, but also how frequently that skill is used, how easy that skill is to learn on the job versus formal education, and how important that skill is to entry-level individuals. Lastly, skills should be investigated for the generalized skill and not specific technologies, as technologies are in constant flux and fixating curriculum on particular implementations may not teach the necessary, transferable knowledge required.
+Additionally, it would be worth noting that as the original study did not include leadership perception of daily use, that too would be interes

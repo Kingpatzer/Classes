@@ -1,0 +1,36 @@
+\documentclass[man]{apa7}
+
+\usepackage{import}
+
+%%
+%% preamble material
+%%
+
+\import{preamble/}{packages}
+\import{preamble/}{bibliography_stuff}
+\import{preamble/}{titlepage}
+
+%%
+%% main document
+%%
+
+\begin{document}
+\maketitle
+
+\import{tex/}{introduction}
+\import{tex/}{customers}
+\import{tex/}{employee_data}
+
+
+\import{tables/}{classification}
+\import{tables/}{by_market}
+\import{tables/}{by_segment}
+\import{tables/}{by_industry}
+
+
+\printbibliography
+\appendix
+\import{appendix/}{appendix_a}
+
+
+\end{document}

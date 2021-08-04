@@ -1,0 +1,18 @@
+\begin{frame}
+  \frametitle{Key Advantages}
+  \framesubtitle{Scalability}
+  \begin{itemize}
+    \item<1-> Scalability can refer to both horizontal duplication and vertical decomposition.
+
+          \note[item]<1-> {\scriptsize{Horizontal duplication is adding more instances of the microservice and can be done either reactively or proactively. Vertical decomposition is breaking down monolithic services into microservices so that each microservices can be independently scaled horizontally as needed \parencite{abbottArtScalabilityScalable2015,liUnderstandingAddressingQuality2021}.}}
+
+    \item<2-> Reactive scaling uses automation rules to scale out services based on quality of service metrics and thresholds.
+
+          \note[item]<2-> {\scriptsize{Threshold-based automated scaling can use any number of application-related metrics to react to the load of the environment. These can be CPU usage, application response time, message queue metrics, or nearly any other monitorable metric the engineers decide upon \parencite{florimentklinakuCAUSElasticityController2018}. Further, because of loose coupling, the metrics can be adjusted at any time.}}
+
+    \item<3-> Proactive scaling attempts to predict workloads based on historical data
+
+          \note[item]<3->{\scriptsize{Proactive solutions can be highly simplistic, for example using historical data to simply guess at the needed resources. An example might be insurance companies scaling in services after the end of open enrollment periods. Alternatively, proactive solutions can use sophisticated machine learning and statistical methods to predict near-future scaling needs \parencite{abdullahPredictiveAutoscalingMicroservices2021}.}}
+
+  \end{itemize}
+\end{frame}
