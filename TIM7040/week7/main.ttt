@@ -1,0 +1,35 @@
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+\centering
+\captionof{table}{Training Timeline Targets\label{Tab:certifications}}
+\arrayrulecolor{black}
+\ADLnullwidehline
+\begin{tabular}{l!{\color{black}\vrule}l!{\color{black}\vrule}l}
+\multicolumn{1}{l}{\textbf{Certification Name}} & \multicolumn{1}{l}{\textbf{Personnel Impacted}}                                                                                        & \textbf{Target Date}                                                    \\
+\hhline{>{\arrayrulecolor{black}}=|=|=}
+Cloud Practitioner                              & All IT Staff                                                                                                                           & End of 1st Qtr                                                          \\
+\arrayrulecolor{black}\hdashline
+Solution Architect (Associate)                  & \begin{tabular}[c]{@{}l@{}}Architecture Staff\\Development Staff\\Security Staff\\Infrastructure Staff\end{tabular}                    & End of 2nd Qtr                                                          \\
+\hdashline
+Sys Ops Administrator (Associate)               & \begin{tabular}[c]{@{}l@{}}SysOps Staff\\Security Staff\\Infrastructure Staff\end{tabular}                                             & End of 2nd Qtr                                                          \\
+\hdashline
+Developer (Associate)                           & Development Staff                                                                                                                      & End of 2nd Qtr                                                          \\
+\hdashline
+Solution Architect (Professional)               &  50\% of Architecture Staff                                                                                                            & End of 3rd Qtr                                                          \\
+\hdashline
+DevOps Engineer (Professional)                  & \begin{tabular}[c]{@{}l@{}}\textgreater{} 50\% of:\\SysOps Staff\\Security Staff\\Infrastructure Staff\\Development Staff\end{tabular} & End of 3rd Qtr                                                          \\
+\hdashline
+Security Specialty                              &  75\% of Security Staff                                                                                                                & End of 3rd Qtr                                                          \\
+\hdashline
+Database Specialty                              & \begin{tabular}[c]{@{}l@{}}\textgreater{} 75\% of DBA Staff\\\textgreater{} 25\% of Other\end{tabular}                                 & \begin{tabular}[c]{@{}l@{}}End of 3rd Qtr\\End of 4th Qtr\end{tabular}  \\
+\hdashline
+Machine Learning Specialty                      & \begin{tabular}[c]{@{}l@{}}\textgreater{} 25\% of Development Staff\\\textgreater{} 10\% of Other\end{tabular}                         & \begin{tabular}[c]{@{}l@{}}End of 3rd Qtr\\End of 4th Qtr\end{tabular}  \\
+\hdashline
+Advanced Networking Specialty~                  & \begin{tabular}[c]{@{}l@{}}\textgreater{} 50\% of Security Staff\\\textgreater{} 75\% of Infrastructure Staff\end{tabular}             & End of 3rd Qtr                                                          \\
+\hdashline
+Data Analytics Specialty                        & \begin{tabular}[c]{@{}l@{}}\textgreater{} 25\% of Development Staff\\\textgreater{} 10\% of Other\end{tabular}                         & \begin{tabular}[c]{@{}l@{}}End of 3rd Qtr\\End of 4th Qtr\end{tabular}  \\
+\hhline{=>{\arrayrulecolor{black}}|>{\arrayrulecolor{black}}=>{\arrayrulecolor{black}}|>{\arrayrulecolor{black}}=}
+\end{tabular}
+\arrayrulecolor{black}
+\end{table*}

@@ -1,0 +1,713 @@
+#+TITLE: IT Policies for a Mid-sized Regional Health Insurance company
+#+INCLUDE: ./preamble.org
+#+LATEX: \maketitle
+
+* Introduction
+
+The following IT policies will form the basis IT policy framework for our corporation. Like many companies in the IT health care space, our company is concerned with big-data analytics as a means of controlling costs and gaining competitive advantage citep:milenkovicBigDataAnalytics2019,dolezelBigDataAnalytics2019; focusing on cloud computing as a means of increasing innovation citep:linCloudComputingInnovation2012,mallmannAdoptionCloudComputing2018,karunagaranDifferentialCloudAdoption2019, as well as increasing reliability and performance at reduced cost citep:andradePerformabilityEvaluationCloudBased2019,khayerCloudComputingAdoption2020. Therefore our policies should reflect the needed security and operational concerns of a distributed environment that is hosted in a hybrid cloud environment.
+
+* Policies
+
+** Acceptable Computer Use Policy
+
+- Applies to: All employees
+- Policy Number: 002
+- Effective Date of This Version: 28-Aug-2021
+- Supersedes the Version Dated: N/A
+- Policy Sponsor: Information Security
+- Original Effective Date: 28-Aug-2021
+
+*** Nature of Revisions
+
+28-Aug-2021: This is the initial version of this policy written from a perspective of a unified corporate policy. Prior policy covering this topic was written at a department level. All such department level policies must meet the minimum standards set forth in this policy from the effective date of this policy. This revision has proceeded through the documented centralized IT business process management system including all review phases cite:wagleDevelopmentEffectiveCentralized2021.
+
+*** Purpose of the Policy
+
+The purpose of this policy is to establish the requirements for the protection of the corporation, its clients, stakeholders, legal relationships, and other third-parties with respect to information and data security, information access, device access, and technology utilization.
+
+
+*** Policy
+
+**** Scope
+
+This policy applies to all employees, contractors, and other workers. It establishes the minimum requirements for accessing, using, or interacting with any corporate owned, managed, or contracted device, or other third-party information or technology system, and when personnel use any device while performing company directed work. Additional requirements may be imposed by federal, state, or local laws, rules, regulations, policies, or processes. Personnel must comply with whichever requirements are most confining.
+
+This policy may not and does not override any applicable data privacy laws or data protection laws or any applicable regulations in any jurisdictions wherein the company operates and all such laws, regulations, and statutory requirements are considered to be binding in addition to this policy.
+
+This policy specifically excludes employees of third-party sub-contractors who have explicit contractual relationships with the company to ensure their own employee non-disclosure and proper-use policies are enforced. Such exclusions will be noted by the legal team within the appropriate contractual relationshp and will be tracked in the contractor portal.
+
+***** Exceptions:
+
+On rare occasions it may be necessary to grant exceptions to this policy, in those instances Information Security may grant exceptions as per the general security exception policy.
+
+***** Sanctions
+
+Any personnel who violates this policy will be referred to HR for disciplinary action. Such action may include but is not limited to:
+
+- A notification of policy violation in personnel file
+- A limitation on compensation increases for the current rewards cycle
+- Removal of access from one or more information systems
+- Termination
+- Legal action
+- Referral to professional boards for disciplinary action
+- Other actions not listed here
+
+**** Expectations
+
+Personnel are expected to act lawfully and in compliance with all applicable regulations at all times. They are expected to exercise sound judgment and to not act in a way which may endanger the good name of the company or endanger the reputation of any company client, staff, providers, or other 3rd party entities. Personnel are expected to conform to the code of ethics at all times and to act with the best interest of the company in mind.
+
+Specific prohibitions include:
+
+- Any conduct that violates any Federal, State, or Local law, regulation, policy, or established ethical practice
+- Accessing the internet or technology for unlawful purposes (examples include violating copyright, or personal financial gain such as mining digital currency)
+- Accessing, downloading, or distributing pornographic, obscene, defamatory, discriminatory, harassing, or otherwise inappropriate materials
+- Installing, using, or accessing any third-party software or technology not approved by the company to store, transfer, or process company data or information
+- Conducting unauthorized vulnerability assessments, penetration tests, network probes or otherwise attempting to exploit, examine, or abuse system security measures
+- Gaining unauthorized access of any kind to any system or technology
+- Threaten the reputation of the company through personal actions which could be construed as libelous, slanderous, defamatory, threatening, exploitative, abusive, or otherwise inappropriate
+
+**** Devices and Technology
+
+***** Provisioning and Use
+
+Only company provided and approved devices, systems, and technology will be connected to the company network and corporate systems. Any devices that is lost, stolen, or misplaced will be immediately reported to information security.
+
+***** Using Devices
+
+- Personnel are required to keep provided systems compliant with security policies, patches, software updates, configurations, encryption standards, patching levels, anti-virus signatures, data-loss prevention systems, etc. This list is non-exhaustive.
+- Any non-compliant configuration must be remediated within 5 business days or it will be disabled at the next automated system scan and will be required to be brought to the system security desk for re-enablement. This event will be noted in the employee personnel file.
+- Passwords and passcodes must meet the security standards published and maintained by the information security team.
+- Mobile devices are limited to being used for email, voice, instant messaging, and browser-based access to corproate vpn systems.
+- All devices must be encrypted
+- Devices wwith screen locks will have such locks enabled whenever not in use
+
+- Personal Use
+  Subject to the restrictions of this policy, personnel may use company provided devices for personal use provided such use:
+  - Does not interefere with on-going work
+  - Does not adversely impact the proper handling of company data or information
+  - Does not create adverse load on company network or technology assets
+
+***** Physical Protection of Mobile Devices
+
+- Unattended devices must be physically secured (e.g. with a cable lock) or securely stored (out of sight and in a locked container). This includes when the devices is in a private home.
+- Privacy screens will be provided and used for mobile devices
+
+**** Verification
+
+Verification of the above will be conducted:
+
+- Subject to applicable laws, all devices will be monitored and security software will be installed to allow for compliance checks to ensure that this policy is adhered to at all times.
+- Regular security scans will be run to ensure that devices are compliant.
+- Regular, unscheduled "walk about" audits to determine if devices are being used properly will be conducted.
+- Network scanning will be conducted to monitor for irregular or unauthorized traffic.
+- Other monitoring as determined reasonable and appropriate by Information Security will be conducted to ensure compliance.
+
+*** Overall Responsibility
+
+Overall responsibility for this policy is Information Security. General questions about this policy can be directed to the Help Desk. Legal questions about this policy can be directed to the legal team.
+
+** Access Controls Standards Policy
+
+- Applies to: All employees
+- Policy Number: 003
+- Effective Date of This Version: 28-Aug-2021
+- Supersedes the Version Dated: N/A
+- Policy Sponsor: Information Security
+- Original Effective Date: 28-Aug-2021
+
+*** Nature of Revisions
+
+28-Aug-2021: This is the initial version of this policy written from a perspective of a unified corporate policy. Prior policy covering this topic was written at a department level. All such department level policies must meet the minimum standards set forth in this policy from the effective date of this policy. This revision has proceeded through the documented centralized IT business process management system including all review phases cite:wagleDevelopmentEffectiveCentralized2021.
+
+*** Purpose of the Policy
+
+The purpose of this policy is to establish the requirements for the protection of the corporation, its clients, stakeholders, legal relationships, and other third-parties with respect to utilizing computer and technology systems for information access and technology utilization.
+
+
+*** Policy
+
+**** Scope
+
+This policy applies to all employees, contractors, and other workers. It establishes the minimum requirements for accessing, using, or interacting with any corporate owned, managed, or contracted device.
+
+This policy specifically excludes employees of third-party sub-contractors who have explicit contractual relationships with the company to ensure their own employee non-disclosure and proper-use policies are enforced. Such exclusions will be noted by the legal team within the appropriate contractual relationship and will be tracked in the contractor portal.
+
+***** Sanctions
+
+Any personnel who violates this policy will be referred to HR for disciplinary action. Such action may include but is not limited to:
+
+- A notification of policy violation in personnel file
+- A limitation on compensation increases for the current rewards cycle
+- Removal of access from one or more information systems
+- Termination
+- Legal action
+- Referral to professional boards for disciplinary action
+- Other actions not listed here
+
+**** Expectations
+
+Systems that are managed by the corporation are expected to have a granular level of access management with the principle of least privilege. Invididuals must be granted the minimum set of permissions necessary to perform their assigned functions and nothing more. If a system can not be limited according to this principle, it must:
+
+- Not have access to the external network
+- Be provided specific exemption to be on the internal network
+- Be engineered behind a firewall or other access control device that will limit access
+- Be thoroughly documented as to the reason why no suitable alternative exists
+
+Systems that need to be accessed by external personnel must be segregated into their own subnet and network traffic must be separated from internal traffic so as to ensure clear security controls are maintained.
+
+Contractors and temporary employees must be assigned a sponsor who must be at manager level or higher and who is responsible for providing sign-off on all access requests. Access requests for such temporary employees must be renewed quarterly.
+
+**** Verification
+
+Verification of the above will be conducted:
+
+- Subject to applicable laws, all devices will be monitored and security software will be installed to allow for compliance checks to ensure that this policy is adhered to at all times.
+- Regular security scans will be run to ensure that devices are compliant.
+- Network scanning will be conducted to monitor for irregular or unauthorized traffic.
+- Other monitoring as determined reasonable and appropriate by Information Security will be conducted to ensure compliance.
+
+
+*** Overall Responsibility
+
+Overall responsibility for this policy is Information Security. General questions about this policy can be directed to the Help Desk. Legal questions about this policy can be directed to the legal team.
+
+** Information Technology Planning Policy
+
+- Applies to: All employees
+- Policy Number: 004
+- Effective Date of This Version: 28-Aug-2021
+- Supersedes the Version Dated: N/A
+- Policy Sponsor:  Information Technology Architecture
+- Original Effective Date: 28-Aug-2021
+
+*** Nature of Revisions
+
+28-Aug-2021: This is the initial version of this policy written from a perspective of a unified corporate policy. Prior policy covering this topic was written at a department level. All such department level policies must meet the minimum standards set forth in this policy from the effective date of this policy. This revision has proceeded through the documented centralized IT business process management system including all review phases cite:wagleDevelopmentEffectiveCentralized2021.
+
+*** Purpose of the Policy
+
+The purpose of this policy is to establish the requirements for the introduction of new technology into the corporate network environment including associated virtual private cloud computing environments hosted by contracted cloud providers.
+
+*** Policy
+
+**** Scope
+
+This policy applies to all individuals tasked with introducing new technology architectures or device types into the environment of the corporation.
+
+***** Sanctions
+
+Any personnel who violates this policy will be referred to HR for disciplinary action. Such action may include but is not limited to:
+
+- A notification of policy violation in personnel file
+- A limitation on compensation increases for the current rewards cycle
+- Removal of access from one or more information systems
+- Termination
+- Legal action
+- Referral to professional boards for disciplinary action
+- Other actions not listed here
+
+Note: installing unapproved devices is a serious security breech that could jeopardize the company and its stakeholders greatly, actions less than immediate termination will require exigent circumstances.
+
+**** Expectations
+
+It is the expectation that no technology will be introduced into the network, VPCs, or otherwise connected into the corporate owned and controlled computing environment without first obtaining proper review and approval.
+
+**** Approval Process
+
+Devices for use within the environment shall be chosen from the Configuration Management Database (CMDB), which contains the listing of all approved device configurations for use within the corporate network environment, include cloud VPC environments. This list is maintained by the IT Architecture team and is updated at least quarterly according to their internal processes, but often more frequently as patches, security updates, and other configuration data is updated by manufacturers.
+
+Requests for a new technology, device type, or system that is not currently part of the CMDB will be processed through the Architecture request portal. Approval will be subject to review for fitness according to criteria related to:
+
+- Total cost of ownership
+- Fitness to purpose
+- Security standards
+- Maintainability
+- Available Alternatives
+- etc.
+
+Once approved, new devices may be ordered through the standard procurement system process request portal.
+
+**** Technology Roadmap
+
+Each year, Architecture will update the Technology Roadmap which will present the projected target technology state for the coming:
+
+- year
+- 3-year
+- 5-year
+
+time windows. WHile it is certainly the case that the 3- and 5-year projects are at best rough estimates, this roadmap provides a guidepost by which teams can plan for the future expansion. The 1-year roadmap will be maintained to include proven technologies that are available on the market today.
+
+**** Verification
+
+Verification of the above will be conducted:
+
+- Regular system scans will be run against the CMDB to ensure that no unapproved devices are in the environment
+- Any unapproved devices will be immediately quarantined from the network by automated processes for security reasons
+- Any unapproved devices will be flagged as a severity 1 ticket for removal from the environment
+
+
+*** Overall Responsibility
+
+Overall responsibility for this policy is IT Architecture. General questions about this policy can be directed to the Help Desk. Legal questions about this policy can be directed to the legal team.
+
+** Hardware and Software Acquisition Standards Policy
+
+- Applies to: All employees
+- Policy Number: 005
+- Effective Date of This Version: 28-Aug-2021
+- Supersedes the Version Dated: N/A
+- Policy Sponsor: Purchasing
+- Original Effective Date: 28-Aug-2021
+
+*** Nature of Revisions
+
+28-Aug-2021: This is the initial version of this policy written from a perspective of a unified corporate policy. Prior policy covering this topic was written at a department level. All such department level policies must meet the minimum standards set forth in this policy from the effective date of this policy. This revision has proceeded through the documented centralized IT business process management system including all review phases cite:wagleDevelopmentEffectiveCentralized2021.
+
+*** Purpose of the Policy
+
+The purpose of this policy is to establish the requirements for the acquisition of hardware and software for the company.
+
+*** Policy
+
+**** Scope
+
+This policy applies to all employees, manager level and above who have been assigned WBS accounts with purchasing signatory authority.
+
+
+***** Exceptions:
+
+On rare occasions it may be necessary to grant exceptions to this policy. It is recognized that the speed of business may mean that normal procurement channels may need to be bypassed in some exceptional circumstances. Managers otherwise authorized under this policy may obtain approval from a director level or higher to utilize their own judgment to bypass this policy and make purchases utilizing their corporate charge card to expedite a purchase. Such purchase are undertaken at the manager's own risk and should the purchase ultimately not be approved as a legitimate business expense, the manager will be fully personally liable for any such purchase. However, if approved, the manager will be fully reimbursed and no penalty will ensue. Purchases made in this manner will not be subject to sanctions outlined below. Sanctions are intended for willfully violating the policy, not attempting to expedite a purchase to meet a legitimate business need.
+
+***** Sanctions
+
+Any personnel who violates this policy will be referred to HR for disciplinary action. Such action may include but is not limited to:
+
+- A notification of policy violation in personnel file
+- A limitation on compensation increases for the current rewards cycle
+- Removal of access from one or more information systems
+- Termination
+- Legal action
+- Referral to professional boards for disciplinary action
+- Other actions not listed here
+
+**** Project Related purchases
+
+Project related purchases, which are line-item expenses from a project WBS budget will go through the normal RFQ and RFP processes as outlined by Purchasing depending on the size of the purchase in question. All such purchases will have the associated RFQ/RFP paperwork filed with the PMO as well as Purchasing, and will be included in quarterly forecast budget statements. No hardware or software may be purchased from a project WBS that is not part of the defined project scope. If a project needs items that are not already in scope, a change request must be filed with the PMO and any budget adjustments must first be applied prior to the filing of the RFQ/RFP.
+
+If it is the case that the time delay for change request processing and the RFQ/RFP process will delay the project timeline and the manager's corporate card purchasing power is sufficient to cover the cost of the purchase and the items to be purchased are already contained in the CMDB, this is a case where the exception path outlined above may be authorized by a director-level or higher employee without the possibility of sanctions being imposed.
+
+**** Non-Project Related Purchases
+
+For non-project related purchases which are already in the normal purchase catalogue and CMDB, a request will be submitted through the purchasing web-store and routed to the employee's direct supervisor for approval. Once approved, purchasing will deliver the items from the warehouse if in stock and then resupply the warehouse as needed, or, if not in stock, will submit an order to an appropriate supplier on behalf of the employee.
+
+**** All Project and Non-Project Purchases
+
+All hardware will be item-tagged, and the tag numbers recorded in the configuration inventory database for tracking. Software purchases will have the software serial number or license number as applicable entered into the inventory database for tracking.
+
+**** Verification
+
+Verification of the above will be conducted:
+
+- All hardware items will be subject to annual validation by hand inspection
+- All software serial/license numbers will be subject to automated validation by security software scans
+
+*** Overall Responsibility
+
+Overall responsibility for this policy falls to Purchasing. General questions about this policy can be directed to the Help Desk. Legal questions about this policy can be directed to the legal team.
+
+** Electronic Communications Policy (Email, Social Media, etc..)
+
+- Applies to: All employees
+- Policy Number: 006
+- Effective Date of This Version: 28-Aug-2021
+- Supersedes the Version Dated: N/A
+- Policy Sponsor: Marketing
+- Original Effective Date: 28-Aug-2021
+
+*** Nature of Revisions
+
+28-Aug-2021: This is the initial version of this policy written from a perspective of a unified corporate policy. Prior policy covering this topic was written at a department level. All such department level policies must meet the minimum standards set forth in this policy from the effective date of this policy. This revision has proceeded through the documented centralized IT business process management system including all review phases cite:wagleDevelopmentEffectiveCentralized2021.
+
+*** Purpose of the Policy
+
+The purpose of this policy is to establish Rules and additional guidelines and suggestions for communications and utilizing social media. This policy applies to all social media, including personal social media accounts.
+
+
+*** Policy
+
+**** Scope
+
+This policy applies to all personnel. All personnel are responsible for the content that they post on-line. Before using social-media for professional or personal purposes, remember that everything one posts is or could become public. Keep in mind that user-generated online content can live forever, so one should be very discrete when generating such content or responding to the content of others.
+
+Social media are digital platforms, technologies and practices that enable people to use, create, and share content, opinions, insights, experiences, and perspectives. Social media posts can take many forms including text, images, audio, video, and multimedia communications.
+
+This policy applies to all social media, and for purposes of this policy,i external social media are social media sites that are generally public, including on-line blogs; forums; social networking sites such as Facebook, Twitter, and LinkedIn; video and image sharing websites such as TikTok, and YouTube; and any other public websites that allow users to post comments or content online. This includes access-restricted groups on public social media sites.
+
+***** Sanctions
+
+Any personnel who violates this policy will be referred to HR for disciplinary action. Such action may include but is not limited to:
+
+- A notification of policy violation in personnel file
+- A limitation on compensation increases for the current rewards cycle
+- Removal of access from one or more information systems
+- Termination
+- Legal action
+- Referral to professional boards for disciplinary action
+- Other actions not listed here
+
+**** Expectations
+
+Personnel are expected to act and post in such a way as to comport to the code of ethics in the use of social media. Personnel are expected to follow all laws and regulations which may apply to them as well. Personnel are expected to:
+
+- Company email accounts will be used for business purposes only
+- Company email will respect data privacy rules, and in particular will never send any documents to third-parties or over external network that are not encrypted.
+- Disclose you are employeed by the company if you post anything on social media related to the company or its business interests, including discussions of its services, clients, providers, etc.
+- Avoid attempts to hide or conceal your identity in order to make posts about the company, its business interests, its services, clients, providers, or third-party relationships.
+- Include a disclaimer noting your views do not represent the views of the company when speaking to topics where the company has a business interest.
+- Be careful to avoid the perception that you are speaking for the company on any topic.
+- Do not use your business email address with your personal social media accounts
+- Never post content that is abusive, malicious, violent, obscene, intimidating, harassing, containing of ethnic, religious, or racial slurs, discriminatory statements, or otherwise include anything in your posts that would reflect poorly upon the company
+- Under no circumstances discuss, disclose, or refer to the company's intellectual property interests
+- Comply with all company data security policies
+- Respect the privacy of your co-workers, providers, clients, and other business relationships
+- You should obtain permission to speak on behalf of the company before choosing to do so
+
+It is to be understood that the company can and will act to protect the interest of the company. Irresponsible use of social media, even if it is your personal social media account, which reflects poorly upon the company, can result in disciplinary action.
+
+**** Verification
+
+Verification of the above will be conducted:
+
+- By scanning of company email using a variety of tools to ensure proper use and compliance with the above guidelines
+- By scanning of company networks using a variety of tools to ensure compliance with the above guidelines
+
+While the company does not directly or specifically monitor personal social media accounts, the company does scan social media sites regularly for mentions of the company, and may encounter employees discussing the company from time to time. In such instances, decisions about if an employee is being responsible in discussing the company on their social media account can be made.
+
+*** Overall Responsibility
+
+Overall responsibility for this policy is Marketing and Communications. General questions about this policy can be directed to the Help Desk. Legal questions about this policy can be directed to the legal team.
+
+** Data Governance Policy
+
+- Applies to: All employees
+- Policy Number: 007
+- Effective Date of This Version: 28-Aug-2021
+- Supersedes the Version Dated: N/A
+- Policy Sponsor: Information Security
+- Original Effective Date: 28-Aug-2021
+
+*** Nature of Revisions
+
+28-Aug-2021: This is the initial version of this policy written from a perspective of a unified corporate policy. Prior policy covering this topic was written at a department level. All such department level policies must meet the minimum standards set forth in this policy from the effective date of this policy. This revision has proceeded through the documented centralized IT business process management system including all review phases cite:wagleDevelopmentEffectiveCentralized2021.
+
+*** Purpose of the Policy
+
+The purpose of this policy is to establish the requirements for the protection of the corporation, its clients, stakeholders, legal relationships, and other third-parties with respect to information and data security via data classification and governance.
+
+
+*** Policy
+
+**** Scope
+
+This policy applies to all company and client data. 1
+
+***** Exceptions:
+
+On rare occasions where there are no contravening legal requirements it may be appropriate to grant an exception to certain requirements in this policy. In such cases, Legal has the authority to determine that Information Security has the authority to grant such an exception.
+
+***** Sanctions
+
+Any personnel who violates this policy will be referred to HR for disciplinary action. Such action may include but is not limited to:
+
+- A notification of policy violation in personnel file
+- A limitation on compensation increases for the current rewards cycle
+- Removal of access from one or more information systems
+- Termination
+- Legal action
+- Referral to professional boards for disciplinary action
+- Other actions not listed here
+
+**** Classifications
+
+***** Restricted
+
+Restricted Data is highly sensitive, stategic data considered material, non-public data which an investor would very likely consider important in deciding whether to buy or sell company securities and which could effect the price of the security. Restricted data is also any data that is subject to any of the following regulations:
+
+- Children's Online Privacy Protection Act
+- Health Insurance Portability and Accounting Act
+- Gramm Leach Bliley Act
+- Fair Credit Reporting Act
+- Any State Data Privacy Laws where the company is licensed as an Insurance Broker, Insurance Agent, Re-insurer of Record, Re-insuring Broker, or other Agent
+- California Consumer Privacy Act
+- California Privacy Rights Act
+- Virginia Consumer Data Protection Act
+- Colorado Privacy Act
+- New York SHIELD Act
+- The International General Data Protection Regulation (GDPR)
+
+***** Highly Confidential Data
+
+Highly Confidential Data is information not to be shared outside of the company and specific external third parties. Highly confidential data is intended for limited specific use by a department or group of individuals that need to know the information to do their jobs. In general, only authorized individuals should have access to this data.
+
+***** Confidential Data
+
+Confidential Data is data not intended to be shared outside of the company or with external parties unless there is a specific business need, but which is often of general utility within the company.
+
+***** Unrestricted Data
+
+Unrestricted data may be freely shared with anyone.
+
+
+**** Responsibility for Classifications
+
+Information in the asset register must be classified by the data governance board in accordance with the published data governance standards. These standards must be updated annually.
+
+**** Controls
+
+The following controls must be implemented for Data Governance and must be validated by the data governance board:
+
+- Access and authentication: following the principle of least privilege
+- Storage and transmission: ensuring encryption both in motion and at rest for all non-public data
+- Backup, retention, and disposal: ensuring that all data in the asset register is backed up on a schedule appropriate to its sensativity and business value
+
+**** Verification
+
+Verification of the above will be conducted:
+
+- Regular security scans will be run to ensure that data stores are compliant with the above
+- Other monitoring as determined reasonable and appropriate by Information Security will be conducted to ensure compliance.
+
+*** Overall Responsibility
+
+Overall responsibility for this policy is Information Security. General questions about this policy can be directed to the Help Desk. Legal questions about this policy can be directed to the legal team.
+
+** Electronic Signature Policy
+
+- Applies to: All employees
+- Policy Number: 008
+- Effective Date of This Version: 28-Aug-2021
+- Supersedes the Version Dated: N/A
+- Policy Sponsor: Human Resources
+- Original Effective Date: 28-Aug-2021
+
+*** Nature of Revisions
+
+28-Aug-2021: This is the initial version of this policy written from a perspective of a unified corporate policy. Prior policy covering this topic was written at a department level. All such department level policies must meet the minimum standards set forth in this policy from the effective date of this policy. This revision has proceeded through the documented centralized IT business process management system including all review phases cite:wagleDevelopmentEffectiveCentralized2021.
+
+*** Purpose of the Policy
+
+The purpose of this policy is to establish the requirements for the protection of the corporation, its clients, stakeholders, legal relationships, and other third-parties with respect to electronic signatures.
+
+
+*** Policy
+
+**** Scope
+
+This policy applies to all employees and how electronic signatures will be handled.
+***** Sanctions
+
+Any personnel who violates this policy will be referred to HR for disciplinary action. Such action may include but is not limited to:
+
+- A notification of policy violation in personnel file
+- A limitation on compensation increases for the current rewards cycle
+- Removal of access from one or more information systems
+- Termination
+- Legal action
+- Referral to professional boards for disciplinary action
+- Other actions not listed here
+
+**** Expectations
+
+Personnel will have Adobe suite installed and configured with Adobe Sign on their personal-use devices. As part of on-boarding, all employees will create a employee electronic signature that will be on file with HR. These are legally biding signatures for use in electronic documents.
+
+The company will take care of all license and upkeep costs to ensure that the signature records are maintained in accordance with the Electronic Identification and Trust Services Regulation (eIDAS) Act of 2016. Which superseded the ESIGN Act of 2000.
+
+All legal documents requiring a signature will be signed using these electronic signatures.
+
+**** Verification
+
+Verification of the above will be conducted by HR as part of the on-boarding process. Periodically by Legal as part of compliance audits.
+
+
+*** Overall Responsibility
+
+Overall responsibility for this policy is Human Resources. General questions about this policy can be directed to the Help Desk. Legal questions about this policy can be directed to the legal team.
+
+** Change Management Policy
+
+- Applies to: All employees
+- Policy Number: 009
+- Effective Date of This Version: 28-Aug-2021
+- Supersedes the Version Dated: N/A
+- Policy Sponsor: Project Management Office
+- Original Effective Date: 28-Aug-2021
+
+*** Nature of Revisions
+
+28-Aug-2021: This is the initial version of this policy written from a perspective of a unified corporate policy. Prior policy covering this topic was written at a department level. All such department level policies must meet the minimum standards set forth in this policy from the effective date of this policy. This revision has proceeded through the documented centralized IT business process management system including all review phases cite:wagleDevelopmentEffectiveCentralized2021.
+
+*** Purpose of the Policy
+
+The purpose of this policy is to establish the requirements for Change Management in the company.
+
+
+*** Policy
+
+**** Scope
+
+This policy applies to all projects engaging in changes in the environment.
+
+***** Sanctions
+
+Any personnel who violates this policy will be referred to HR for disciplinary action. Such action may include but is not limited to:
+
+- A notification of policy violation in personnel file
+- A limitation on compensation increases for the current rewards cycle
+- Removal of access from one or more information systems
+- Termination
+- Legal action
+- Referral to professional boards for disciplinary action
+- Other actions not listed here
+
+**** Expectations
+
+
+As this is a fully Agile DevSecOps environment, traditional Change Management is not practiced here. Each Agile DevOps team is responsible for their own production environment where a practice of continuous automated test/release is practiced.
+
+The following standards will be adhered to:
+
+1. Each Product Manager will establish the Availability target for their service product in terms of a number of 9's. For example 3-9's would be 99.9% availability.
+2. Each Availability target will take into account the user bases' ability to detect unavailability. For example, typical ISP's have an availability range of between 2-9s and 2.5 9's. So availability much higher than that is wasted opportunity cost.
+3. From the Availability target, each team will establish an "Error Budget," the amount of time a system is allowed to be down for any reason, from feature release to failure over any time period.
+4. The Product Manager will establish appropriate Service Level Indicators and Service LEvel Objectives to measure and monitor adherence to the Availability target and Error Budget.
+5. The DevOps team will be free to release on-demand to production so-long as the error-budget is not exceeded during any given time window.
+6. Any code released to production will have gone through the following gates:
+   a. An Automated Build Pipeline with compliance checks for coding standards
+   b. An Automated testing Pipeline with full Unit and Regression testing
+   c. An Automated release Pipeline with full security checks for security and governance standards
+7. Once the error budget is broached, no more releases will be permitted until the error budget is replenished.
+
+**** Verification
+
+Verification of the above will be conducted:
+
+- Dashboards will exist for each service tracking SLO's for all established SLI's
+- Product Managers will report on their Availability targets and Error Budget management at weekly PMO meetings
+
+*** Overall Responsibility
+
+Overall responsibility for this policy is the PMO. General questions about this policy can be directed to the Help Desk. Legal questions about this policy can be directed to the legal team.
+
+** Media Protection and Disposal Policy
+
+- Applies to: All employees
+- Policy Number: 010
+- Effective Date of This Version: 28-Aug-2021
+- Supersedes the Version Dated: N/A
+- Policy Sponsor: Information Security
+- Original Effective Date: 28-Aug-2021
+
+*** Nature of Revisions
+
+28-Aug-2021: This is the initial version of this policy written from a perspective of a unified corporate policy. Prior policy covering this topic was written at a department level. All such department level policies must meet the minimum standards set forth in this policy from the effective date of this policy. This revision has proceeded through the documented centralized IT business process management system including all review phases cite:wagleDevelopmentEffectiveCentralized2021.
+
+*** Purpose of the Policy
+
+The purpose of this policy is to establish the requirements for the protection of the corporation, its clients, stakeholders, legal relationships, and other third-parties with respect to information and data security related to disposal of data devices.
+
+
+*** Policy
+
+**** Scope
+
+This policy applies to all the disposal of all data containing hardware devices.
+
+***** Sanctions
+
+Any personnel who violates this policy will be referred to HR for disciplinary action. Such action may include but is not limited to:
+
+- A notification of policy violation in personnel file
+- A limitation on compensation increases for the current rewards cycle
+- Removal of access from one or more information systems
+- Termination
+- Legal action
+- Referral to professional boards for disciplinary action
+- Other actions not listed here
+
+
+**** Expectations
+
+1. No removable media will be used internally within the company. Removable media may be used for permitted transfers of data external to the company. When removable media is on site, it must be secured at all times in locked containers or locked rooms (depending on the size and scale). If removable media is received from an external site, once the data has been extracted, it will be erased following a standard process and then handed over to information security for destruction.
+2. Device Disposal. All devices will be handed over to Information Security for disposal. IS will wipe the devices clean if possible. The devices will be sent to a contracted 3rd party bonded reclamation company with the responsibility of securely disposing of the equipment such that no data is recoverable from the systems.
+
+**** Verification
+
+Verification of the above will be conducted:
+
+- Audit will review records of device disposal to ensure the third-party service provider is following procedures appropriately
+
+*** Overall Responsibility
+
+Overall responsibility for this policy is Information Security. General questions about this policy can be directed to the Help Desk. Legal questions about this policy can be directed to the legal team.
+
+** Security Awareness and Training Policy
+
+- Applies to: All employees
+- Policy Number: 011
+- Effective Date of This Version: 28-Aug-2021
+- Supersedes the Version Dated: N/A
+- Policy Sponsor: Information Security
+- Original Effective Date: 28-Aug-2021
+
+*** Nature of Revisions
+
+28-Aug-2021: This is the initial version of this policy written from a perspective of a unified corporate policy. Prior policy covering this topic was written at a department level. All such department level policies must meet the minimum standards set forth in this policy from the effective date of this policy. This revision has proceeded through the documented centralized IT business process management system including all review phases cite:wagleDevelopmentEffectiveCentralized2021.
+
+*** Purpose of the Policy
+
+The purpose of this policy is to establish the requirements for the protection of the corporation, its clients, stakeholders, legal relationships, and other third-parties with respect to information and data security, information access, device access, and technology utilization through the communication of policies to internal employees.
+
+
+*** Policy
+
+**** Scope
+
+This policy applies to all employees, contractors, and other workers.
+
+**** Expectations
+
+Personnel are expected to be fully versed in best-practices for IT security, including being prepared to resist social engineering attacks. As well as being able to recognize common exploits such as phishing attacks, spam emails, and other common attacks. Further, personnel are expected to understand how to ensure that their devices are in compliance with the latest security configurations and to remediate their devices if their devices are found to not be in compliance.
+
+**** Training requirements
+
+The Information Security will coordinate with the training department to provide for the following minimum training with respect to security. A number of these will need coordination with other entities.
+
+- Quarterly training on corporate security policies and industry best-practices
+- Regular faux phishing attacks and other faux attacks to attempt to educate employees about common exploits
+- Regular faux social engineering attacks to attempt to educate employees about common exploits
+- Regular "red team" physical and virtual penetration attacks utilizing a contracted specialty company that focuses on "red team" exploits.
+- Ad hoc speakers, town halls and other events on security topics related to Information Security and the Health Care industry
+
+
+**** Verification
+
+Verification of the above will be conducted:
+
+- Scores for each employees training results will be part of the employee record
+- Failures faux attacks will result in remedial training for employees
+- Failures of red-team attacks will result in remedial training for responsible directors and managers
+
+*** Overall Responsibility
+
+Overall responsibility for this policy is Information Security. General questions about this policy can be directed to the Help Desk. Legal questions about this policy can be directed to the legal team.
+
+
+#+LATEX: \newpage
+
+
+* References
+  :PROPERTIES:
+  :UNNUMBERED: t
+  :NEWPAGE: t
+  :END:
+  #+LaTeX: \printbibliography[heading=none]

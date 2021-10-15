@@ -1,0 +1,276 @@
+% Created 2021-09-19 Sun 20:28
+% Intended LaTeX compiler: pdflatex
+\documentclass[stu]{apa7}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\duedate{Sep 19, 2021}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{csquotes}
+\usepackage{hhline}
+\usepackage{colortbl}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{arydshln}
+\usepackage{caption}
+\usepackage[utf8]{inputenc}
+\usepackage[gen]{eurosym}
+\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber,natbib=true]{biblatex}
+\DeclareLanguageMapping{american}{american-apa}
+\addbibresource{/home/david/Dropbox/Org/References/bibliography.bib}
+\author{David Wagle}
+\course{TIM-7040 V3: Technology Policy and Strategy}
+\professor{Dr. Dani Babb}
+\affiliation{School of Business, Northcentral University}
+\author{David Wagle}
+\date{\today}
+\title{Implementing an IT Strategic Plan Within an SME Health Insurance Provider}
+\hypersetup{
+ pdfauthor={David Wagle},
+ pdftitle={Implementing an IT Strategic Plan Within an SME Health Insurance Provider},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 28.0.50 (Org mode 9.5)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+\label{sec:org58d5ea3}
+
+Implementing a new strategic plan can be complex business with numerous potential downfalls. Rapid execution is essential to business success as business transformation must ensure that an organization keeps pace with developments in the ever-changing marketplace \citep{pradhanLargeScaleQuality2021}. At the same time, however, excessive speed in implementation risks over-generalizations of policy which ultimately compromise both intention and purpose, and jeopardize the fit between policy objectives and organizational implementation \citep{ledererKeyPrescriptionsStrategic1996}.
+
+Further, within the healthcare arena, policy implementation in the Information Technology space is complicated by the special legal and regulatory burdens that face business operators within that industry from national laws such as the \citet{HealthInsurancePortability1996} as well as international regulatory considerations such as the European Union Data Privacy Protection Regulation \citeyearpar{EuropeanUnionData}. Additionally, states such as California are enacting laws which provide protections for their citizens which can compel insurance providers located in other states to ensure their policies are in compliance. These regulatory frameworks are not always in agreement and sometimes are even in conflict with each other \citep{determannIndiaPersonalData2019,moultNavigatingConflictingLaws2016} , creating a difficult to navigate sea of regulatory burdens that is overtly well-outside the expertise of the typical IT leadership team.
+
+An additional consideration that must be taken into account by any implementation of policy is ``Conway's Law,'' a formulation put forward by Melvin Conway in 1968, which suggests that any organization that designs a system will inevitably produce a design whose structure is a copy of the organization's organizational and communication structure \citep{conwayHOWCOMMITTEESINVENT1968}. This suggests that the corporation's organizational chart is at least as important to determining the effectiveness of a policy implementation's success as the details of the policy itself and must be taken into consideration when implementing the policy details. This can be especially important with respect to data security policies related to information sharing and privacy protections \citep{andersonInformationSecurityControl2017}, where corporate goals, communication channels, policy, and regulatory frameworks come into tension with each other.
+
+It is within this context that the following implementation plan proceeds. This plan addresses the policy objectives and specific policies outlined in the Appendix Table \ref{Tab:objectives}. It will cover milestones and timelines for each policy within each larger objective. For each policy, the various stakeholders are identified and their responsibilities are briefly outlined. An overall communications plan is expressed in broad strokes. There is an overview of leadership involvement from the objective level. And finally, additional details are presented for successful implementation where appropriate.
+
+\section{Implementation Plan}
+\label{sec:org0c626a1}
+
+\subsection{Milestones and Timelines}
+\label{sec:orgfc043a5}
+
+\subsubsection{Cloud Initiative}
+\label{sec:org6d11b95}
+
+\begin{enumerate}
+\item Training
+\label{sec:org8c620bb}
+
+The first tactic is support of the cloud initiative policy, which is aimed at supporting the reduction of information technology operating expenditures by moving existing infrastructure, services, and systems to cloud based solutions as well as driving new development to cloud providers. This will lower the total cost of ownership while increasing availability, durability, disaster recovery capability, and supporting business continuity \citep{chiTotalCostOwnership2021}. There is a need for training to support this endeavor, as many of current workers do not have the skills necessary to be successful in the new environment \citep{kenellyReasonsMostCompanies2019,sayeghCloudTalentDrought}.
+
+The strategic partner chosen for our primary cloud provider is AWS. Our key milestones are provided in Table \ref{Tab:certifications}. Key to the overall success of this endeavor is that every member of IT staff will be conversant with the basic terminology and functional requirements of AWS cloud operations and architecture through completion of the Cloud Practitioner certification by the end of the 1st Quarter. Beyond this certification, staff will be sent to training to align with their area of career specialization and career level, with a goal of having greater than 50$\backslash$% of our IT Architects, Developers, SysOps, DevOps, and Security, and Infrastructure staff certified at the professional level by the end of the 3rd quarter of the year. Additionally, support will be provided for key personnel to obtain additional specialty certifications, with concentrations on Security, Advanced Networking, and Database topics.
+
+
+\begin{table}[h]
+\centering
+\captionof{table}{Training Timeline Targets\label{Tab:certifications}}
+\arrayrulecolor{black}
+\ADLnullwidehline
+\begin{tabular}{l!{\color{black}\vrule}l!{\color{black}\vrule}l}
+\multicolumn{1}{l}{\textbf{Certification Name}} & \multicolumn{1}{l}{\textbf{Personnel Impacted}}                                                                                        & \textbf{Target Date}                                                    \\
+\hhline{>{\arrayrulecolor{black}}=|=|=}
+Cloud Practitioner                              & All IT Staff                                                                                                                           & End of 1st Qtr                                                          \\
+\arrayrulecolor{black}\hdashline
+Solution Architect (Associate)                  & \begin{tabular}[c]{@{}l@{}}Architecture Staff\\Development Staff\\Security Staff\\Infrastructure Staff\end{tabular}                    & End of 2nd Qtr                                                          \\
+\hdashline
+Sys Ops Administrator (Associate)               & \begin{tabular}[c]{@{}l@{}}SysOps Staff\\Security Staff\\Infrastructure Staff\end{tabular}                                             & End of 2nd Qtr                                                          \\
+\hdashline
+Developer (Associate)                           & Development Staff                                                                                                                      & End of 2nd Qtr                                                          \\
+\hdashline
+Solution Architect (Professional)               &  50\% of Architecture Staff                                                                                                            & End of 3rd Qtr                                                          \\
+\hdashline
+DevOps Engineer (Professional)                  & \begin{tabular}[c]{@{}l@{}}\textgreater{} 50\% of:\\SysOps Staff\\Security Staff\\Infrastructure Staff\\Development Staff\end{tabular} & End of 3rd Qtr                                                          \\
+\hdashline
+Security Specialty                              &  75\% of Security Staff                                                                                                                & End of 3rd Qtr                                                          \\
+\hdashline
+Database Specialty                              & \begin{tabular}[c]{@{}l@{}}\textgreater{} 75\% of DBA Staff\\\textgreater{} 25\% of Other\end{tabular}                                 & \begin{tabular}[c]{@{}l@{}}End of 3rd Qtr\\End of 4th Qtr\end{tabular}  \\
+\hdashline
+Machine Learning Specialty                      & \begin{tabular}[c]{@{}l@{}}\textgreater{} 25\% of Development Staff\\\textgreater{} 10\% of Other\end{tabular}                         & \begin{tabular}[c]{@{}l@{}}End of 3rd Qtr\\End of 4th Qtr\end{tabular}  \\
+\hdashline
+Advanced Networking Specialty~                  & \begin{tabular}[c]{@{}l@{}}\textgreater{} 50\% of Security Staff\\\textgreater{} 75\% of Infrastructure Staff\end{tabular}             & End of 3rd Qtr                                                          \\
+\hdashline
+Data Analytics Specialty                        & \begin{tabular}[c]{@{}l@{}}\textgreater{} 25\% of Development Staff\\\textgreater{} 10\% of Other\end{tabular}                         & \begin{tabular}[c]{@{}l@{}}End of 3rd Qtr\\End of 4th Qtr\end{tabular}  \\
+\hhline{=>{\arrayrulecolor{black}}|>{\arrayrulecolor{black}}=>{\arrayrulecolor{black}}|>{\arrayrulecolor{black}}=}
+\end{tabular}
+\arrayrulecolor{black}
+\end{table}
+
+\item Rebasing
+\label{sec:orga5700d9}
+
+Rebasing of systems into the cloud is highly dependent upon having the skills in house to perform functions in a cost effective manner. Therefore, the key milestones for this activity are far more future looking than for the training initiative. The target milestones for this initiative are as follows: to have a target network VPC architecture approved by the end of Q3; to have said target VPC implemented by the end of Q4 with at least 1 major internal system and one customer facing system (not necessarily a major system) moved to the cloud by the end of Q4. Additionally, the information learned from this effort should inform the development of a detailed roadmap to be approved for directing the moving of all remaining systems and services to the cloud over the next 18 months following Q4. However, this roadmap needs to consider the operating expense of the current systems as well as the complexity in moving the systems to the cloud. As the real purpose of moving to the cloud is not merely the operational gains of reliability and durability, but the potential operational expense savings to be had from decommissionining existing systems. This may seem like a slow pace. However, even though AWS is the largest cloud provider, experience has shown that careful planning is necessary to successful adoption of cloud services \citep{bromallCaseStudyBasedAnalysis2019}.
+
+\item Decomissioning
+\label{sec:org7a8f17d}
+
+Obviously decomissioning of systems can not happen while the systems are still in use. Therefore, like rebasing, this activity is highly dependent upon training and follows a similar schedule. The demosision schedule should be established to trail behind the rebasing effort by no more than 60 days. The schedule should be approved and published by the end of Q4, with the systems which are rebased into the cloud by the end of Q4 to be moved no later than 30 days into Q1 of the following year. As the greatest operational expense savings will be gained from those systems that require the most human intervention in operations, those systems should be prioritized for rebasing to the cloud earlier in the cycle wherever possible, with high-energy expenditure systems following second. Finally, a key milestone will be reached when there is sufficient data storage capability realized in the cloud, with adequate redundancy to begin decomissioning fail-over recovery sites. This plan requires some significant considerations to optimize priority order. A detailed financial operating analysis of each major system will be completed by the end of Q1. That data will be combined with the proposed cloud architecture in Q4 to establish the best order for both rebasing and decomissioning taking into account the knowledge level of our staff, the cost of outsourcing for non-core competencies, the risk associated with rebasing a particular system, and costs of operating the legacy environment. That plan will then be utilized to drive the rebasing and decomisioning order in the next 18 months.
+\end{enumerate}
+
+
+\subsubsection{Strategic Partnerships}
+\label{sec:org4d76e2f}
+
+\begin{enumerate}
+\item Offshoring
+\label{sec:org4b69967}
+
+Offshoring is a useful tactic in cost optimization strategies \citep{goasduffSecretsCostOptimization2016}, though as Goasduff points out in the Gartner research piece, contracting must include currency risk and sourcing options (such as moving to new platforming choices). Offshoring low-skill roles such as first-tier support will help significantly lower cost through labor arbitrage. Key milestones in this area should be relatively straightforward and easily hit.
+
+First, by Q1 of this year, the firm will have obtained staffing quotes from at least 3 US based consulting companies with the capabilities to function as full scale technology partners, to include off-shoring. A selection will be made based on the total bid around the full strategic partnership proposal, not just the off-shoring costs as part of the Q2 mid-year budget summit. Q3 will see the implementation of the off-shoring capabilities for T1 support capabilities, and Q4 will see the start of on-shore staffing re-alignment, with a reduction of on-shore staffing sufficient to pay for the off-shore T1 support at a minimum.
+
+\item Platforming
+\label{sec:orgde136af}
+
+As part of the Q2 mid-year proposal, our technology partner will be asked to implement cloud-based platforms for ERM, CRM, and process management. Tools under consideration can in the class of be Microsoft Dynamics 365, Salesforce, Workday, SAP, etc. This choice will result in a lengthy implementation project aimed at a collection of in-house, custom applications to a cloud-based suite of unified platform applications designed for a growing Enterprise. This work will have several key benefits. First, by moving the functionality to the cloud, operating costs will be lower. Second, by moving to a modern platform, there will be a lower level of specific in-house customization. Third, by replacing aging custom, home-built infrastructure with modern, cloud-based, Software as a Service (SaaS) infrastructure, operating costs will be rationalized into the contract budget rather than as part of a variable project cost.
+
+After the selection of the specific vendor at the Q2 budget meeting, the first deliverable expected will be a project road map by the middle of Q3, this will be adopted and started with additional milestones noted at that time.
+
+\item Externalize Non-Competencies
+\label{sec:org0da2355}
+
+Once we have selected a vendor partner, there will be a deep dive into our IT processes during Q3, the result of this deep dive with the vendor will be a proposal for which specific functions beyond T1 support should be outsourced as a service to the vendor as non-competencies.
+
+The specific goal is to make managing IT vendor contracts a key competency, as well as high level architecture and process management, but much of the lower level specialty work should be outsourced. This is true for several reasons. First, the work is variable, and thus the specific staffing needs change regularly. By utilizing a large consulting vendor as a strategic partner, the organization can focus on managing the environment, planning and executing functionality, but not necessarily on staffing particular skill sets. Second, as an insurance company, our primary focus is not on being an IT delivery company. Therefore, by utilizing a company who's primary focus is IT delivery as a strategic partner, our focus can be on providing the necessary inputs around critical business knowledge that is unique to the enterprise rather than on providing IT capabilities that are generic to all companies.
+\end{enumerate}
+
+
+\subsubsection{Acceptable Use Validation}
+\label{sec:org62cc78c}
+
+\begin{enumerate}
+\item Identity Federation
+\label{sec:orgf6bdb84}
+
+Identity federation is a well-understood problem and the AWS solution set is not remarkably different from systems utilized in other environments \citep{awsFederationAmazonWeb}. Therefore, this tactical approach to addressing Acceptable Use Validation has a clear path forward. Once the VPC is provisioned for use at the start of Q4, Identity federation should be completed by the end of Q4.
+
+\item Centralized Monitoring
+\label{sec:org63be387}
+
+Centralized monitoring is a semi-complicated problem and will be part of the strategic SaaS solution that is followed. Application Monitoring, Traces, and Log validations will utlize a collection of tools such as Dynatrace and Microsoft SCOM to feed into an aggregated data set which will in turn be read by Splunk. This tool will utilize machine learning to set predictive thresholds across the application stack to allow for reactive response by the T1 support team.
+
+This should be the first set of tools implemented by our Vendor once the VPC is provisioned. Implementation, while complex, is a known solution. The Architecture is relatively straightforward and standard. The expectation is that Q4 will be spent in design by the vendor, with Q1 of the following year being spent doing implementation across the stack.
+
+\item ML Driven Auditing
+\label{sec:org29db96d}
+
+Once Centralized monitoring is in place, ML driving event auditing can being. Therefore, this should be configured on the Splunk data set immediately at the end of Q1 of next year, as well as on the Dynatrace event logging system. This is ``out of the box'' functionality for both of these tool sets and, while it requires some minimal configuration for the environment, should be considered part of the implementation plan for the Centralized Monitoring effort and will be accomplished at the same time.
+\end{enumerate}
+
+\subsubsection{ITIL Process Management}
+\label{sec:orgbc2edd6}
+
+\begin{enumerate}
+\item CMDB Modernization
+\label{sec:orgd3637a0}
+
+The CMDB (Configuration Management Data Base) is the repository of all IT assets and how they are configured and used within the environment. As part of the platforming effort, the Monitoring tool set should be configured to automatically pool and update environmental details into a modern CMDB, on whatever process management system is eventually chosen. This will be part of the Vendor implementation road map, and should be prioritized to complete by Q2 of next fiscal year.
+
+\item Incident Response Management
+\label{sec:org40472ee}
+
+Incident Response Management will need to be updated with T1 support being moved off-shore. A focus on communication and hand-off will be paramount to ensure that incidents are handled appropriately and quickly. Centralized monitoring will help with bringing awareness and visibility to incidents. Leadership will update Incident Response Management as part of the offshoring effort by the end of Q3, with a review by all involved parties happening prior to standing up off the off-shore T1 support team.
+
+\item IT Process Board
+\label{sec:org9b4010b}
+
+With all of the proposed changes to the environment, it will be necessary to have an involved IT Process Board to oversee the changes being made in the environment and to ensure that processes are kept up-to-date appropriately. As \citet{kotterLeadingChange2012} noted, communication is critical for change to be successful, and the above agenda is extremely aggressive in the amount of organizational change it is attempting over the next two years. Having an engaged, committed process board will be central to ensuring success.
+
+Therefore by the end of Q1 there will be a board created made up of senior IT and business leadership with the power to draw upon capabilities across the organization to effect the necessary process changes to support this agenda. This board will also have the responsibility of creating, documenting, and communicating the operational knowledge necessary to succeed through thes changes \citep{yangEnablingEffectiveOperational2017}.
+\end{enumerate}
+
+\subsection{Stakeholder and Responsibility Identification}
+\label{sec:orgabad5b5}
+
+\subsubsection{Cloud Initiative}
+\label{sec:org60ac614}
+
+Key stakeholders are senior IT directors and HR directors. HR is responsible for contracting with an appropriate training organization and testing service to provide the training necessary to meet the training schedule outlined. IT Directors are responsible for identifying which staff members are targeted for which training, and ensuring that they are given ample time to attend said training and that the training and certification is given an appropriate priority.
+
+IT leadership will review progress against the training and certification schedule by manager and department on a monthly basis, and will follow up with any managers who are found to be under-performing.
+
+\subsubsection{Strategic Partnerships}
+\label{sec:orgb2a6afc}
+
+Key stakeholders here are the Senior executives, the Senior IT staff, and IT directors. The senior Executives, having set this direction, are responsible for reviewing the proposals at the budget meeting and choosing with which vendor to commit to a long-term relationship. Once that decision has been made, the Senior IT staff and IT directors are required to meet with partner company client account team and establish an appropriate road map, resource plan, and commitment schedule.
+
+\subsubsection{Acceptable Use Validation}
+\label{sec:org2926063}
+
+The acceptable use validation effort will be driven by the networking and infrastructure teams as well as with some input from architecture. Architects must have appropriate plans in place, on time. Networking must set up the VPC on schedule. Security must establish identity federation. The infrastructure leadership team must work with the vendor on the remaining items and ensure appropriate communication happens at each juncture.
+
+\subsubsection{ITIL Process Management}
+\label{sec:orgb494bb8}
+
+For the CMDB effort, the vendor will need to engage the architecture, networking, and security teams and their leadership. For the remaining items,
+
+\subsection{Leadership Involvement needs}
+\label{sec:org0c0ab79}
+
+\subsubsection{OpEx Reduction}
+\label{sec:org6dd977e}
+
+For this overall objective, success is highly dependent upon senior leadership involvement. As has been shown repeatedly in change management literature such as \citet{appelbaumBackFutureRevisiting2012,kotterLeadingChangeNew2012}, significant organizational change requires significant leadership guidance and involvement in order for change to be successful. As every strategy for this objective involves massive change to the organization, there will be multiple points where senior leadership guidance is needed to not only present the reasoning for why change is necessary, but to also convey to the company that the plan being followed is rational, well-structured, and that the needs and interests of the employees have been considered. Senior leadership will need to be continuously communicating these points to the broader company with great frequency.
+
+\subsubsection{Security Optimization}
+\label{sec:org5747c0e}
+
+For the security optimization plan, Leadership involvement is less critical. Here, beyond communicating their support for the process board, and ensuring that the processes designed meet broader business objectives, senior Leadership really needs only to visit the progress at key milestones and if and when there are significant deviations from the road map.
+
+\subsection{Communication Plan}
+\label{sec:orga5ff14e}
+
+Broadly speaking, communication planning for all of the above should proceed with multiple broad communications each quarter providing insight into what is happening in the near term, and why. What the long-term objectives are, and what has been done towards those objectives up until this point. With the exception of the off-shoring efforts. Because employees see off-shoring and labor arbitrage as an extant threat, this aspect of the objectives must be considered as a highly classified strategic information and kept very confidential. Access to off-shoring information and discussions should be restricted to only those people who need to be involved, and only to the times during which they need to be involved.
+
+Further, because part of this plan does include the rolling off of at least T1 support personnel from on-shore roles, criteria for layoffs must be vetted with HR and legal to ensure that there are no liability considerations for the company prior to these actions being taken.
+
+\newpage
+\section*{References}
+\label{sec:org01e6ae2}
+\printbibliography[heading=none]
+
+
+\newpage
+\section*{Appendix}
+\label{sec:org2f78608}
+\noindent\begin{minipage}{\linewidth}
+\centering
+
+\captionof{table}{Objectives, Strategies, and Tactics\label{Tab:objectives}}
+\centering
+\begin{tabular}{l|l|l}
+\textbf{Objectives}                    & \textbf{Strategy}                          & \textbf{Tactics}              \\
+\hline\hline
+\multirow{6}{*}{OpEx Reduction}        & \multirow{3}{*}{Cloud Initiative}          & Training                      \\
+&                                            & Rebasing                      \\
+&                                            & Decommissioning               \\
+\cline{2-3}
+& \multirow{3}{*}{Strategic Partnerships}    & Offshoring                    \\
+&                                            & Platforming                   \\
+&                                            & Externalize Non-competencies  \\
+\hline
+\multirow{6}{*}{Security Optimization} & \multirow{3}{*}{Acceptable Use Validation} & Identity Federation           \\
+&                                            & Centralized Monitoring        \\
+&                                            & ML Driven Auditing            \\
+\cline{2-3}
+& \multirow{3}{*}{ITIL Process Management}   & CMDB Modernization            \\
+&                                            & Incident Response Mgmt        \\
+&                                            & IT Process Board              \\
+\hline\hline
+\end{tabular}
+\end{minipage}
+\end{document}
